@@ -71,6 +71,8 @@ export default function Home() {
 						imageSrc={modalData.imageSrc}
 						imageAlt={modalData.imageAlt}
 						description={modalData.description}
+						camera={modalData.camera}
+						stats={modalData.stats}
 					/>
 
 					{modalData.isOpen ? (
@@ -143,6 +145,27 @@ export default function Home() {
 							stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 						/>
 					</motion.div>
+				</div>
+
+				<div className="bg-gradient-to-b from-[#9EB8CF] to-[#1C1E1B]">
+					<motion.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						transition={{
+							duration: transitionLength,
+						}}
+						className="grid grid-cols-6 gap-4 px-5">
+						<div className="col-start-2 col-span-2">
+							<PhotoThumbnail
+								setModalData={setModalData}
+								src="/chiLh.JPG"
+								alt="chicago lighthouse"
+								description="chicago lighthouse"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+							/>
+						</div>
+					</motion.div>
 
 					<motion.div
 						initial={{ opacity: 0 }}
@@ -150,13 +173,71 @@ export default function Home() {
 						transition={{
 							duration: transitionLength,
 						}}
-						className="grid grid-cols-6 grid-rows-3 gap-4 px-5">
+						className="p-5 grid grid-cols-6 grid-rows-2 gap-4 px-5">
+						<div className="col-span-4 col-start-3 row-span-2">
+							<PhotoThumbnail
+								setModalData={setModalData}
+								src="/starryTSB.JPG"
+								alt="night sky"
+								description="night sky"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+							/>
+						</div>
+						<div className="col-span-2 row-start-2 pt-8">
+							<PhotoThumbnail
+								setModalData={setModalData}
+								src="/rb.JPG"
+								alt="rab"
+								description="rab"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+							/>
+						</div>
+					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						transition={{
+							duration: transitionLength,
+						}}
+						className="grid grid-cols-4 grid-rows-1 gap-4 px-5">
+						<div className="col-span-2 row-span-2">
+							<PhotoThumbnail
+								setModalData={setModalData}
+								src="/koi.JPG"
+								alt="koi"
+								description="koi"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+							/>
+						</div>
+						<div className="col-span-2 px-12 pt-6">
+							<PhotoThumbnail
+								setModalData={setModalData}
+								src="/flower.JPG"
+								alt="flower"
+								description="flower"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+							/>
+						</div>
+					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						transition={{
+							duration: transitionLength,
+						}}
+						className="p-5 grid grid-cols-3 gap-4 px-5">
 						<div className="col-start-2 col-span-2">
 							<PhotoThumbnail
 								setModalData={setModalData}
-								src="/chiLh.JPG"
-								alt="chicago lighthouse"
-								description="chicago lighthouse"
+								src="/duckTri.JPG"
+								alt="duck"
+								description="duck"
 								camera="SONY DSC-RX100M6"
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>

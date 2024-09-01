@@ -6,9 +6,11 @@ interface PhotoModalProps {
 	imageSrc: string;
 	imageAlt: string;
 	description: string;
+	camera: string;
+	stats: string;
 }
 
-const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, description }) => {
+const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, description, camera, stats }) => {
 	if (!isOpen) return null;
 
 	return (
@@ -21,6 +23,9 @@ const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, des
 				</button> */}
 				<img src={imageSrc} alt={imageAlt} className="w-full h-auto mb-4" />
 				<p className="text-lg">{description}</p>
+				<p className="text-sm md:text-lg">
+					{camera} • {stats}
+				</p>
 			</div>
 		</div>
 	);
