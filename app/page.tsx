@@ -61,7 +61,7 @@ export default function Home() {
 			<title>Rida Naeem Photography</title>
 			<main className={caveat.className}>
 				<div className="bg-[#9EB8CF]">
-					<div className="header flex flex-col p-5">
+					<div className="header flex flex-col p-2 md:p-5">
 						<h1 className="text-4xl">Rida Naeem Photography</h1>
 						<h2 className="text-2xl">Memories</h2>
 					</div>
@@ -85,7 +85,7 @@ export default function Home() {
 						transition={{
 							duration: transitionLength,
 						}}>
-						<div className="grid grid-cols-3 gap-4 p-5 lg:grid-cols-3">
+						<div className="grid grid-cols-3 gap-4 p-2 md:p-5 lg:grid-cols-3">
 							<div className="col-start-2 col-span-2 row-span-3 lg:col-start-2">
 								<PhotoThumbnail
 									setModalData={setModalData}
@@ -135,7 +135,7 @@ export default function Home() {
 						transition={{
 							duration: transitionLength,
 						}}
-						className="p-5">
+						className="p-2 md:p-5">
 						<PhotoThumbnail
 							setModalData={setModalData}
 							src="/haSunset.JPG"
@@ -154,7 +154,7 @@ export default function Home() {
 						transition={{
 							duration: transitionLength,
 						}}
-						className="grid grid-cols-6 gap-4 px-5">
+						className="grid grid-cols-4 lg:grid-cols-6 gap-4 px-5">
 						<div className="col-start-2 col-span-2">
 							<PhotoThumbnail
 								setModalData={setModalData}
@@ -173,7 +173,7 @@ export default function Home() {
 						transition={{
 							duration: transitionLength,
 						}}
-						className="p-5 grid grid-cols-6 grid-rows-2 gap-4 px-5">
+						className="p-2 md:p-5 grid grid-cols-6 grid-rows-2 gap-4 px-5">
 						<div className="col-span-4 col-start-3 row-span-2">
 							<PhotoThumbnail
 								setModalData={setModalData}
@@ -213,7 +213,7 @@ export default function Home() {
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
-						<div className="col-span-2 px-12 pt-6">
+						<div className="col-span-2 px-2 pt-2 md:px-5 md:pt-2 lg:px-12 lg:pt-6">
 							<PhotoThumbnail
 								setModalData={setModalData}
 								src="/flower.JPG"
@@ -231,7 +231,7 @@ export default function Home() {
 						transition={{
 							duration: transitionLength,
 						}}
-						className="p-5 grid grid-cols-3 gap-4 px-5">
+						className="p-2 md:p-5 grid grid-cols-3 gap-4 md:px-5">
 						<div className="col-start-2 col-span-2">
 							<PhotoThumbnail
 								setModalData={setModalData}
