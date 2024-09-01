@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import PhotoThumbnail from "@/components/PhotoThumbnail";
@@ -38,6 +38,22 @@ export default function Home() {
 		});
 	};
 
+	useEffect(() => {
+		const handleEsc = (event: KeyboardEvent) => {
+			if (event.key === "Escape") {
+				closeModal();
+			}
+		};
+
+		if (modalData.isOpen) {
+			window.addEventListener("keydown", handleEsc);
+		}
+
+		return () => {
+			window.removeEventListener("keydown", handleEsc);
+		};
+	}, [modalData.isOpen]);
+
 	const transitionLength = 1;
 
 	return (
@@ -67,8 +83,8 @@ export default function Home() {
 						transition={{
 							duration: transitionLength,
 						}}>
-						<div className="grid grid-cols-3 gap-4 p-5 lg:grid-cols-6">
-							<div className="col-start-2 col-span-2 lg:col-start-4">
+						<div className="grid grid-cols-3 gap-4 p-5 lg:grid-cols-3">
+							<div className="col-start-2 col-span-2 row-span-3 lg:col-start-2">
 								<PhotoThumbnail
 									setModalData={setModalData}
 									src="/waterLily.JPG"
@@ -126,6 +142,25 @@ export default function Home() {
 							camera="SONY DSC-RX100M6"
 							stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 						/>
+					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						transition={{
+							duration: transitionLength,
+						}}
+						className="grid grid-cols-6 grid-rows-3 gap-4 px-5">
+						<div className="col-start-2 col-span-2">
+							<PhotoThumbnail
+								setModalData={setModalData}
+								src="/chiLh.JPG"
+								alt="chicago lighthouse"
+								description="chicago lighthouse"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+							/>
+						</div>
 					</motion.div>
 				</div>
 			</main>
