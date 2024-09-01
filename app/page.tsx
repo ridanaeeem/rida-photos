@@ -20,8 +20,8 @@ export default function Home() {
 					transition={{
 						duration: transitionLength,
 					}}>
-					<div className="grid grid-cols-3 gap-4 p-5">
-						<div className="col-start-2 col-span-2">
+					<div className="grid grid-cols-3 gap-4 p-5 lg:grid-cols-6">
+						<div className="col-start-2 col-span-2 lg:col-start-4">
 							<img src="/waterLily.JPG" alt="water lily"></img>
 						</div>
 					</div>
