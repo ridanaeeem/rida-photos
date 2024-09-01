@@ -18,7 +18,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={caveat.className}>{children}</body>
+			<body className={caveat.className}>
+				<div className="header flex flex-col p-2 md:p-5 bg-[#9EB8CF]">
+					<h1 className="text-4xl">Rida Naeem Photography</h1>
+				</div>
+				{children}
+			</body>
 		</html>
 	);
 }

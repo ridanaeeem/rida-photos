@@ -61,8 +61,7 @@ export default function Home() {
 			<title>Rida Naeem Photography</title>
 			<main className={caveat.className}>
 				<div className="bg-[#9EB8CF]">
-					<div className="header flex flex-col p-2 md:p-5">
-						<h1 className="text-4xl">Rida Naeem Photography</h1>
+					<div className="flex flex-col p-2 md:p-5">
 						<h2 className="text-2xl">Memories</h2>
 					</div>
 
@@ -238,6 +237,54 @@ export default function Home() {
 								src="/duckTri.JPG"
 								alt="duck"
 								description="duck"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+							/>
+						</div>
+					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						transition={{
+							duration: transitionLength,
+						}}
+						className="grid grid-cols-4 gap-4 md:px-5">
+						<div className="col-start-3 col-span-2 pr-10">
+							<PhotoThumbnail
+								setModalData={setModalData}
+								src="/protest.JPG"
+								alt="protest"
+								description="protest"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+							/>
+						</div>
+						<div className="col-span-2 row-start-1 pt-12 md:px-40 md:pt-24">
+							<PhotoThumbnail
+								setModalData={setModalData}
+								src="/bernini.JPG"
+								alt="bernini"
+								description="bernini"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+							/>
+						</div>
+					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						transition={{
+							duration: transitionLength,
+						}}
+						className="p-2 md:p-5 grid grid-cols-3 gap-4 md:px-5">
+						<div className="col-start-2 col-span-2">
+							<PhotoThumbnail
+								setModalData={setModalData}
+								src="/waterLily2.JPG"
+								alt="water lily"
+								description="water lily"
 								camera="SONY DSC-RX100M6"
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
