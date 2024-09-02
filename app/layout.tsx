@@ -4,6 +4,7 @@ import "./globals.css";
 import { Caveat } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import Link from "next/link";
+import Nav from "@/components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 const caveat = Caveat({ subsets: ["latin"] });
@@ -26,19 +27,7 @@ export default function RootLayout({
 						<Link href="/">Rida Naeem Photography</Link>
 					</h1>
 				</div>
-				<nav>
-					<ul className="text-3xl flex justify-center">
-						<ul className="px-5">
-							<Link href="/collections">Collections</Link>
-						</ul>
-						<ul className="px-5">
-							<Link href="/contact">Contact</Link>
-						</ul>
-						<ul className="px-5">
-							<Link href="/about">About</Link>
-						</ul>
-					</ul>
-				</nav>
+				<Nav />
 				{children}
 				<Analytics />
 			</body>
