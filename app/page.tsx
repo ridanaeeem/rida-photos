@@ -36,6 +36,7 @@ export default function Home() {
 			collection: "",
 			stats: "",
 		});
+		window.history.pushState(null, "", window.location.pathname);
 	};
 
 	useEffect(() => {
@@ -55,9 +56,10 @@ export default function Home() {
 	}, [modalData.isOpen]);
 
 	const transitionLength = 1;
+	const modalId = modalData.imageSrc.slice(0, -4);
 
 	return (
-		<div>
+		<div id={modalId}>
 			<title>Rida Naeem Photography</title>
 			<main className={caveat.className}>
 				<div className="bg-gradient-to-b from-white to-[#9EB8CF]">
