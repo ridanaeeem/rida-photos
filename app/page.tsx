@@ -61,9 +61,9 @@ export default function Home() {
 			<title>Rida Naeem Photography</title>
 			<main className={caveat.className}>
 				<div className="bg-gradient-to-b from-white to-[#9EB8CF]">
-					<div className="flex flex-col p-2 md:p-5">
+					{/* <div className="flex flex-col p-2 md:p-5">
 						<h2 className="text-2xl">Memories</h2>
-					</div>
+					</div> */}
 
 					<PhotoModal
 						isOpen={modalData.isOpen}
@@ -97,7 +97,8 @@ export default function Home() {
 							</div>
 						</div>
 					</motion.div>
-
+				</div>
+				<div className="bg-gradient-to-b from-[#9EB8CF] to-[#9EB8CF]">
 					<motion.div
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
@@ -127,7 +128,8 @@ export default function Home() {
 							</div>
 						</div>
 					</motion.div>
-
+				</div>
+				<div className="bg-gradient-to-b from-[#9EB8CF] to-[#9EB8CF]">
 					<motion.div
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}

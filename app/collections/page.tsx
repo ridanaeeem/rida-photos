@@ -60,10 +60,10 @@ export default function Home() {
 		<div>
 			<title>Rida Naeem Photography</title>
 			<main className={caveat.className}>
-				<div className="bg-[#171719]">
-					<div className="flex flex-col p-2 md:p-5">
+				<div className="bg-gradient-to-b from-[#171719] to-[#171719]">
+					{/* <div className="flex flex-col p-2 md:p-5">
 						<h2 className="text-2xl text-white">Collections</h2>
-					</div>
+					</div> */}
 
 					<PhotoModal
 						isOpen={modalData.isOpen}
@@ -80,7 +80,7 @@ export default function Home() {
 
 					<div className="pb-10">
 						<h3 className="text-xl text-white">TSB</h3>
-						<div className="grid grid-cols-3 mx-24">
+						<div className="grid grid-cols-2 md:grid-cols-3 mx-6 lg::mx-24">
 							<CollectionThumbnail
 								setModalData={setModalData}
 								src="/starryTSB2.JPG"
@@ -140,7 +140,7 @@ export default function Home() {
 
 					<div className="pb-10">
 						<h3 className="text-xl text-white">Perseids Meteor Shower 2024</h3>
-						<div className="grid grid-cols-3 mx-24">
+						<div className="grid grid-cols-2 md:grid-cols-3 mx-6 lg::mx-24">
 							<CollectionThumbnail
 								setModalData={setModalData}
 								src="/perseid.JPG"
@@ -166,7 +166,7 @@ export default function Home() {
 								description="water lily"
 								camera="SONY DSC-RX100M6"
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
-								classAdjustments="col-span-1 row-span-1"
+								classAdjustments="col-span-2 md:col-span-1 row-span-1"
 							/>
 						</div>
 					</div>
