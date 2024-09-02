@@ -196,7 +196,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		collection: "ducksandlilies",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/16000 • 72.00mm • ISO3200",
-		classAdjustments: "md:col-span-1 col-span-2 row-span-1",
+		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
 	},
 ];
 

@@ -34,7 +34,7 @@ const perseids2024Array: PhotoModalProps[] = [
 		collection: "perseids2024",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
-		classAdjustments: "md:col-span-1 col-span-2 row-span-1",
+		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
 	},
 ];
 
