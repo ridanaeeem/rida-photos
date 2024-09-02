@@ -25,6 +25,11 @@ export default function RootLayout({
 						<Link href="/">Rida Naeem Photography</Link>
 					</h1>
 				</div>
+				<div>
+					<h2 className="text-3xl">
+						<Link href="/collections">Collections</Link>
+					</h2>
+				</div>
 				{children}
 			</body>
 		</html>
