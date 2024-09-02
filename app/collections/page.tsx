@@ -143,7 +143,7 @@ export default function Home() {
 						<div className="grid grid-cols-3 mx-24">
 							<CollectionThumbnail
 								setModalData={setModalData}
-								src="/perseid.jpg"
+								src="/perseid.JPG"
 								alt="water lily"
 								description="water lily"
 								camera="SONY DSC-RX100M6"
@@ -161,7 +161,7 @@ export default function Home() {
 							/>
 							<CollectionThumbnail
 								setModalData={setModalData}
-								src="/perseid3.JPG"
+								src="/perseid3.jpg"
 								alt="water lily"
 								description="water lily"
 								camera="SONY DSC-RX100M6"
