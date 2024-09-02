@@ -251,8 +251,8 @@ export default function Home() {
 						transition={{
 							duration: transitionLength,
 						}}
-						className="grid grid-cols-4 gap-4 md:px-5">
-						<div className="col-start-3 col-span-2 pr-10">
+						className="grid grid-cols-8 md:grid-cols-4 gap-4 md:px-5">
+						<div className="col-span-5 md:col-start-3 md:col-span-2 pr-10">
 							<PhotoThumbnail
 								setModalData={setModalData}
 								src="/protest.JPG"
@@ -262,7 +262,7 @@ export default function Home() {
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
-						<div className="col-span-2 row-start-1 pt-12 md:px-40 md:pt-24">
+						<div className="col-span-3 md:col-span-2 row-start-1 pt-20 md:px-40 md:pt-24">
 							<PhotoThumbnail
 								setModalData={setModalData}
 								src="/bernini.jpg"
