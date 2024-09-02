@@ -91,8 +91,8 @@ export default function Home() {
 									src="/waterLily.JPG"
 									alt="white water lily"
 									description="water lily"
-									collection="/collections#ducksandlilies"
-									stats="SONY DSC-RX100M • 6f/6.3 • 1/2000 • 63.55mm • ISO3200"
+									collection="#ducksandlilies"
+									stats="SONY DSC-RX100M6 • f/6.3 • 1/2000 • 63.55mm • ISO3200"
 								/>
 							</div>
 						</div>
@@ -287,8 +287,8 @@ export default function Home() {
 								src="/waterLily2.JPG"
 								alt="two white water lilies"
 								description="water lily"
-								collection="SONY DSC-RX100M6"
-								stats="f/4.5 • 1/25600 • 72.00mm • ISO5000"
+								collection="#ducksandlilies"
+								stats="SONY DSC-RX100M6 • f/4.5 • 1/25600 • 72.00mm • ISO5000"
 							/>
 						</div>
 					</motion.div>
