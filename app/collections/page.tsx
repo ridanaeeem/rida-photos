@@ -5,7 +5,9 @@ import { motion } from "framer-motion";
 import CollectionThumbnail from "@/components/CollectionThumbnail";
 import PhotoModal from "@/components/PhotoModal";
 import { Caveat } from "next/font/google";
-import ducksAndLiliesArray from "@/collections/ducksandlilies/ducksAndLilies";
+import ducksAndLiliesArray from "@/collections/ducksAndLilies";
+import perseids2024Array from "@/collections/perseids2024";
+import topsailBeachArray from "@/collections/topsailBeach";
 
 const caveat = Caveat({ subsets: ["latin"] });
 
@@ -18,7 +20,17 @@ interface ModalData {
 	stats: string;
 }
 
-export default function Home() {
+interface CollectionPhotoProps {
+	imageSrc: string;
+	imageAlt: string;
+	description: string;
+	collection: string;
+	showLink: boolean;
+	stats: string;
+	classAdjustments: string;
+}
+
+export default function Collections() {
 	const [modalData, setModalData] = useState<ModalData>({
 		isOpen: false,
 		imageSrc: "",
@@ -82,7 +94,7 @@ export default function Home() {
 					<div className="pb-10" id="ducksandlilies">
 						<h3 className="text-xl text-white">Ducks & Lilies</h3>
 						<div className="grid grid-cols-2 md:grid-cols-3 mx-6 lg::mx-24">
-							{ducksAndLiliesArray.map((photo) => (
+							{ducksAndLiliesArray.map((photo: CollectionPhotoProps) => (
 								<CollectionThumbnail
 									setModalData={setModalData}
 									src={photo.imageSrc}
@@ -96,105 +108,37 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="pb-10">
-						<h3 className="text-xl text-white">TSB</h3>
+					<div className="pb-10" id="topsailBeach">
+						<h3 className="text-xl text-white">Topsail Beach</h3>
 						<div className="grid grid-cols-2 md:grid-cols-3 mx-6 lg::mx-24">
-							<CollectionThumbnail
-								setModalData={setModalData}
-								src="/starryTSB2.JPG"
-								alt="water lily"
-								description="water lily"
-								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
-								classAdjustments="col-span-1 row-span-1"
-							/>
-							<CollectionThumbnail
-								setModalData={setModalData}
-								src="/starryTSB.JPG"
-								alt="water lily"
-								description="water lily"
-								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
-								classAdjustments="col-span-1 row-span-1"
-							/>
-							<CollectionThumbnail
-								setModalData={setModalData}
-								src="/starryTSB3.JPG"
-								alt="water lily"
-								description="water lily"
-								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
-								classAdjustments="col-span-1 row-span-1"
-							/>
-							<CollectionThumbnail
-								setModalData={setModalData}
-								src="/starryTSB4.JPG"
-								alt="water lily"
-								description="water lily"
-								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
-								classAdjustments="col-span-1 row-span-1"
-							/>
-							<CollectionThumbnail
-								setModalData={setModalData}
-								src="/nightTSB.jpg"
-								alt="water lily"
-								description="water lily"
-								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
-								classAdjustments="col-span-1 row-span-1"
-							/>
-							<CollectionThumbnail
-								setModalData={setModalData}
-								src="/beach.JPG"
-								alt="water lily"
-								description="water lily"
-								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
-								classAdjustments="col-span-1 row-span-1"
-							/>
-							<CollectionThumbnail
-								setModalData={setModalData}
-								src="/beach2.JPG"
-								alt="water lily"
-								description="water lily"
-								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
-								classAdjustments="col-span-1 row-span-1"
-							/>
+							{topsailBeachArray.map((photo: CollectionPhotoProps) => (
+								<CollectionThumbnail
+									setModalData={setModalData}
+									src={photo.imageSrc}
+									alt={photo.imageAlt}
+									description={photo.description}
+									collection={photo.collection}
+									stats={photo.stats}
+									classAdjustments={photo.classAdjustments}
+								/>
+							))}
 						</div>
 					</div>
 
-					<div className="pb-10">
+					<div className="pb-10" id="perseids2024">
 						<h3 className="text-xl text-white">Perseids Meteor Shower 2024</h3>
 						<div className="grid grid-cols-2 md:grid-cols-3 mx-6 lg::mx-24">
-							<CollectionThumbnail
-								setModalData={setModalData}
-								src="/perseid.JPG"
-								alt="water lily"
-								description="water lily"
-								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
-								classAdjustments="col-span-1 row-span-1"
-							/>
-							<CollectionThumbnail
-								setModalData={setModalData}
-								src="/perseid2.jpg"
-								alt="water lily"
-								description="water lily"
-								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
-								classAdjustments="col-span-1 row-span-1"
-							/>
-							<CollectionThumbnail
-								setModalData={setModalData}
-								src="/perseid3.jpg"
-								alt="water lily"
-								description="water lily"
-								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
-								classAdjustments="col-span-2 md:col-span-1 row-span-1"
-							/>
+							{perseids2024Array.map((photo: CollectionPhotoProps) => (
+								<CollectionThumbnail
+									setModalData={setModalData}
+									src={photo.imageSrc}
+									alt={photo.imageAlt}
+									description={photo.description}
+									collection={photo.collection}
+									stats={photo.stats}
+									classAdjustments={photo.classAdjustments}
+								/>
+							))}
 						</div>
 					</div>
 				</div>
