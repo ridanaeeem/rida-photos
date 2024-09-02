@@ -112,8 +112,8 @@ export default function Home() {
 									src="/fireworks.JPG"
 									alt="fireworks"
 									description="fireworks"
-									collection="SONY DSC-RX100M6"
-									stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+									collection=""
+									stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
 								/>
 							</div>
 							<div className="col-span-2 row-start-2 row-span-2">
@@ -122,8 +122,8 @@ export default function Home() {
 									src="/chicagoEyes.JPG"
 									alt="Chicago Eyes"
 									description="Chicago Eyes"
-									collection="SONY DSC-RX100M6"
-									stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+									collection=""
+									stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
 								/>
 							</div>
 						</div>
@@ -142,8 +142,8 @@ export default function Home() {
 							src="/haSunset.JPG"
 							alt="Sunset"
 							description="Sunset"
-							collection="SONY DSC-RX100M6"
-							stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+							collection=""
+							stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
 						/>
 					</motion.div>
 				</div>
@@ -162,8 +162,8 @@ export default function Home() {
 								src="/chiLh.JPG"
 								alt="chicago lighthouse"
 								description="chicago lighthouse"
-								collection="SONY DSC-RX100M6"
-								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								collection=""
+								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
 					</motion.div>
@@ -181,8 +181,8 @@ export default function Home() {
 								src="/starryTSB.JPG"
 								alt="night sky"
 								description="night sky"
-								collection="SONY DSC-RX100M6"
-								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								collection=""
+								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
 						<div className="col-span-2 row-start-2 pt-8">
@@ -191,8 +191,8 @@ export default function Home() {
 								src="/rb.JPG"
 								alt="rab"
 								description="rab"
-								collection="SONY DSC-RX100M6"
-								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								collection=""
+								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
 					</motion.div>
@@ -210,8 +210,8 @@ export default function Home() {
 								src="/koi.JPG"
 								alt="koi"
 								description="koi"
-								collection="SONY DSC-RX100M6"
-								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								collection=""
+								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
 						<div className="col-span-2 px-2 pt-2 md:px-5 md:pt-2 lg:px-12 lg:pt-6">
@@ -220,8 +220,8 @@ export default function Home() {
 								src="/flower.JPG"
 								alt="flower"
 								description="flower"
-								collection="SONY DSC-RX100M6"
-								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								collection=""
+								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
 					</motion.div>
@@ -239,8 +239,8 @@ export default function Home() {
 								src="/duckTri.JPG"
 								alt="duck"
 								description="duck"
-								collection="SONY DSC-RX100M6"
-								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								collection="#ducksandlilies"
+								stats="SONY DSC-RX100M6 • f/4.5 • 1/16000 • 72.00mm • ISO3200"
 							/>
 						</div>
 					</motion.div>
@@ -258,8 +258,8 @@ export default function Home() {
 								src="/protest.JPG"
 								alt="protest"
 								description="protest"
-								collection="SONY DSC-RX100M6"
-								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								collection=""
+								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
 						<div className="col-span-3 md:col-span-2 row-start-1 pt-20 md:px-40 md:pt-24">
@@ -268,8 +268,8 @@ export default function Home() {
 								src="/bernini.jpg"
 								alt="bernini"
 								description="bernini"
-								collection="SONY DSC-RX100M6"
-								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								collection=""
+								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
 					</motion.div>

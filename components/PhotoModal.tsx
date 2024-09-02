@@ -23,14 +23,14 @@ const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, des
 				</button> */}
 				<img src={imageSrc} alt={imageAlt} className="w-auto h-auto mb-4" />
 				<p className="text-lg">
-					{description}
+					{/* {description + ": "} */}
 					{collection != "" ? (
 						<a
 							href={"/collections" + collection}
 							target="_blank"
 							rel="noreferrer"
 							className="hover:text-[#809BB3]">
-							: View Collection
+							View Collection
 						</a>
 					) : null}
 				</p>
