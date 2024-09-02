@@ -19,7 +19,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 	},
 	{
-		imageSrc: "/pigeon.jpg",
+		imageSrc: "/pigeon.JPG",
 		imageAlt: "pigeon",
 		description: "",
 		collection: "chicagoStreet",
@@ -28,7 +28,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 	},
 	{
-		imageSrc: "/protest.jpg",
+		imageSrc: "/protest.JPG",
 		imageAlt: "protest",
 		description: "",
 		collection: "chicagoStreet",
@@ -37,7 +37,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
 	},
 	{
-		imageSrc: "/chicago.jpg",
+		imageSrc: "/chicago.JPG",
 		imageAlt: "chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -46,7 +46,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
 	},
 	{
-		imageSrc: "/chicago2.jpg",
+		imageSrc: "/chicago2.JPG",
 		imageAlt: "chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -55,7 +55,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
 	},
 	{
-		imageSrc: "/chicago3.jpg",
+		imageSrc: "/chicago3.JPG",
 		imageAlt: "chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -64,7 +64,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
 	},
 	{
-		imageSrc: "/chicago4.jpg",
+		imageSrc: "/chicago4.JPG",
 		imageAlt: "chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -73,7 +73,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
 	},
 	{
-		imageSrc: "/chicago5.jpg",
+		imageSrc: "/chicago5.JPG",
 		imageAlt: "chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -82,7 +82,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
 	},
 	{
-		imageSrc: "/chicago6.jpg",
+		imageSrc: "/chicago6.JPG",
 		imageAlt: "chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -91,7 +91,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
 	},
 	{
-		imageSrc: "/chicago7.jpg",
+		imageSrc: "/chicago7.JPG",
 		imageAlt: "chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -100,7 +100,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
 	},
 	{
-		imageSrc: "/chicagoEyes.jpg",
+		imageSrc: "/chicagoEyes.JPG",
 		imageAlt: "chicagoEyes",
 		description: "",
 		collection: "chicagoStreet",
@@ -109,7 +109,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
 	},
 	{
-		imageSrc: "/chicagoEyes2.jpg",
+		imageSrc: "/chicagoEyes2.JPG",
 		imageAlt: "chicagoEyes",
 		description: "",
 		collection: "chicagoStreet",
