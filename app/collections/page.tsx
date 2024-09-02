@@ -8,6 +8,7 @@ import { Caveat } from "next/font/google";
 import ducksAndLiliesArray from "@/collections/ducksAndLilies";
 import perseids2024Array from "@/collections/perseids2024";
 import topsailBeachArray from "@/collections/topsailBeach";
+import chicagoStreetArray from "@/collections/chicagoStreet";
 
 const caveat = Caveat({ subsets: ["latin"] });
 
@@ -96,6 +97,7 @@ export default function Collections() {
 						<div className="grid grid-cols-2 md:grid-cols-3 mx-6 lg::mx-24">
 							{ducksAndLiliesArray.map((photo: CollectionPhotoProps) => (
 								<CollectionThumbnail
+									key={photo.imageSrc}
 									setModalData={setModalData}
 									src={photo.imageSrc}
 									alt={photo.imageAlt}
@@ -113,6 +115,25 @@ export default function Collections() {
 						<div className="grid grid-cols-2 md:grid-cols-3 mx-6 lg::mx-24">
 							{topsailBeachArray.map((photo: CollectionPhotoProps) => (
 								<CollectionThumbnail
+									key={photo.imageSrc}
+									setModalData={setModalData}
+									src={photo.imageSrc}
+									alt={photo.imageAlt}
+									description={photo.description}
+									collection={photo.collection}
+									stats={photo.stats}
+									classAdjustments={photo.classAdjustments}
+								/>
+							))}
+						</div>
+					</div>
+
+					<div className="pb-10" id="chicagoStreet">
+						<h3 className="text-xl text-white">Chicago Street</h3>
+						<div className="grid grid-cols-2 md:grid-cols-3 mx-6 lg::mx-24">
+							{chicagoStreetArray.map((photo: CollectionPhotoProps) => (
+								<CollectionThumbnail
+									key={photo.imageSrc}
 									setModalData={setModalData}
 									src={photo.imageSrc}
 									alt={photo.imageAlt}
@@ -130,6 +151,7 @@ export default function Collections() {
 						<div className="grid grid-cols-2 md:grid-cols-3 mx-6 lg::mx-24">
 							{perseids2024Array.map((photo: CollectionPhotoProps) => (
 								<CollectionThumbnail
+									key={photo.imageSrc}
 									setModalData={setModalData}
 									src={photo.imageSrc}
 									alt={photo.imageAlt}
