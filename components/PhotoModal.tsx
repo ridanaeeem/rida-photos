@@ -6,11 +6,11 @@ interface PhotoModalProps {
 	imageSrc: string;
 	imageAlt: string;
 	description: string;
-	camera: string;
+	collection: string;
 	stats: string;
 }
 
-const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, description, camera, stats }) => {
+const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, description, collection, stats }) => {
 	if (!isOpen) return null;
 
 	return (
@@ -22,10 +22,15 @@ const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, des
 					&times;
 				</button> */}
 				<img src={imageSrc} alt={imageAlt} className="w-auto h-auto mb-4" />
-				<p className="text-lg">{description}</p>
-				<p className="text-sm md:text-lg">
-					{camera} • {stats}
+				<p className="text-lg">
+					{description}:{" "}
+					{collection != "" ? (
+						<a href={collection} target="_blank" rel="noreferrer" className="hover:text-[#809BB3]">
+							View Collection
+						</a>
+					) : null}
 				</p>
+				<p className="text-sm md:text-lg">{stats}</p>
 			</div>
 		</div>
 	);

@@ -13,7 +13,7 @@ interface ModalData {
 	imageSrc: string;
 	imageAlt: string;
 	description: string;
-	camera: string;
+	collection: string;
 	stats: string;
 }
 
@@ -23,7 +23,7 @@ export default function Home() {
 		imageSrc: "",
 		imageAlt: "",
 		description: "",
-		camera: "",
+		collection: "",
 		stats: "",
 	});
 
@@ -33,7 +33,7 @@ export default function Home() {
 			imageSrc: "",
 			imageAlt: "",
 			description: "",
-			camera: "",
+			collection: "",
 			stats: "",
 		});
 	};
@@ -70,7 +70,7 @@ export default function Home() {
 						imageSrc={modalData.imageSrc}
 						imageAlt={modalData.imageAlt}
 						description={modalData.description}
-						camera={modalData.camera}
+						collection={modalData.collection}
 						stats={modalData.stats}
 					/>
 
@@ -89,10 +89,10 @@ export default function Home() {
 								<PhotoThumbnail
 									setModalData={setModalData}
 									src="/waterLily.JPG"
-									alt="water lily"
+									alt="white water lily"
 									description="water lily"
-									camera="SONY DSC-RX100M6"
-									stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+									collection="/collections#ducksandlilies"
+									stats="SONY DSC-RX100M • 6f/6.3 • 1/2000 • 63.55mm • ISO3200"
 								/>
 							</div>
 						</div>
@@ -112,7 +112,7 @@ export default function Home() {
 									src="/fireworks.JPG"
 									alt="fireworks"
 									description="fireworks"
-									camera="SONY DSC-RX100M6"
+									collection="SONY DSC-RX100M6"
 									stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 								/>
 							</div>
@@ -122,7 +122,7 @@ export default function Home() {
 									src="/chicagoEyes.JPG"
 									alt="Chicago Eyes"
 									description="Chicago Eyes"
-									camera="SONY DSC-RX100M6"
+									collection="SONY DSC-RX100M6"
 									stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 								/>
 							</div>
@@ -142,7 +142,7 @@ export default function Home() {
 							src="/haSunset.JPG"
 							alt="Sunset"
 							description="Sunset"
-							camera="SONY DSC-RX100M6"
+							collection="SONY DSC-RX100M6"
 							stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 						/>
 					</motion.div>
@@ -162,7 +162,7 @@ export default function Home() {
 								src="/chiLh.JPG"
 								alt="chicago lighthouse"
 								description="chicago lighthouse"
-								camera="SONY DSC-RX100M6"
+								collection="SONY DSC-RX100M6"
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
@@ -181,7 +181,7 @@ export default function Home() {
 								src="/starryTSB.JPG"
 								alt="night sky"
 								description="night sky"
-								camera="SONY DSC-RX100M6"
+								collection="SONY DSC-RX100M6"
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
@@ -191,7 +191,7 @@ export default function Home() {
 								src="/rb.JPG"
 								alt="rab"
 								description="rab"
-								camera="SONY DSC-RX100M6"
+								collection="SONY DSC-RX100M6"
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
@@ -210,7 +210,7 @@ export default function Home() {
 								src="/koi.JPG"
 								alt="koi"
 								description="koi"
-								camera="SONY DSC-RX100M6"
+								collection="SONY DSC-RX100M6"
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
@@ -220,7 +220,7 @@ export default function Home() {
 								src="/flower.JPG"
 								alt="flower"
 								description="flower"
-								camera="SONY DSC-RX100M6"
+								collection="SONY DSC-RX100M6"
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
@@ -239,7 +239,7 @@ export default function Home() {
 								src="/duckTri.JPG"
 								alt="duck"
 								description="duck"
-								camera="SONY DSC-RX100M6"
+								collection="SONY DSC-RX100M6"
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
@@ -258,7 +258,7 @@ export default function Home() {
 								src="/protest.JPG"
 								alt="protest"
 								description="protest"
-								camera="SONY DSC-RX100M6"
+								collection="SONY DSC-RX100M6"
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
@@ -268,7 +268,7 @@ export default function Home() {
 								src="/bernini.jpg"
 								alt="bernini"
 								description="bernini"
-								camera="SONY DSC-RX100M6"
+								collection="SONY DSC-RX100M6"
 								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
 							/>
 						</div>
@@ -285,10 +285,10 @@ export default function Home() {
 							<PhotoThumbnail
 								setModalData={setModalData}
 								src="/waterLily2.JPG"
-								alt="water lily"
+								alt="two white water lilies"
 								description="water lily"
-								camera="SONY DSC-RX100M6"
-								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								collection="SONY DSC-RX100M6"
+								stats="f/4.5 • 1/25600 • 72.00mm • ISO5000"
 							/>
 						</div>
 					</motion.div>

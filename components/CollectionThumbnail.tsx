@@ -23,7 +23,7 @@ export default function CollectionThumbnail({
 	src,
 	alt,
 	description,
-	camera,
+	collection,
 	stats,
 	classAdjustments,
 }: {
@@ -31,7 +31,7 @@ export default function CollectionThumbnail({
 	src: string;
 	alt: string;
 	description: string;
-	camera: string;
+	collection: string;
 	stats: string;
 	classAdjustments: string;
 }) {
@@ -47,7 +47,7 @@ export default function CollectionThumbnail({
 				src={src}
 				alt={alt}
 				className="cursor-pointer p-2"
-				onClick={() => openModal(setModalData, src, alt, description, camera, stats)}></img>
+				onClick={() => openModal(setModalData, src, alt, description, collection, stats)}></img>
 		</motion.div>
 	);
 }

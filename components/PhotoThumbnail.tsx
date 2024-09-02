@@ -3,7 +3,7 @@ function openModal(
 	imageSrc: string,
 	imageAlt: string,
 	description: string,
-	camera: string,
+	collection: string,
 	stats: string
 ) {
 	setModalData({
@@ -11,7 +11,7 @@ function openModal(
 		imageSrc,
 		imageAlt,
 		description,
-		camera,
+		collection,
 		stats,
 	});
 }
@@ -21,14 +21,14 @@ export default function PhotoThumbnail({
 	src,
 	alt,
 	description,
-	camera,
+	collection,
 	stats,
 }: {
 	setModalData: any;
 	src: string;
 	alt: string;
 	description: string;
-	camera: string;
+	collection: string;
 	stats: string;
 }) {
 	return (
@@ -36,6 +36,6 @@ export default function PhotoThumbnail({
 			src={src}
 			alt={alt}
 			className="cursor-pointer"
-			onClick={() => openModal(setModalData, src, alt, description, camera, stats)}></img>
+			onClick={() => openModal(setModalData, src, alt, description, collection, stats)}></img>
 	);
 }
