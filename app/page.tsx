@@ -65,14 +65,16 @@ export default function Home() {
 						<h2 className="text-2xl">Memories</h2>
 					</div> */}
 
-					<PhotoModal
-						isOpen={modalData.isOpen}
-						imageSrc={modalData.imageSrc}
-						imageAlt={modalData.imageAlt}
-						description={modalData.description}
-						collection={modalData.collection}
-						stats={modalData.stats}
-					/>
+					<div className="inset-0 flex justify-center">
+						<PhotoModal
+							isOpen={modalData.isOpen}
+							imageSrc={modalData.imageSrc}
+							imageAlt={modalData.imageAlt}
+							description={modalData.description}
+							collection={modalData.collection}
+							stats={modalData.stats}
+						/>
+					</div>
 
 					{modalData.isOpen ? (
 						<div className="fixed inset-0 z-10 bg-black bg-opacity-75" onClick={() => closeModal()}></div>

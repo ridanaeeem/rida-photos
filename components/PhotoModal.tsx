@@ -14,7 +14,7 @@ const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, des
 	if (!isOpen) return null;
 
 	return (
-		<div className="fixed lg:inset-0 z-50 flex items-center justify-center m-5 lg:m-60 text-center">
+		<div className="fixed z-50 flex items-center justify-center m-5 lg:m-auto text-center">
 			<div className="relative bg-white p-3 md:p-5 rounded-lg">
 				{/* <button
 					className="absolute p-2 top-2 right-1 text-2xl text-gray-500 hover:text-gray-800"
