@@ -14,8 +14,6 @@ function openModal(
 		collection,
 		stats,
 	});
-	const modalId = imageSrc.slice(0, -4);
-	window.history.pushState(null, "", `${modalId}`);
 }
 
 export default function PhotoThumbnail({
