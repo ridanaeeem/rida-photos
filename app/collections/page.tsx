@@ -9,6 +9,7 @@ import ducksAndLiliesArray from "@/collections/ducksAndLilies";
 import perseids2024Array from "@/collections/perseids2024";
 import topsailBeachArray from "@/collections/topsailBeach";
 import chicagoStreetArray from "@/collections/chicagoStreet";
+import halfaliveArray from "@/collections/halfalive";
 
 const caveat = Caveat({ subsets: ["latin"] });
 
@@ -91,6 +92,24 @@ export default function Collections() {
 					{modalData.isOpen ? (
 						<div className="fixed inset-0 z-10 bg-black bg-opacity-75" onClick={() => closeModal()}></div>
 					) : null}
+
+					<div className="pb-10" id="halfalive">
+						<h3 className="text-xl text-white">Half Alive & Tessa Violet</h3>
+						<div className="grid grid-cols-2 md:grid-cols-3 mx-6">
+							{halfaliveArray.map((photo: CollectionPhotoProps) => (
+								<CollectionThumbnail
+									key={photo.imageSrc}
+									setModalData={setModalData}
+									src={photo.imageSrc}
+									alt={photo.imageAlt}
+									description={photo.description}
+									collection={photo.collection}
+									stats={photo.stats}
+									classAdjustments={photo.classAdjustments}
+								/>
+							))}
+						</div>
+					</div>
 
 					<div className="pb-10" id="ducksandlilies">
 						<h3 className="text-xl text-white">Ducks & Lilies</h3>
