@@ -79,6 +79,201 @@ export default function Home() {
 					) : null}
 
 					<div className="pb-10">
+						<h3 className="text-xl text-white">Ducks & Lilies</h3>
+						<div className="grid grid-cols-2 md:grid-cols-3 mx-6 lg::mx-24">
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily.JPG"
+								alt="white water lily"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily2.JPG"
+								alt="two white water lilies"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/duck.JPG"
+								alt="baby duck swimming in water"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/duck2.JPG"
+								alt="baby duck swimming in water"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily3.JPG"
+								alt="four purple water lilies"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily6.JPG"
+								alt="one bright pink water lily"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily4.JPG"
+								alt="one pink water lily"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily5.JPG"
+								alt="three pink water lilies"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily9.JPG"
+								alt="two pink water lilies"
+								description="one pink water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily10.JPG"
+								alt="one pink water lily, blooming"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/duck3.JPG"
+								alt="baby duck moving around in water"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/duck4.JPG"
+								alt="baby duck looking at lilypads in water"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily12.JPG"
+								alt="one white water lily with pink tips"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/duckTri.JPG"
+								alt="baby duck swimming in water"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily7.JPG"
+								alt="three magenta water lilies"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily8.JPG"
+								alt="two pink water lilies"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily13.JPG"
+								alt="two white water lilies"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/waterLily14.JPG"
+								alt="two white water lilies, up close"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/duck5.JPG"
+								alt="baby duck swimming across water"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/duck6.jpg"
+								alt="duck swimming in water, looking forwards"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/duck7.JPG"
+								alt="duck standing in water"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-2 md:col-span-1 row-span-1"
+							/>
+						</div>
+					</div>
+
+					<div className="pb-10">
 						<h3 className="text-xl text-white">TSB</h3>
 						<div className="grid grid-cols-2 md:grid-cols-3 mx-6 lg::mx-24">
 							<CollectionThumbnail
@@ -129,6 +324,15 @@ export default function Home() {
 							<CollectionThumbnail
 								setModalData={setModalData}
 								src="/beach.JPG"
+								alt="water lily"
+								description="water lily"
+								camera="SONY DSC-RX100M6"
+								stats="f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								classAdjustments="col-span-1 row-span-1"
+							/>
+							<CollectionThumbnail
+								setModalData={setModalData}
+								src="/beach2.JPG"
 								alt="water lily"
 								description="water lily"
 								camera="SONY DSC-RX100M6"
