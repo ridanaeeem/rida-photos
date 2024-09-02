@@ -263,7 +263,7 @@ export default function Home() {
 						<div className="col-span-2 row-start-1 pt-12 md:px-40 md:pt-24">
 							<PhotoThumbnail
 								setModalData={setModalData}
-								src="/bernini.JPG"
+								src="/bernini.jpg"
 								alt="bernini"
 								description="bernini"
 								camera="SONY DSC-RX100M6"
