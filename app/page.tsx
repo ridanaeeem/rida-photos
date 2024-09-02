@@ -60,7 +60,7 @@ export default function Home() {
 		<div>
 			<title>Rida Naeem Photography</title>
 			<main className={caveat.className}>
-				<div className="bg-[#9EB8CF]">
+				<div className="bg-gradient-to-b from-white to-[#9EB8CF]">
 					<div className="flex flex-col p-2 md:p-5">
 						<h2 className="text-2xl">Memories</h2>
 					</div>
