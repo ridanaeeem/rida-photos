@@ -93,7 +93,7 @@ export default function Home() {
 									src="/waterLily.JPG"
 									alt="white water lily"
 									description="water lily"
-									collection="#ducksandlilies"
+									collection="ducksandlilies"
 									stats="SONY DSC-RX100M6 • f/6.3 • 1/2000 • 63.55mm • ISO3200"
 								/>
 							</div>
@@ -122,10 +122,10 @@ export default function Home() {
 								<PhotoThumbnail
 									setModalData={setModalData}
 									src="/chicagoEyes.JPG"
-									alt="Chicago Eyes"
+									alt="Eyes on a building in Chicago"
 									description="Chicago Eyes"
-									collection=""
-									stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
+									collection="chicagoStreet"
+									stats="SONY DSC-RX100M6 • ƒ/4.5 • 1/2000 • 71.03mm • ISO250"
 								/>
 							</div>
 						</div>
@@ -241,7 +241,7 @@ export default function Home() {
 								src="/duckTri.JPG"
 								alt="duck"
 								description="duck"
-								collection="#ducksandlilies"
+								collection="ducksandlilies"
 								stats="SONY DSC-RX100M6 • f/4.5 • 1/16000 • 72.00mm • ISO3200"
 							/>
 						</div>
@@ -258,10 +258,10 @@ export default function Home() {
 							<PhotoThumbnail
 								setModalData={setModalData}
 								src="/protest.JPG"
-								alt="protest"
+								alt="A protestor with a blindfold in Chicago"
 								description="protest"
 								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								stats="SONY DSC-RX100M6 • ƒ/4.5 • 1/25600 • 50.65mm • ISO5000"
 							/>
 						</div>
 						<div className="col-span-3 md:col-span-2 row-start-1 pt-20 md:px-40 md:pt-24">
@@ -289,7 +289,7 @@ export default function Home() {
 								src="/waterLily2.JPG"
 								alt="two white water lilies"
 								description="water lily"
-								collection="#ducksandlilies"
+								collection="ducksandlilies"
 								stats="SONY DSC-RX100M6 • f/4.5 • 1/25600 • 72.00mm • ISO5000"
 							/>
 						</div>

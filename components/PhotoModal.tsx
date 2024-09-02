@@ -26,7 +26,7 @@ const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, des
 					{/* {description + ": "} */}
 					{collection != "" ? (
 						<a
-							href={"/collections" + collection}
+							href={"/collections#" + collection}
 							target="_blank"
 							rel="noreferrer"
 							className="hover:text-[#809BB3]">
