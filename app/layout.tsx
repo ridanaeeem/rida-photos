@@ -22,11 +22,6 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={caveat.className}>
-				<div className="header flex flex-col p-2 md:p-5 bg-white">
-					<h1 className="text-4xl">
-						<Link href="/">Rida Naeem Photography</Link>
-					</h1>
-				</div>
 				<Nav />
 				{children}
 				<Analytics />
