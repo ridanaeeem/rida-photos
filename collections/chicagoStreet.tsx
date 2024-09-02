@@ -34,7 +34,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		collection: "chicagoStreet",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
-		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
+		classAdjustments: "col-span-1 row-span-1",
 	},
 	{
 		imageSrc: "/chicago.JPG",
@@ -43,7 +43,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		collection: "chicagoStreet",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
-		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
+		classAdjustments: "col-span-1 row-span-1",
 	},
 	{
 		imageSrc: "/chicago2.JPG",
@@ -52,7 +52,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		collection: "chicagoStreet",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
-		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
+		classAdjustments: "col-span-1 row-span-1",
 	},
 	{
 		imageSrc: "/chicago3.JPG",
@@ -61,16 +61,16 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		collection: "chicagoStreet",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
-		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
+		classAdjustments: "col-span-1 row-span-1",
 	},
 	{
-		imageSrc: "/chicago4.JPG",
+		imageSrc: "/chicago4.jpg",
 		imageAlt: "chicago",
 		description: "",
 		collection: "chicagoStreet",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
-		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
+		classAdjustments: "col-span-1 row-span-1",
 	},
 	{
 		imageSrc: "/chicago5.JPG",
@@ -79,7 +79,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		collection: "chicagoStreet",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
-		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
+		classAdjustments: "col-span-1 row-span-1",
 	},
 	{
 		imageSrc: "/chicago6.JPG",
@@ -88,7 +88,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		collection: "chicagoStreet",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
-		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
+		classAdjustments: "col-span-1 row-span-1",
 	},
 	{
 		imageSrc: "/chicago7.JPG",
@@ -97,7 +97,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		collection: "chicagoStreet",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
-		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
+		classAdjustments: "col-span-1 row-span-1",
 	},
 	{
 		imageSrc: "/chicagoEyes.JPG",
@@ -106,7 +106,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		collection: "chicagoStreet",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
-		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
+		classAdjustments: "col-span-1 row-span-1",
 	},
 	{
 		imageSrc: "/chicagoEyes2.JPG",
@@ -115,7 +115,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		collection: "chicagoStreet",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
-		classAdjustments: "col-span-2 md:col-span-1 row-span-1",
+		classAdjustments: "col-span-1 row-span-1",
 	},
 ];
 
