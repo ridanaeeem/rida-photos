@@ -46,7 +46,7 @@ export default function CollectionThumbnail({
 			<img
 				src={src}
 				alt={alt}
-				className="cursor-pointer p-2"
+				className="cursor-pointer p-2 w-full h-full object-cover"
 				onClick={() => openModal(setModalData, src, alt, description, collection, stats)}></img>
 		</motion.div>
 	);
