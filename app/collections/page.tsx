@@ -95,7 +95,7 @@ export default function Collections() {
 
 					<div className="pb-10" id="halfalive">
 						<h3 className="text-xl text-white">Half Alive & Tessa Violet @ House of Blues Boston</h3>
-						<div className="grid grid-cols-2 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-6">
+						<div className="grid grid-cols-3 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-6">
 							{halfaliveArray.map((photo: CollectionPhotoProps) => (
 								<CollectionThumbnail
 									key={photo.imageSrc}

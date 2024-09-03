@@ -16,7 +16,7 @@ const halfaliveArray: PhotoModalProps[] = [
 		collection: "concerts",
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
-		classAdjustments: "col-span-2 row-span-1",
+		classAdjustments: "col-span-3 md:col-span-2 row-span-1",
 	},
 	{
 		imageSrc: "/tessaViolet.gif",
