@@ -294,6 +294,25 @@ export default function Home() {
 							/>
 						</div>
 					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						transition={{
+							duration: transitionLength,
+						}}
+						className="p-2 md:p-5 grid grid-cols-3 gap-4 md:px-5">
+						<div className="col-start-2 col-span-2">
+							<PhotoThumbnail
+								setModalData={setModalData}
+								src="/waterLily2.JPG"
+								alt="two white water lilies"
+								description="water lily"
+								collection="ducksandlilies"
+								stats="SONY DSC-RX100M6 • f/4.5 • 1/25600 • 72.00mm • ISO5000"
+							/>
+						</div>
+					</motion.div>
 				</div>
 			</main>
 		</div>
