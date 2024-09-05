@@ -161,7 +161,7 @@ export default function Home() {
 						<div className="col-start-2 col-span-2">
 							<PhotoThumbnail
 								setModalData={setModalData}
-								src="/chiLh.JPG"
+								src="/montrose14.JPG"
 								alt="chicago lighthouse"
 								description="chicago lighthouse"
 								collection=""
