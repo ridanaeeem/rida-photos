@@ -96,8 +96,22 @@ export default function Collections() {
 
 					<div className="pb-10" id="montroseMoonrise">
 						<h3 className="text-xl text-white">Montrose Moonrise Vista Point</h3>
-						<div className="grid grid-cols-2 md:grid-cols-6 mx-3 md:mx-6">
-							{montroseMoonriseArray.map((photo: CollectionPhotoProps) => (
+						<div className="grid grid-cols-2 mx-3">
+							{montroseMoonriseArray.slice(0, 2).map((photo: CollectionPhotoProps) => (
+								<CollectionThumbnail
+									key={photo.imageSrc}
+									setModalData={setModalData}
+									src={photo.imageSrc}
+									alt={photo.imageAlt}
+									description={photo.description}
+									collection={photo.collection}
+									stats={photo.stats}
+									classAdjustments={photo.classAdjustments}
+								/>
+							))}
+						</div>
+						<div className="grid grid-cols-2 md:grid-cols-6 mx-3">
+							{montroseMoonriseArray.slice(2).map((photo: CollectionPhotoProps) => (
 								<CollectionThumbnail
 									key={photo.imageSrc}
 									setModalData={setModalData}
