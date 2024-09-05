@@ -96,7 +96,7 @@ export default function Collections() {
 
 					<div className="pb-10" id="montroseMoonrise">
 						<h3 className="text-xl text-white">Montrose Moonrise Vista Point</h3>
-						<div className="grid grid-cols-2 md:grid-cols-6 mx-6">
+						<div className="grid grid-cols-2 md:grid-cols-6 mx-3 md:mx-6">
 							{montroseMoonriseArray.map((photo: CollectionPhotoProps) => (
 								<CollectionThumbnail
 									key={photo.imageSrc}
@@ -114,7 +114,7 @@ export default function Collections() {
 
 					<div className="pb-10" id="halfalive">
 						<h3 className="text-xl text-white">Half Alive & Tessa Violet @ House of Blues Boston</h3>
-						<div className="grid grid-cols-3 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-6">
+						<div className="grid grid-cols-3 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-3 md:mx-6">
 							{halfaliveArray.map((photo: CollectionPhotoProps) => (
 								<CollectionThumbnail
 									key={photo.imageSrc}
@@ -132,7 +132,7 @@ export default function Collections() {
 
 					<div className="pb-10" id="ducksandlilies">
 						<h3 className="text-xl text-white">Ducks & Lilies</h3>
-						<div className="grid grid-cols-2 md:grid-cols-3 mx-6">
+						<div className="grid grid-cols-2 md:grid-cols-3 mx-3 md:mx-6">
 							{ducksAndLiliesArray.map((photo: CollectionPhotoProps) => (
 								<CollectionThumbnail
 									key={photo.imageSrc}
@@ -150,7 +150,7 @@ export default function Collections() {
 
 					<div className="pb-10" id="topsailBeach">
 						<h3 className="text-xl text-white">Topsail Beach</h3>
-						<div className="grid grid-cols-2 md:grid-cols-3 mx-6">
+						<div className="grid grid-cols-2 md:grid-cols-3 mx-3 md:mx-6">
 							{topsailBeachArray.map((photo: CollectionPhotoProps) => (
 								<CollectionThumbnail
 									key={photo.imageSrc}
@@ -168,7 +168,7 @@ export default function Collections() {
 
 					<div className="pb-10" id="chicagoStreet">
 						<h3 className="text-xl text-white">Chicago Street</h3>
-						<div className="grid grid-cols-2 md:grid-cols-3 mx-6">
+						<div className="grid grid-cols-2 md:grid-cols-3 mx-3 md:mx-6">
 							{chicagoStreetArray.map((photo: CollectionPhotoProps) => (
 								<CollectionThumbnail
 									key={photo.imageSrc}
@@ -186,7 +186,7 @@ export default function Collections() {
 
 					<div className="pb-10" id="perseids2024">
 						<h3 className="text-xl text-white">Perseids Meteor Shower 2024</h3>
-						<div className="grid grid-cols-2 md:grid-cols-3 mx-6">
+						<div className="grid grid-cols-2 md:grid-cols-3 mx-3 md:mx-6">
 							{perseids2024Array.map((photo: CollectionPhotoProps) => (
 								<CollectionThumbnail
 									key={photo.imageSrc}
