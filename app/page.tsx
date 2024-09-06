@@ -112,7 +112,7 @@ export default function Home() {
 									alt="fireworks"
 									description="fireworks"
 									collection=""
-									stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
+									stats=""
 								/>
 							</div>
 							<div className="col-span-2 row-start-2 row-span-2">
@@ -142,7 +142,7 @@ export default function Home() {
 							alt="Sunset"
 							description="Sunset"
 							collection=""
-							stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
+							stats=""
 						/>
 					</motion.div>
 				</div>
@@ -162,7 +162,7 @@ export default function Home() {
 								alt="chicago lighthouse"
 								description="chicago lighthouse"
 								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								stats=""
 							/>
 						</div>
 					</motion.div>
@@ -181,7 +181,7 @@ export default function Home() {
 								alt="night sky"
 								description="night sky"
 								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								stats=""
 							/>
 						</div>
 						<div className="col-span-2 row-start-2 pt-8">
@@ -191,7 +191,7 @@ export default function Home() {
 								alt="rab"
 								description="rab"
 								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								stats=""
 							/>
 						</div>
 					</motion.div>
@@ -210,7 +210,7 @@ export default function Home() {
 								alt="koi"
 								description="koi"
 								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								stats=""
 							/>
 						</div>
 						<div className="col-span-2 px-2 pt-2 md:px-5 md:pt-2 lg:px-12 lg:pt-6">
@@ -220,7 +220,7 @@ export default function Home() {
 								alt="flower"
 								description="flower"
 								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								stats=""
 							/>
 						</div>
 					</motion.div>
@@ -268,7 +268,7 @@ export default function Home() {
 								alt="bernini"
 								description="bernini"
 								collection=""
-								stats="SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800"
+								stats=""
 							/>
 						</div>
 					</motion.div>
@@ -306,7 +306,7 @@ export default function Home() {
 								alt="The Pieta in a church"
 								description=""
 								collection="stAgnesStPaul"
-								stats="SONY DSC-RX100M6 • f/4.5 • 1/25600 • 72.00mm • ISO5000"
+								stats="SONY DSC-RX100M6"
 							/>
 						</div>
 					</motion.div>
@@ -325,7 +325,7 @@ export default function Home() {
 								alt="Dome of the Bahai Temple in Chicago"
 								description=""
 								collection=""
-								stats="SONY DSC-RX100M6 • f/4.5 • 1/25600 • 72.00mm • ISO5000"
+								stats="SONY DSC-RX100M6 • ƒ/4.5 • 1/32000 • 72mm • ISO2000"
 							/>
 						</div>
 					</motion.div>

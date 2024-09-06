@@ -12,6 +12,7 @@ import chicagoStreetArray from "@/collections/chicagoStreet";
 import halfaliveArray from "@/collections/halfalive";
 import montroseMoonriseArray from "@/collections/montroseMoonrise";
 import stPaulChurchArray from "@/collections/stPaulChurch";
+import excelsiorBirdsBeesArray from "@/collections/excelsiorBirdsBees";
 import collectionsArray from "@/collections/collections";
 import { Arimo } from "next/font/google";
 
@@ -163,6 +164,68 @@ export default function Collections() {
 
 					{filters.length === 0 ? (
 						<div>
+							<div className="pb-10" id="ducksandlilies">
+								<CollectionHeading
+									title="The Birds and Bees of Excelsior"
+									details="Excelsior, MN. Summer 2024."
+								/>
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+									{excelsiorBirdsBeesArray.slice(0, 12).map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+								<div className="grid grid-cols-2 md:grid-cols-4 mx-3">
+									{excelsiorBirdsBeesArray.slice(12, 16).map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+								<div className="grid grid-cols-2 mx-3">
+									{excelsiorBirdsBeesArray.slice(16, 18).map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+								<div className="grid grid-cols-3 mx-3">
+									{excelsiorBirdsBeesArray.slice(18).map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+							</div>
 							<div className="pb-10" id="montroseMoonrise">
 								<CollectionHeading
 									title="Montrose Moonrise Vista Point"
