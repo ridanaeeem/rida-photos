@@ -321,7 +321,7 @@ export default function Collections() {
 						<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
 							{collectionsArray.map(
 								(photo: CollectionPhotoProps) =>
-									photo.tags?.some((tag) => filters.includes(tag)) && (
+									filters.every((filter) => photo.tags?.includes(filter)) && (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											setModalData={setModalData}
