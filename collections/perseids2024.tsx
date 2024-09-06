@@ -6,6 +6,7 @@ interface PhotoModalProps {
 	showLink: boolean;
 	stats: string;
 	classAdjustments: string;
+	tags?: string[];
 }
 
 const perseids2024Array: PhotoModalProps[] = [
@@ -17,6 +18,7 @@ const perseids2024Array: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Astrophotography"],
 	},
 	{
 		imageSrc: "/perseid2.jpg",
@@ -26,6 +28,7 @@ const perseids2024Array: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Astrophotography"],
 	},
 	{
 		imageSrc: "/perseid3.jpg",
@@ -35,6 +38,7 @@ const perseids2024Array: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Astrophotography"],
 	},
 ];
 

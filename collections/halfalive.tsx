@@ -6,6 +6,7 @@ interface PhotoModalProps {
 	showLink: boolean;
 	stats: string;
 	classAdjustments: string;
+	tags?: string[];
 }
 
 const halfaliveArray: PhotoModalProps[] = [
@@ -17,6 +18,7 @@ const halfaliveArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-3 md:col-span-2 row-span-1",
+		tags: ["Concert"],
 	},
 	{
 		imageSrc: "/tessaViolet.gif",
@@ -26,6 +28,7 @@ const halfaliveArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Concert"],
 	},
 	{
 		imageSrc: "/tessaViolet3.jpg",
@@ -35,6 +38,7 @@ const halfaliveArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Concert"],
 	},
 	{
 		imageSrc: "/tessaViolet4.jpg",
@@ -44,6 +48,7 @@ const halfaliveArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Concert"],
 	},
 ];
 

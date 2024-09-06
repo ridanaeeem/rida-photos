@@ -18,7 +18,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-3 row-span-1",
-		tags: ["People"],
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/montrose6.JPG",
@@ -28,7 +28,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-3 row-span-1",
-		tags: ["Nature"],
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/montrose11.JPG",
@@ -38,7 +38,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
-		tags: ["Nature"],
+		tags: ["Landscape", "Animals"],
 	},
 	{
 		imageSrc: "/montrose12.JPG",
@@ -48,6 +48,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
+		tags: ["Landscape", "Animals"],
 	},
 	{
 		imageSrc: "/montrose7.JPG",
@@ -58,6 +59,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/montrose3.JPG",
@@ -67,6 +69,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
+		tags: ["Landscape", "Animals"],
 	},
 	{
 		imageSrc: "/montrose9.JPG",
@@ -76,6 +79,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/montrose8.JPG",
@@ -85,6 +89,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/montrose.JPG",
@@ -94,6 +99,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/montrose14.JPG",
@@ -103,6 +109,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/montrose10.JPG",
@@ -112,6 +119,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/montrose2.JPG",
@@ -121,6 +129,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/montrose4.JPG",
@@ -130,6 +139,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/montrose13.JPG",
@@ -139,6 +149,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
+		tags: ["Animals"],
 	},
 ];
 

@@ -97,9 +97,11 @@ export default function Collections() {
 					) : null}
 
 					<div>
-						<div className="flex flex-col p-6 pb-0">
-							<h3 className="text-4xl font-bold text-left ">Filters</h3>
-							<div className="grid grid-cols-7 gap-4">
+						<div className="flex flex-col p-6 py-12">
+							<h3 className="text-4xl font-bold text-left py-2">
+								Filters Applied: {filters.length == 0 ? "None" : filters.join(", ")}
+							</h3>
+							<div className="grid grid-cols-2 md:grid-cols-7 gap-4">
 								<FilterBox
 									filter="Landscape"
 									filters={filters}
@@ -129,7 +131,7 @@ export default function Collections() {
 									imageAlt="Sunset"
 								/>
 								<FilterBox
-									filter="Astro"
+									filter="Astrophotography"
 									filters={filters}
 									setFilters={setFilters}
 									imageSrc="perseid.JPG"

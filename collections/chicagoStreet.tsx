@@ -6,6 +6,7 @@ interface PhotoModalProps {
 	showLink: boolean;
 	stats: string;
 	classAdjustments: string;
+	tags?: string[];
 }
 
 const chicagoStreetArray: PhotoModalProps[] = [
@@ -17,6 +18,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • ƒ/3.2 • 1/1000 • 9mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Street"],
 	},
 	{
 		imageSrc: "/chicago4.jpg",
@@ -26,6 +28,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • ƒ/4.5 • 1/320 • 47.86mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Street"],
 	},
 	{
 		imageSrc: "/chicagoEyes2.JPG",
@@ -44,6 +47,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • ƒ/4.5 • 1/6400 • 27.44mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Street"],
 	},
 	{
 		imageSrc: "/pigeon.JPG",
@@ -53,6 +57,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • ƒ/4.5 • 1/10000 • 72mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/protest.JPG",
@@ -62,6 +67,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • ƒ/4.5 • 1/25600 • 50.65mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Street"],
 	},
 	{
 		imageSrc: "/chicago.JPG",
@@ -71,6 +77,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • ƒ/4.5 • 1/2000 • 72mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/chicago2.JPG",
@@ -80,6 +87,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • ƒ/4.5 • 1/1000 • 72mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/chicago3.JPG",
@@ -89,6 +97,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • ƒ/3.5 • 1/2500 • 13.29mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/chicago5.JPG",
@@ -98,6 +107,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • ƒ/3.2 • 1/1600 • 9mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Landscape, Animals"],
 	},
 	{
 		imageSrc: "/chicago6.JPG",
@@ -107,6 +117,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • ƒ/3.2 • 1/2500 • 9mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Landscape, Animals"],
 	},
 
 	{
@@ -117,6 +128,7 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • ƒ/4.5 • 1/2000 • 71.03mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
+		tags: ["Landscape"],
 	},
 ];
 
