@@ -18,7 +18,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/birdsAndBees5.JPG",
@@ -28,7 +28,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/birdsAndBees2.JPG",
@@ -38,7 +38,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/birdsAndBees3.JPG",
@@ -48,7 +48,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/birdsAndBees6.JPG",
@@ -58,7 +58,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/birdsAndBees4.JPG",
@@ -68,7 +68,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals", "Landscape"],
 	},
 	{
 		imageSrc: "/birdsAndBees14.JPG",
@@ -78,7 +78,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/birdsAndBees13.JPG",
@@ -88,7 +88,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants", "Animals"],
 	},
 	{
 		imageSrc: "/birdsAndBees12.JPG",
@@ -98,7 +98,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants", "Animals"],
 	},
 	{
 		imageSrc: "/birdsAndBees11.JPG",
@@ -108,7 +108,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/birdsAndBees21.JPG",
@@ -118,7 +118,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants", "Animals"],
 	},
 	{
 		imageSrc: "/birdsAndBees8.JPG",
@@ -128,7 +128,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/birdsAndBees16.JPG",
@@ -138,7 +138,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/birdsAndBees20.JPG",
@@ -158,7 +158,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/birdsAndBees7.JPG",
@@ -168,7 +168,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/birdsAndBees9.JPG",
@@ -178,7 +178,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals", "Landscape"],
 	},
 	{
 		imageSrc: "/birdsAndBees10.JPG",
@@ -188,7 +188,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals", "Landscape"],
 	},
 
 	{
@@ -199,7 +199,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/birdsAndBees19.JPG",
@@ -209,7 +209,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/birdsAndBees18.JPG",
@@ -219,7 +219,7 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 ];
 
