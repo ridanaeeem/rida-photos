@@ -31,7 +31,7 @@ const stPaulChurchArray: PhotoModalProps[] = [
 		tags: ["Art"],
 	},
 	{
-		imageSrc: "/church4.jpg",
+		imageSrc: "/church4.JPG",
 		imageAlt: "Close up of the Pieta in St Agnes Church in St Paul",
 		description: "",
 		collection: "stAgnesStPaul",
@@ -42,7 +42,7 @@ const stPaulChurchArray: PhotoModalProps[] = [
 	},
 
 	{
-		imageSrc: "/church3.jpg",
+		imageSrc: "/church3.JPG",
 		imageAlt: "Statue in St Agnes Church in St Paul",
 		description: "",
 		collection: "stAgnesStPaul",
@@ -53,7 +53,7 @@ const stPaulChurchArray: PhotoModalProps[] = [
 	},
 
 	{
-		imageSrc: "/church.jpg",
+		imageSrc: "/church.JPG",
 		imageAlt: "Far away shot of the Pieta in St Agnes Church in St Paul, framed by doors",
 		description: "",
 		collection: "stAgnesStPaul",
