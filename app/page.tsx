@@ -122,7 +122,7 @@ export default function Home() {
 									alt="Eyes on a building in Chicago"
 									description="Chicago Eyes"
 									collection="chicagoStreet"
-									stats="SONY DSC-RX100M6 • ƒ/4.5 • 1/2000 • 71.03mm • ISO250"
+									stats="SONY DSC-RX100M6 • f/4.5 • 1/2000 • 71.03mm • ISO250"
 								/>
 							</div>
 						</div>
@@ -258,7 +258,7 @@ export default function Home() {
 								alt="A protestor with a blindfold in Chicago"
 								description="protest"
 								collection=""
-								stats="SONY DSC-RX100M6 • ƒ/4.5 • 1/25600 • 50.65mm • ISO5000"
+								stats="SONY DSC-RX100M6 • f/4.5 • 1/25600 • 50.65mm • ISO5000"
 							/>
 						</div>
 						<div className="col-span-3 md:col-span-2 row-start-1 pt-20 md:px-40 md:pt-24">
@@ -325,7 +325,7 @@ export default function Home() {
 								alt="Dome of the Bahai Temple in Chicago"
 								description=""
 								collection=""
-								stats="SONY DSC-RX100M6 • ƒ/4.5 • 1/32000 • 72mm • ISO2000"
+								stats="SONY DSC-RX100M6 • f/4.5 • 1/32000 • 72mm • ISO2000"
 							/>
 						</div>
 					</motion.div>
