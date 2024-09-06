@@ -298,14 +298,33 @@ export default function Home() {
 						transition={{
 							duration: transitionLength,
 						}}
-						className="p-2 md:p-5 grid grid-cols-3 gap-4 md:px-5">
+						className="grid grid-cols-4 md:grid-cols-7 gap-4 md:px-5">
 						<div className="col-start-2 col-span-2">
 							<PhotoThumbnail
 								setModalData={setModalData}
-								src="/waterLily2.JPG"
-								alt="two white water lilies"
-								description="water lily"
-								collection="ducksandlilies"
+								src="/church.JPG"
+								alt="The Pieta in a church"
+								description=""
+								collection="stAgnesStPaul"
+								stats="SONY DSC-RX100M6 • f/4.5 • 1/25600 • 72.00mm • ISO5000"
+							/>
+						</div>
+					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						transition={{
+							duration: transitionLength,
+						}}
+						className="p-2 md:p-5 grid grid-cols-3 md:grid-cols-5 gap-4 md:px-5">
+						<div className="col-start-1 col-span-2">
+							<PhotoThumbnail
+								setModalData={setModalData}
+								src="/bahai.JPG"
+								alt="Dome of the Bahai Temple in Chicago"
+								description=""
+								collection=""
 								stats="SONY DSC-RX100M6 • f/4.5 • 1/25600 • 72.00mm • ISO5000"
 							/>
 						</div>

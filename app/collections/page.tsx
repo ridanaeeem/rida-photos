@@ -3,6 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import FilterBox from "@/components/FilterBox";
 import CollectionThumbnail from "@/components/CollectionThumbnail";
+import CollectionHeading from "@/components/CollectionHeading";
 import PhotoModal from "@/components/PhotoModal";
 import ducksAndLiliesArray from "@/collections/ducksAndLilies";
 import perseids2024Array from "@/collections/perseids2024";
@@ -10,6 +11,7 @@ import topsailBeachArray from "@/collections/topsailBeach";
 import chicagoStreetArray from "@/collections/chicagoStreet";
 import halfaliveArray from "@/collections/halfalive";
 import montroseMoonriseArray from "@/collections/montroseMoonrise";
+import stPaulChurchArray from "@/collections/stPaulChurch";
 import collectionsArray from "@/collections/collections";
 import { Arimo } from "next/font/google";
 
@@ -162,10 +164,10 @@ export default function Collections() {
 					{filters.length === 0 ? (
 						<div>
 							<div className="pb-10" id="montroseMoonrise">
-								<div className="flex flex-col p-6 pb-0">
-									<h3 className="text-4xl font-bold text-left ">Montrose Moonrise Vista Point</h3>
-									<h2 className="text-2xl font-medium text-left">Chicago, IL. Summer 2023.</h2>
-								</div>
+								<CollectionHeading
+									title="Montrose Moonrise Vista Point"
+									details="Chicago, IL. Summer 2023."
+								/>
 								<div className="grid grid-cols-2 mx-3">
 									{montroseMoonriseArray.slice(0, 2).map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
@@ -196,12 +198,10 @@ export default function Collections() {
 								</div>
 							</div>
 							<div className="pb-10" id="halfalive">
-								<div className="flex flex-col p-6 pb-0">
-									<h3 className="text-4xl font-bold text-left ">Half Alive & Tessa Violet</h3>
-									<h2 className="text-2xl font-medium text-left">
-										House of Blues Boston, MA. Spring 2023.
-									</h2>
-								</div>
+								<CollectionHeading
+									title="Half Alive & Tessa Violet"
+									details="House of Blues Boston, MA. Spring 2023."
+								/>
 								<div className="grid grid-cols-3 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-3">
 									{halfaliveArray.map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
@@ -218,10 +218,7 @@ export default function Collections() {
 								</div>
 							</div>
 							<div className="pb-10" id="ducksandlilies">
-								<div className="flex flex-col p-6 pb-0">
-									<h3 className="text-4xl font-bold text-left ">Ducks & Lilies</h3>
-									<h2 className="text-2xl font-medium text-left">Saint Paul, MN. Summer 2024.</h2>
-								</div>
+								<CollectionHeading title="Ducks & Lilies" details="Saint Paul, MN. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
 									{ducksAndLiliesArray.map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
@@ -238,10 +235,7 @@ export default function Collections() {
 								</div>
 							</div>
 							<div className="pb-10" id="topsailBeach">
-								<div className="flex flex-col p-6 pb-0">
-									<h3 className="text-4xl font-bold text-left ">Topsail Beach</h3>
-									<h2 className="text-2xl font-medium text-left">Topsail Island, NC. Summer 2024.</h2>
-								</div>
+								<CollectionHeading title="Topsail Beach" details="Topsail Island, NC. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
 									{topsailBeachArray.map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
@@ -258,10 +252,7 @@ export default function Collections() {
 								</div>
 							</div>
 							<div className="pb-10" id="chicagoStreet">
-								<div className="flex flex-col p-6 pb-0">
-									<h3 className="text-4xl font-bold text-left ">Downtown Chicago</h3>
-									<h2 className="text-2xl font-medium text-left">Chicago, IL. Summer 2023.</h2>
-								</div>
+								<CollectionHeading title="Downtown Chicago" details="Chicago, IL. Summer 2023." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
 									{chicagoStreetArray.map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
@@ -278,12 +269,40 @@ export default function Collections() {
 								</div>
 							</div>
 							<div className="pb-10" id="perseids2024">
-								<div className="flex flex-col p-6 pb-0">
-									<h3 className="text-4xl font-bold text-left ">Perseids Meteor Shower 2024</h3>
-									<h2 className="text-2xl font-medium text-left">MD. Summer 2024.</h2>
-								</div>
+								<CollectionHeading title="Perseids Meteor Shower 2024" details="MD. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
 									{perseids2024Array.map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+							</div>
+							<div className="pb-10" id="stAgnesStPaul">
+								<CollectionHeading title="Church of St. Agnes" details="Saint Paul, MN. Summer 2023." />
+								<div className="grid grid-cols-2 mx-3">
+									{stPaulChurchArray.slice(0, 2).map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+									{stPaulChurchArray.slice(2).map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											setModalData={setModalData}
