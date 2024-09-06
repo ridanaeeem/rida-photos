@@ -150,7 +150,7 @@ export default function Collections() {
 										{/* black overlay with 50% opacity */}
 										<div className="absolute inset-0 bg-black opacity-50"></div>
 										{/* centered text */}
-										<h5 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold">
+										<h5 className="absolute inset-0 flex items-center justify-center text-white text-lg md:text-xl font-bold">
 											Clear
 										</h5>
 									</div>
