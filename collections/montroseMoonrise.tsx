@@ -6,6 +6,7 @@ interface PhotoModalProps {
 	showLink: boolean;
 	stats: string;
 	classAdjustments: string;
+	tags?: string[];
 }
 
 const montroseMoonriseArray: PhotoModalProps[] = [
@@ -17,6 +18,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-3 row-span-1",
+		tags: ["People"],
 	},
 	{
 		imageSrc: "/montrose6.JPG",
@@ -26,6 +28,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-3 row-span-1",
+		tags: ["Nature"],
 	},
 	{
 		imageSrc: "/montrose11.JPG",
@@ -35,6 +38,7 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/11.0 • 1/4000 • 16.21mm • ISO12800",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
+		tags: ["Nature"],
 	},
 	{
 		imageSrc: "/montrose12.JPG",

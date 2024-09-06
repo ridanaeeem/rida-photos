@@ -6,7 +6,8 @@ function openModal(
 	imageAlt: string,
 	description: string,
 	camera: string,
-	stats: string
+	stats: string,
+	tags?: string[]
 ) {
 	setModalData({
 		isOpen: true,

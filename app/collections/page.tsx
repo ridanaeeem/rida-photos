@@ -1,7 +1,7 @@
 "use client";
+import React from "react";
 import { useState, useEffect } from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import FilterBox from "@/components/FilterBox";
 import CollectionThumbnail from "@/components/CollectionThumbnail";
 import PhotoModal from "@/components/PhotoModal";
 import ducksAndLiliesArray from "@/collections/ducksAndLilies";
@@ -10,6 +10,7 @@ import topsailBeachArray from "@/collections/topsailBeach";
 import chicagoStreetArray from "@/collections/chicagoStreet";
 import halfaliveArray from "@/collections/halfalive";
 import montroseMoonriseArray from "@/collections/montroseMoonrise";
+import collectionsArray from "@/collections/collections";
 import { Arimo } from "next/font/google";
 
 const arimo = Arimo({ subsets: ["latin"] });
@@ -31,6 +32,7 @@ interface CollectionPhotoProps {
 	showLink: boolean;
 	stats: string;
 	classAdjustments: string;
+	tags?: string[];
 }
 
 export default function Collections() {
@@ -70,7 +72,7 @@ export default function Collections() {
 		};
 	}, [modalData.isOpen]);
 
-	const transitionLength = 1;
+	const [filters, setFilters] = useState<string[]>([]);
 
 	return (
 		<div className={`${arimo.className} ${"text-white"}`}>
@@ -94,145 +96,225 @@ export default function Collections() {
 						<div className="fixed inset-0 z-10 bg-black bg-opacity-75" onClick={() => closeModal()}></div>
 					) : null}
 
-					<div className="pb-10" id="montroseMoonrise">
+					<div>
 						<div className="flex flex-col p-6 pb-0">
-							<h3 className="text-4xl font-bold text-left ">Montrose Moonrise Vista Point</h3>
-							<h2 className="text-2xl font-medium text-left">Chicago, IL. Summer 2023.</h2>
-						</div>
-						<div className="grid grid-cols-2 mx-3">
-							{montroseMoonriseArray.slice(0, 2).map((photo: CollectionPhotoProps) => (
-								<CollectionThumbnail
-									key={photo.imageSrc}
-									setModalData={setModalData}
-									src={photo.imageSrc}
-									alt={photo.imageAlt}
-									description={photo.description}
-									collection={photo.collection}
-									stats={photo.stats}
-									classAdjustments={photo.classAdjustments}
+							<h3 className="text-4xl font-bold text-left ">Filters</h3>
+							<div className="grid grid-cols-7 gap-4">
+								<FilterBox
+									filter="Landscape"
+									filters={filters}
+									setFilters={setFilters}
+									imageSrc="/montrose2.JPG"
+									imageAlt="Rocks along the shore at Montrose Moonrise Vista Point"
 								/>
-							))}
-						</div>
-						<div className="grid grid-cols-2 md:grid-cols-6 mx-3">
-							{montroseMoonriseArray.slice(2).map((photo: CollectionPhotoProps) => (
-								<CollectionThumbnail
-									key={photo.imageSrc}
-									setModalData={setModalData}
-									src={photo.imageSrc}
-									alt={photo.imageAlt}
-									description={photo.description}
-									collection={photo.collection}
-									stats={photo.stats}
-									classAdjustments={photo.classAdjustments}
+								<FilterBox
+									filter="Plants"
+									filters={filters}
+									setFilters={setFilters}
+									imageSrc="waterLily10.JPG"
+									imageAlt="Water Lily"
 								/>
-							))}
+								<FilterBox
+									filter="Animals"
+									filters={filters}
+									setFilters={setFilters}
+									imageSrc="duck.JPG"
+									imageAlt="duck"
+								/>
+								<FilterBox
+									filter="People"
+									filters={filters}
+									setFilters={setFilters}
+									imageSrc="haSunset.JPG"
+									imageAlt="Sunset"
+								/>
+								<FilterBox
+									filter="Astro"
+									filters={filters}
+									setFilters={setFilters}
+									imageSrc="perseid.JPG"
+									imageAlt="Perseif Meteor Shower"
+								/>
+								<FilterBox
+									filter="Street"
+									filters={filters}
+									setFilters={setFilters}
+									imageSrc="/chicago7.JPG"
+									imageAlt="Skaters in Chicago"
+								/>
+								<button onClick={() => setFilters([])}>
+									<div className="relative">
+										<img src="/starryTSB4.JPG" alt="Night sky" />
+										{/* black overlay with 50% opacity */}
+										<div className="absolute inset-0 bg-black opacity-50"></div>
+										{/* centered text */}
+										<h5 className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold">
+											Clear
+										</h5>
+									</div>
+								</button>
+							</div>
 						</div>
 					</div>
 
-					<div className="pb-10" id="halfalive">
-						<div className="flex flex-col p-6 pb-0">
-							<h3 className="text-4xl font-bold text-left ">Half Alive & Tessa Violet</h3>
-							<h2 className="text-2xl font-medium text-left">House of Blues Boston, MA. Spring 2023.</h2>
+					{filters.length === 0 ? (
+						<div>
+							<div className="pb-10" id="montroseMoonrise">
+								<div className="flex flex-col p-6 pb-0">
+									<h3 className="text-4xl font-bold text-left ">Montrose Moonrise Vista Point</h3>
+									<h2 className="text-2xl font-medium text-left">Chicago, IL. Summer 2023.</h2>
+								</div>
+								<div className="grid grid-cols-2 mx-3">
+									{montroseMoonriseArray.slice(0, 2).map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+								<div className="grid grid-cols-2 md:grid-cols-6 mx-3">
+									{montroseMoonriseArray.slice(2).map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+							</div>
+							<div className="pb-10" id="halfalive">
+								<div className="flex flex-col p-6 pb-0">
+									<h3 className="text-4xl font-bold text-left ">Half Alive & Tessa Violet</h3>
+									<h2 className="text-2xl font-medium text-left">
+										House of Blues Boston, MA. Spring 2023.
+									</h2>
+								</div>
+								<div className="grid grid-cols-3 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-3">
+									{halfaliveArray.map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+							</div>
+							<div className="pb-10" id="ducksandlilies">
+								<div className="flex flex-col p-6 pb-0">
+									<h3 className="text-4xl font-bold text-left ">Ducks & Lilies</h3>
+									<h2 className="text-2xl font-medium text-left">Saint Paul, MN. Summer 2024.</h2>
+								</div>
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+									{ducksAndLiliesArray.map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+							</div>
+							<div className="pb-10" id="topsailBeach">
+								<div className="flex flex-col p-6 pb-0">
+									<h3 className="text-4xl font-bold text-left ">Topsail Beach</h3>
+									<h2 className="text-2xl font-medium text-left">Topsail Island, NC. Summer 2024.</h2>
+								</div>
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+									{topsailBeachArray.map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+							</div>
+							<div className="pb-10" id="chicagoStreet">
+								<div className="flex flex-col p-6 pb-0">
+									<h3 className="text-4xl font-bold text-left ">Downtown Chicago</h3>
+									<h2 className="text-2xl font-medium text-left">Chicago, IL. Summer 2023.</h2>
+								</div>
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+									{chicagoStreetArray.map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+							</div>
+							<div className="pb-10" id="perseids2024">
+								<div className="flex flex-col p-6 pb-0">
+									<h3 className="text-4xl font-bold text-left ">Perseids Meteor Shower 2024</h3>
+									<h2 className="text-2xl font-medium text-left">MD. Summer 2024.</h2>
+								</div>
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+									{perseids2024Array.map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+							</div>
 						</div>
-						<div className="grid grid-cols-3 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-3">
-							{halfaliveArray.map((photo: CollectionPhotoProps) => (
-								<CollectionThumbnail
-									key={photo.imageSrc}
-									setModalData={setModalData}
-									src={photo.imageSrc}
-									alt={photo.imageAlt}
-									description={photo.description}
-									collection={photo.collection}
-									stats={photo.stats}
-									classAdjustments={photo.classAdjustments}
-								/>
-							))}
-						</div>
-					</div>
-
-					<div className="pb-10" id="ducksandlilies">
-						<div className="flex flex-col p-6 pb-0">
-							<h3 className="text-4xl font-bold text-left ">Ducks & Lilies</h3>
-							<h2 className="text-2xl font-medium text-left">Saint Paul, MN. Summer 2024.</h2>
-						</div>
+					) : (
 						<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-							{ducksAndLiliesArray.map((photo: CollectionPhotoProps) => (
-								<CollectionThumbnail
-									key={photo.imageSrc}
-									setModalData={setModalData}
-									src={photo.imageSrc}
-									alt={photo.imageAlt}
-									description={photo.description}
-									collection={photo.collection}
-									stats={photo.stats}
-									classAdjustments={photo.classAdjustments}
-								/>
-							))}
+							{collectionsArray.map(
+								(photo: CollectionPhotoProps) =>
+									photo.tags?.some((tag) => filters.includes(tag)) && (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments=""
+										/>
+									)
+							)}
 						</div>
-					</div>
-
-					<div className="pb-10" id="topsailBeach">
-						<div className="flex flex-col p-6 pb-0">
-							<h3 className="text-4xl font-bold text-left ">Topsail Beach</h3>
-							<h2 className="text-2xl font-medium text-left">Topsail Island, NC. Summer 2024.</h2>
-						</div>
-						<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-							{topsailBeachArray.map((photo: CollectionPhotoProps) => (
-								<CollectionThumbnail
-									key={photo.imageSrc}
-									setModalData={setModalData}
-									src={photo.imageSrc}
-									alt={photo.imageAlt}
-									description={photo.description}
-									collection={photo.collection}
-									stats={photo.stats}
-									classAdjustments={photo.classAdjustments}
-								/>
-							))}
-						</div>
-					</div>
-
-					<div className="pb-10" id="chicagoStreet">
-						<div className="flex flex-col p-6 pb-0">
-							<h3 className="text-4xl font-bold text-left ">Downtown Chicago</h3>
-							<h2 className="text-2xl font-medium text-left">Chicago, IL. Summer 2023.</h2>
-						</div>
-						<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-							{chicagoStreetArray.map((photo: CollectionPhotoProps) => (
-								<CollectionThumbnail
-									key={photo.imageSrc}
-									setModalData={setModalData}
-									src={photo.imageSrc}
-									alt={photo.imageAlt}
-									description={photo.description}
-									collection={photo.collection}
-									stats={photo.stats}
-									classAdjustments={photo.classAdjustments}
-								/>
-							))}
-						</div>
-					</div>
-
-					<div className="pb-10" id="perseids2024">
-						<div className="flex flex-col p-6 pb-0">
-							<h3 className="text-4xl font-bold text-left ">Perseids Meteor Shower 2024</h3>
-							<h2 className="text-2xl font-medium text-left">MD. Summer 2024.</h2>
-						</div>
-						<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-							{perseids2024Array.map((photo: CollectionPhotoProps) => (
-								<CollectionThumbnail
-									key={photo.imageSrc}
-									setModalData={setModalData}
-									src={photo.imageSrc}
-									alt={photo.imageAlt}
-									description={photo.description}
-									collection={photo.collection}
-									stats={photo.stats}
-									classAdjustments={photo.classAdjustments}
-								/>
-							))}
-						</div>
-					</div>
+					)}
 				</div>
 			</main>
 		</div>
