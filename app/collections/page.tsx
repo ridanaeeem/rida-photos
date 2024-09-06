@@ -101,7 +101,7 @@ export default function Collections() {
 							<h3 className="text-4xl font-bold text-left py-2">
 								Filters Applied: {filters.length == 0 ? "None" : filters.join(", ")}
 							</h3>
-							<div className="grid grid-cols-2 md:grid-cols-7 gap-4">
+							<div className="grid grid-cols-2 md:grid-cols-7 gap-3 md:gap-4">
 								<FilterBox
 									filter="Landscape"
 									filters={filters}
