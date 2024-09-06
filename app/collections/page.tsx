@@ -4,13 +4,13 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import CollectionThumbnail from "@/components/CollectionThumbnail";
 import PhotoModal from "@/components/PhotoModal";
-import { Caveat } from "next/font/google";
 import ducksAndLiliesArray from "@/collections/ducksAndLilies";
 import perseids2024Array from "@/collections/perseids2024";
 import topsailBeachArray from "@/collections/topsailBeach";
 import chicagoStreetArray from "@/collections/chicagoStreet";
 import halfaliveArray from "@/collections/halfalive";
 import montroseMoonriseArray from "@/collections/montroseMoonrise";
+import { Caveat } from "next/font/google";
 
 const caveat = Caveat({ subsets: ["latin"] });
 
@@ -75,7 +75,7 @@ export default function Collections() {
 	return (
 		<div>
 			<title>Rida Naeem Photography</title>
-			<main className={caveat.className}>
+			<main>
 				<div className="bg-gradient-to-b from-[#171719] to-[#171719]">
 					{/* <div className="flex flex-col p-2 md:p-5">
 						<h2 className="text-2xl text-white">Collections</h2>

@@ -4,9 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import PhotoThumbnail from "@/components/PhotoThumbnail";
 import PhotoModal from "@/components/PhotoModal";
-import { Caveat } from "next/font/google";
-
-const caveat = Caveat({ subsets: ["latin"] });
 
 interface ModalData {
 	isOpen: boolean;
@@ -59,7 +56,7 @@ export default function Home() {
 	return (
 		<div>
 			<title>Rida Naeem Photography</title>
-			<main className={caveat.className}>
+			<main>
 				<div className="bg-gradient-to-b from-white to-[#9EB8CF]">
 					{/* <div className="flex flex-col p-2 md:p-5">
 						<h2 className="text-2xl">Memories</h2>

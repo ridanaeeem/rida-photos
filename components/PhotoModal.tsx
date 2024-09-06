@@ -1,8 +1,10 @@
 import React from "react";
+import { Darker_Grotesque } from "next/font/google";
+
+const darker_grotesque = Darker_Grotesque({ subsets: ["latin"] });
 
 interface PhotoModalProps {
 	isOpen: boolean;
-	// onClose: () => void;
 	imageSrc: string;
 	imageAlt: string;
 	description: string;
@@ -14,7 +16,10 @@ const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, des
 	if (!isOpen) return null;
 
 	return (
-		<div className="fixed lg:inset-0 z-50 flex items-center justify-center m-5 lg:m-[20rem] text-center">
+		<div
+			className={`${
+				darker_grotesque.className
+			} ${"fixed lg:inset-0 z-50 flex items-center justify-center m-5 lg:m-[20rem] text-center"}`}>
 			<div className="relative bg-white p-3 md:p-5 rounded-lg">
 				{/* <button
 					className="absolute p-2 top-2 right-1 text-2xl text-gray-500 hover:text-gray-800"
@@ -22,7 +27,7 @@ const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, des
 					&times;
 				</button> */}
 				<img src={imageSrc} alt={imageAlt} className="w-auto h-auto mb-4" />
-				<p className="text-lg">
+				<p className="text-2xl">
 					{/* {description + ": "} */}
 					{collection != "" ? (
 						<a
@@ -34,7 +39,7 @@ const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, des
 						</a>
 					) : null}
 				</p>
-				<p className="text-sm md:text-lg">{stats}</p>
+				<p className="text-md md:text-3xl">{stats}</p>
 			</div>
 		</div>
 	);

@@ -1,12 +1,18 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Caveat } from "next/font/google";
+
+const caveat = Caveat({ subsets: ["latin"] });
 
 export default function Nav() {
 	const pathname = usePathname();
 
 	return (
-		<nav className={`${pathname === "/collections" ? "bg-[#171719] text-white" : "bg-white text-black"}`}>
+		<nav
+			className={`${caveat.className} ${
+				pathname === "/collections" ? "bg-[#171719] text-white" : "bg-white text-black"
+			}`}>
 			<div className="header flex flex-col p-2 md:p-5">
 				<h1 className={`text-4xl ${pathname === "/" ? "text-[#809BB3]" : null}`}>
 					<Link href="/">Rida Naeem Photography</Link>
