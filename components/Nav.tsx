@@ -22,11 +22,8 @@ export default function Nav() {
 				<ul className={`px-5 ${pathname === "/collections" ? "text-[#809BB3]" : "null"}`}>
 					<Link href="/collections">Collections</Link>
 				</ul>
-				<ul className={`px-5 ${pathname === "/contact" ? "text-[#809BB3]" : "null"}`}>
-					<Link href="/contact">Contact</Link>
-				</ul>
-				<ul className={`px-5 ${pathname === "/about" ? "text-[#809BB3]" : "null"}`}>
-					<Link href="/about">About</Link>
+				<ul className={`px-5 ${pathname === "/connect" ? "text-[#809BB3]" : "null"}`}>
+					<Link href="/connect">Connect</Link>
 				</ul>
 			</ul>
 		</nav>
