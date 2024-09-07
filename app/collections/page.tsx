@@ -102,7 +102,7 @@ export default function Collections() {
 
 					<div>
 						<div className="flex flex-col p-6 py-12">
-							<h3 className="text-4xl font-bold text-left py-2">
+							<h3 className="text-2xl md:text-4xl font-bold text-left py-2">
 								Filters Applied: {filters.length == 0 ? "None" : filters.join(", ")}
 							</h3>
 							<div className="grid grid-cols-2 md:grid-cols-7 gap-3 md:gap-4">
