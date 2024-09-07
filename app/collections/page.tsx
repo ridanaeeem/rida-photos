@@ -103,9 +103,9 @@ export default function Collections() {
 					<div>
 						<div className="flex flex-col p-6 py-12">
 							<h3 className="text-2xl md:text-4xl font-bold text-left py-2">
-								Filters Applied: {filters.length == 0 ? "None" : filters.join(", ")}
+								Search for... {filters.join(" & ")}
 							</h3>
-							<div className="grid grid-cols-2 md:grid-cols-7 gap-3 md:gap-4">
+							<div className="grid grid-cols-3 md:grid-cols-7 gap-3 md:gap-4">
 								<FilterBox
 									filter="Landscape"
 									filters={filters}
@@ -155,7 +155,7 @@ export default function Collections() {
 										<div className="absolute inset-0 bg-black opacity-50"></div>
 										{/* centered text */}
 										<h5 className="absolute inset-0 flex items-center justify-center text-white text-lg md:text-xl font-bold">
-											Clear
+											Reset
 										</h5>
 									</div>
 								</button>
