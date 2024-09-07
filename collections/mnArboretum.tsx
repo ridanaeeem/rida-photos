@@ -78,7 +78,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		collection: "mnArboretum",
 		showLink: false,
 		stats: "",
-		classAdjustments: "col-span-2 row-span-2",
+		classAdjustments: "row-span-2 md:col-span-2 md:row-span-2",
 		tags: ["Landscape", "Plants"],
 	},
 	{
@@ -138,7 +138,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		collection: "mnArboretum",
 		showLink: false,
 		stats: "",
-		classAdjustments: "col-span-2 row-span-2",
+		classAdjustments: "row-span-2 md:col-span-2 md:row-span-2",
 		tags: ["Landscape", "Plants"],
 	},
 	{
