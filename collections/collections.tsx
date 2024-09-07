@@ -5,6 +5,7 @@ import ducksAndLiliesArray from "./ducksAndLilies";
 import perseids2024Array from "./perseids2024";
 import topsailBeachArray from "./topsailBeach";
 import excelsiorBirdsBeesArray from "./excelsiorBirdsBees";
+import mnArboretumArray from "./mnArboretum";
 
 const collectionsArray = chicagoStreetArray.concat(
 	halfaliveArray,
@@ -12,7 +13,8 @@ const collectionsArray = chicagoStreetArray.concat(
 	ducksAndLiliesArray,
 	perseids2024Array,
 	topsailBeachArray,
-	excelsiorBirdsBeesArray
+	excelsiorBirdsBeesArray,
+	mnArboretumArray
 );
 
 export default collectionsArray;
