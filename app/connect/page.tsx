@@ -6,7 +6,7 @@ export default function Contact() {
 			<title>Contact</title>
 			<main>
 				<div className="bg-gradient-to-b from-white to-[#9EB8CF]">
-					<div className="h-screen">
+					<div className="min-h-screen">
 						<h1 className="text-4xl text-left font-bold p-6">About Me</h1>
 						<p className="text-lg md:text-2xl text-left px-6">
 							Hi! My name is Rida, and I recently graduated from Boston University where I studied

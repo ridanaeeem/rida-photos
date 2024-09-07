@@ -82,7 +82,7 @@ export default function Collections() {
 		<div className={`${arimo.className} ${"text-white"}`}>
 			<title>Rida Naeem Photography</title>
 			<main>
-				<div className="bg-gradient-to-b from-[#171719] to-[#171719] h-screen">
+				<div className="bg-gradient-to-b from-[#171719] to-[#171719] min-h-screen">
 					{/* <div className="flex flex-col p-2 md:p-5">
 						<h2 className="text-2xl text-white">Collections</h2>
 					</div> */}
