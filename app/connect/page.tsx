@@ -37,7 +37,7 @@ export default function Contact() {
 							to see more specific themes. Enjoy!
 						</p>
 						<h1 className="text-4xl text-left font-bold p-6">Contact Me</h1>
-						<p className="text-lg md:text-2xl text-left px-6">
+						<p className="text-lg md:text-2xl text-left px-6 pb-6">
 							Email:{" "}
 							<a href="mailto:ridan@bu.edu" className="text-blue-600">
 								ridan@bu.edu
