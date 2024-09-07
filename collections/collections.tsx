@@ -8,13 +8,13 @@ import excelsiorBirdsBeesArray from "./excelsiorBirdsBees";
 import mnArboretumArray from "./mnArboretum";
 
 const collectionsArray = chicagoStreetArray.concat(
-	halfaliveArray,
+	mnArboretumArray,
+	excelsiorBirdsBeesArray,
 	montroseMoonriseArray,
 	ducksAndLiliesArray,
 	perseids2024Array,
 	topsailBeachArray,
-	excelsiorBirdsBeesArray,
-	mnArboretumArray
+	halfaliveArray
 );
 
 export default collectionsArray;

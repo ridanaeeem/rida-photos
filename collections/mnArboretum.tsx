@@ -18,7 +18,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-2 row-span-2",
-		tags: [""],
+		tags: ["Landscape", "Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum18.JPG",
@@ -28,7 +28,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum19.JPG",
@@ -38,7 +38,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum23.JPG",
@@ -48,7 +48,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum14.JPG",
@@ -58,7 +58,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum15.JPG",
@@ -68,7 +68,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum6.jpg",
@@ -79,7 +79,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-2 row-span-2",
-		tags: [""],
+		tags: ["Landscape", "Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum22.JPG",
@@ -89,7 +89,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Landscape", "Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum4.JPG",
@@ -99,7 +99,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum16.JPG",
@@ -109,7 +109,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Landscape", "Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum5.JPG",
@@ -119,7 +119,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum2.JPG",
@@ -129,17 +129,17 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Landscape", "Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum17.JPG",
-		imageAlt: "Trees shaded in the back of a field, without field",
+		imageAlt: "Trees shaded in the back of a field, without sky",
 		description: "",
 		collection: "mnArboretum",
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-2 row-span-2",
-		tags: [""],
+		tags: ["Landscape", "Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum12.JPG",
@@ -149,7 +149,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum10.JPG",
@@ -159,7 +159,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Landscape", "Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum.JPG",
@@ -169,7 +169,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Landscape", "Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum7.JPG",
@@ -179,7 +179,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals", "Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum11.JPG",
@@ -189,7 +189,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum8.JPG",
@@ -199,7 +199,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum3.JPG",
@@ -209,7 +209,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Landscape", "Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum9.JPG",
@@ -219,7 +219,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Landscape", "Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum13.JPG",
@@ -229,7 +229,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum21.JPG",
@@ -239,7 +239,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnArboretum24.JPG",
@@ -249,7 +249,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/mnJapaneseGarden13.JPG",
@@ -259,7 +259,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/mnJapaneseGarden2.JPG",
@@ -269,7 +269,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnJapaneseGarden4.JPG",
@@ -279,7 +279,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Landscape"],
 	},
 	{
 		imageSrc: "/mnJapaneseGarden7.JPG",
@@ -289,7 +289,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/mnJapaneseGarden.JPG",
@@ -299,7 +299,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Plants"],
 	},
 	{
 		imageSrc: "/mnJapaneseGarden8.JPG",
@@ -309,7 +309,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-2 row-span-2",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/mnJapaneseGarden6.JPG",
@@ -319,7 +319,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/mnJapaneseGarden9.JPG",
@@ -329,7 +329,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/mnJapaneseGarden5.JPG",
@@ -339,7 +339,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/mnJapaneseGarden10.JPG",
@@ -349,7 +349,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/mnJapaneseGarden11.JPG",
@@ -359,7 +359,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 	{
 		imageSrc: "/mnJapaneseGarden12.JPG",
@@ -369,7 +369,7 @@ const mnArboretumArray: PhotoModalProps[] = [
 		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
-		tags: [""],
+		tags: ["Animals"],
 	},
 ];
 
