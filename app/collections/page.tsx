@@ -171,7 +171,35 @@ export default function Collections() {
 									details="Minnesota Landscape Arboretum, MN. Summer 2024."
 								/>
 								<div className="grid grid-cols-2 md:grid-cols-4 mx-3">
-									{mnArboretumArray.map((photo: CollectionPhotoProps) => (
+									{mnArboretumArray.slice(0, 5).map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+								<div className="grid grid-cols-2 md:grid-cols-4 mx-3">
+									{mnArboretumArray.slice(5, 10).map((photo: CollectionPhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											setModalData={setModalData}
+											src={photo.imageSrc}
+											alt={photo.imageAlt}
+											description={photo.description}
+											collection={photo.collection}
+											stats={photo.stats}
+											classAdjustments={photo.classAdjustments}
+										/>
+									))}
+								</div>
+								<div className="grid grid-cols-2 md:grid-cols-4 mx-3">
+									{mnArboretumArray.slice(10).map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											setModalData={setModalData}
