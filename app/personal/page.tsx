@@ -292,7 +292,7 @@ export default function Personal() {
 							{collectionsArray.filter((photo: CollectionPhotoProps) =>
 								filters.every((filter) => photo.tags?.includes(filter))
 							).length === 0 ? (
-								<div className="flex flex-col p-6 pb-0">
+								<div className="flex flex-col p-6 pb-12">
 									<h3 className="text-2xl md:text-4xl font-bold text-left ">
 										{"Looking for... " + filters.join(" & ")}
 									</h3>
@@ -305,7 +305,7 @@ export default function Personal() {
 									</h2>
 								</div>
 							) : (
-								<>
+								<div className="pb-12">
 									<CollectionHeading
 										title={"Looking for... " + filters.join(" & ")}
 										details="Includes photos with the selected combination of tags."
@@ -323,11 +323,11 @@ export default function Personal() {
 												)
 										)}
 									</div>
-								</>
+								</div>
 							)}
 
 							{/* {filters.length > 1 && (
-								<>
+								<div className="pb-12">
 									<CollectionHeading
 										title={"Looking for... " + filters.join(", ")}
 										details="Includes photos with any one of the selected tags."
@@ -345,7 +345,7 @@ export default function Personal() {
 												)
 										)}
 									</div>
-								</>
+								</div>
 							)} */}
 						</>
 					)}
