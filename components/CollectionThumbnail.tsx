@@ -1,40 +1,26 @@
 import { motion } from "framer-motion";
+import { CollectionPhotoProps } from "@/types";
 
-function openModal(
-	setModalData: any,
-	imageSrc: string,
-	imageAlt: string,
-	description: string,
-	camera: string,
-	stats: string,
-	tags?: string[]
-) {
+function openModal(setModalData: any, photo: CollectionPhotoProps, showLink: boolean) {
 	setModalData({
 		isOpen: true,
-		imageSrc,
-		imageAlt,
-		description,
-		camera,
-		stats,
+		imageSrc: photo.imageSrc,
+		imageAlt: photo.imageAlt,
+		description: photo.description,
+		collection: photo.collection,
+		stats: photo.stats,
+		showLink: showLink,
 	});
 }
 
 export default function CollectionThumbnail({
+	photo,
 	setModalData,
-	src,
-	alt,
-	description,
-	collection,
-	stats,
-	classAdjustments,
+	showLink,
 }: {
+	photo: CollectionPhotoProps;
 	setModalData: any;
-	src: string;
-	alt: string;
-	description: string;
-	collection: string;
-	stats: string;
-	classAdjustments: string;
+	showLink?: boolean;
 }) {
 	return (
 		<motion.div
@@ -43,12 +29,12 @@ export default function CollectionThumbnail({
 			transition={{
 				duration: 1,
 			}}
-			className={classAdjustments}>
+			className={photo.classAdjustments}>
 			<img
-				src={src}
-				alt={alt}
+				src={photo.imageSrc}
+				alt={photo.imageAlt}
 				className="cursor-pointer p-2 w-full h-full object-cover"
-				onClick={() => openModal(setModalData, src, alt, description, collection, stats)}></img>
+				onClick={() => openModal(setModalData, photo, showLink ? showLink : false)}></img>
 		</motion.div>
 	);
 }

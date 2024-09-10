@@ -1,21 +1,11 @@
-interface PhotoModalProps {
-	imageSrc: string;
-	imageAlt: string;
-	description: string;
-	collection: string;
-	showLink: boolean;
-	stats: string;
-	classAdjustments: string;
-	tags?: string[];
-}
+import { CollectionPhotoProps } from "@/types";
 
-const montroseMoonriseArray: PhotoModalProps[] = [
+const montroseMoonriseArray: CollectionPhotoProps[] = [
 	{
 		imageSrc: "/montrose5.JPG",
 		imageAlt: "Two people standing in front of a lighthouse at Montrose Moonrise Vista Point",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-3 row-span-1",
 		tags: ["Landscape"],
@@ -25,7 +15,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		imageAlt: "Two people in front of a lighthouse at Montrose Moonrise Vista Point, one is walking away",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-3 row-span-1",
 		tags: ["Landscape"],
@@ -35,7 +24,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		imageAlt: "Five ducks swimming in frnot of a lighthouse at Montrose Moonrise Vista Point",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape", "Animals"],
@@ -45,7 +33,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		imageAlt: "A seagull lined up with a building on the Chicago skyline",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape", "Animals"],
@@ -56,7 +43,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 			"Far away shot of wwo people in front of a lighthouse at Montrose Moonrise Vista Point with boats in the horizon",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape"],
@@ -66,7 +52,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		imageAlt: "Duck in the water with the Chicago sklyine in the background",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape", "Animals"],
@@ -76,7 +61,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		imageAlt: "Duck in the water at Montrose Moonrise Vista Point, medium distance",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Animals"],
@@ -86,7 +70,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		imageAlt: "Duck in the water at Montrose Moonrise Vista Point, far away",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Animals"],
@@ -96,7 +79,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		imageAlt: "Two lighthouses visible at Montrose Moonrise Vista Point",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape"],
@@ -106,7 +88,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		imageAlt: "Lighthouse at Montrose Moonrise Vista Point, with boat passing by",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape"],
@@ -116,7 +97,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		imageAlt: "Duck in the water at Montrose Moonrise Vista Point, close up",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Animals"],
@@ -126,7 +106,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		imageAlt: "Rocks along the shore at Montrose Moonrise Vista Point",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape"],
@@ -136,7 +115,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		imageAlt: "Mossy rocks in the water at Montrose Moonrise Vista Point",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Plants"],
@@ -146,7 +124,6 @@ const montroseMoonriseArray: PhotoModalProps[] = [
 		imageAlt: "Two ducks swimming across the water at Montrose Moonrise Vista Point",
 		description: "",
 		collection: "montroseMoonrise",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Animals"],

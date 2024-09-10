@@ -1,21 +1,11 @@
-interface PhotoModalProps {
-	imageSrc: string;
-	imageAlt: string;
-	description: string;
-	collection: string;
-	showLink: boolean;
-	stats: string;
-	classAdjustments: string;
-	tags?: string[];
-}
+import { CollectionPhotoProps } from "@/types";
 
-const topsailBeachArray: PhotoModalProps[] = [
+const topsailBeachArray: CollectionPhotoProps[] = [
 	{
 		imageSrc: "/starryTSB2.JPG",
 		imageAlt: "Night shot of Topsail Beach",
 		description: "",
 		collection: "topsailBeach",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape", "Astrophotography"],
@@ -25,7 +15,6 @@ const topsailBeachArray: PhotoModalProps[] = [
 		imageAlt: "Illuminated houses on Topsail Beach at night, with stars in the sky",
 		description: "",
 		collection: "topsailBeach",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape", "Astrophotography"],
@@ -35,7 +24,6 @@ const topsailBeachArray: PhotoModalProps[] = [
 		imageAlt: "Shot of the night sky at Topsail Beach, with higher exposure",
 		description: "",
 		collection: "topsailBeach",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Astrophotography"],
@@ -45,7 +33,6 @@ const topsailBeachArray: PhotoModalProps[] = [
 		imageAlt: "Shot of the night sky at Topsail Beach, with lower exposure",
 		description: "",
 		collection: "topsailBeach",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Astrophotography"],
@@ -55,7 +42,6 @@ const topsailBeachArray: PhotoModalProps[] = [
 		imageAlt: "Shot of two girls sitting on the beach under the moonlight",
 		description: "",
 		collection: "topsailBeach",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
@@ -65,7 +51,6 @@ const topsailBeachArray: PhotoModalProps[] = [
 		imageAlt: "Shot of girl walking towards the ocean on Topsail Beach",
 		description: "",
 		collection: "topsailBeach",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
@@ -75,7 +60,6 @@ const topsailBeachArray: PhotoModalProps[] = [
 		imageAlt: "Shot of girl walking in the sand",
 		description: "",
 		collection: "topsailBeach",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],

@@ -1,21 +1,11 @@
-interface PhotoModalProps {
-	imageSrc: string;
-	imageAlt: string;
-	description: string;
-	collection: string;
-	showLink: boolean;
-	stats: string;
-	classAdjustments: string;
-	tags?: string[];
-}
+import { CollectionPhotoProps } from "@/types";
 
-const excelsiorBirdsBeesArray: PhotoModalProps[] = [
+const excelsiorBirdsBeesArray: CollectionPhotoProps[] = [
 	{
 		imageSrc: "/birdsAndBees.JPG",
 		imageAlt: "Goose walking towards camera",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
@@ -25,7 +15,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Goose opening beak as other geese in background eat",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
@@ -35,7 +24,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Shot of dragonfly with blurred background",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
@@ -45,7 +33,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Close up shot of dragonfly",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
@@ -55,7 +42,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Goose in foreground with four geese eating in background",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
@@ -65,7 +51,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Shot of several geese by the water and a bench",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals", "Landscape"],
@@ -75,7 +60,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Long purple flowers in the tall grass",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
@@ -85,7 +69,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Several bees on a pink flower",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants", "Animals"],
@@ -95,7 +78,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Bee on long purple flowers",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants", "Animals"],
@@ -105,7 +87,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Mixed focus shot of long purple flowers",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
@@ -115,7 +96,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Bees on long white and purple flowers",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants", "Animals"],
@@ -125,7 +105,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Duck pulling head out of the water with visible water droplets",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
@@ -135,7 +114,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Shot of small red sailboat, Red Ink, in the water and centered",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
@@ -145,7 +123,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Glass reflecting the flowers and water",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: [""],
@@ -155,7 +132,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Shot of small red sailboat, Red Ink, in the water framed by the trees",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
@@ -165,7 +141,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Duck sitting still in the water",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
@@ -175,7 +150,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Duck facing away from camera",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals", "Landscape"],
@@ -185,7 +159,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "Duck diving into the water, with its backside up in the air",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals", "Landscape"],
@@ -196,7 +169,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "The last three ducks in a line of five ducks",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
@@ -206,7 +178,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "A line of five ducks swimming in the water",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
@@ -216,7 +187,6 @@ const excelsiorBirdsBeesArray: PhotoModalProps[] = [
 		imageAlt: "The first three ducks in a line of five ducks",
 		description: "",
 		collection: "excelsiorBirdsBees",
-		showLink: false,
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],

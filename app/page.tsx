@@ -4,15 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import PhotoThumbnail from "@/components/PhotoThumbnail";
 import PhotoModal from "@/components/PhotoModal";
-
-interface ModalData {
-	isOpen: boolean;
-	imageSrc: string;
-	imageAlt: string;
-	description: string;
-	collection: string;
-	stats: string;
-}
+import { ModalData } from "@/types";
 
 export default function Home() {
 	const [modalData, setModalData] = useState<ModalData>({
@@ -22,6 +14,7 @@ export default function Home() {
 		description: "",
 		collection: "",
 		stats: "",
+		showLink: false,
 	});
 
 	const closeModal = () => {
@@ -32,6 +25,7 @@ export default function Home() {
 			description: "",
 			collection: "",
 			stats: "",
+			showLink: false,
 		});
 	};
 
@@ -63,14 +57,7 @@ export default function Home() {
 					</div> */}
 
 					<div className="inset-0 flex justify-center">
-						<PhotoModal
-							isOpen={modalData.isOpen}
-							imageSrc={modalData.imageSrc}
-							imageAlt={modalData.imageAlt}
-							description={modalData.description}
-							collection={modalData.collection}
-							stats={modalData.stats}
-						/>
+						<PhotoModal modalData={modalData} collection={modalData.collection} />
 					</div>
 
 					{modalData.isOpen ? (
@@ -265,7 +252,7 @@ export default function Home() {
 							<PhotoThumbnail
 								setModalData={setModalData}
 								src="/bernini.jpg"
-								alt="bernini"
+								alt="A Bernini sculpture"
 								description="bernini"
 								collection=""
 								stats=""

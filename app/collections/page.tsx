@@ -5,39 +5,13 @@ import FilterBox from "@/components/FilterBox";
 import CollectionThumbnail from "@/components/CollectionThumbnail";
 import CollectionHeading from "@/components/CollectionHeading";
 import PhotoModal from "@/components/PhotoModal";
-import ducksAndLiliesArray from "@/collections/ducksAndLilies";
-import perseids2024Array from "@/collections/perseids2024";
-import topsailBeachArray from "@/collections/topsailBeach";
-import chicagoStreetArray from "@/collections/chicagoStreet";
-import halfaliveArray from "@/collections/halfalive";
-import montroseMoonriseArray from "@/collections/montroseMoonrise";
-import stPaulChurchArray from "@/collections/stPaulChurch";
-import excelsiorBirdsBeesArray from "@/collections/excelsiorBirdsBees";
-import mnArboretumArray from "@/collections/mnArboretum";
-import collectionsArray from "@/collections/collections";
+import { collectionsArray } from "@/collections/collections";
+import { collections } from "@/collections/collections";
+import { CollectionPhotoProps } from "@/types";
+import { ModalData } from "@/types";
 import { Arimo } from "next/font/google";
 
 const arimo = Arimo({ subsets: ["latin"] });
-
-interface ModalData {
-	isOpen: boolean;
-	imageSrc: string;
-	imageAlt: string;
-	description: string;
-	collection: string;
-	stats: string;
-}
-
-interface CollectionPhotoProps {
-	imageSrc: string;
-	imageAlt: string;
-	description: string;
-	collection: string;
-	showLink: boolean;
-	stats: string;
-	classAdjustments: string;
-	tags?: string[];
-}
 
 export default function Collections() {
 	const [modalData, setModalData] = useState<ModalData>({
@@ -87,14 +61,7 @@ export default function Collections() {
 						<h2 className="text-2xl text-white">Collections</h2>
 					</div> */}
 
-					<PhotoModal
-						isOpen={modalData.isOpen}
-						imageSrc={modalData.imageSrc}
-						imageAlt={modalData.imageAlt}
-						description={modalData.description}
-						collection=""
-						stats={modalData.stats}
-					/>
+					<PhotoModal modalData={modalData} collection="" />
 
 					{modalData.isOpen ? (
 						<div className="fixed inset-0 z-10 bg-black bg-opacity-75" onClick={() => closeModal()}></div>
@@ -171,16 +138,11 @@ export default function Collections() {
 									details="Minnesota Landscape Arboretum, MN. Summer 2024."
 								/>
 								<div className="grid grid-cols-2 md:grid-cols-4 mx-3">
-									{mnArboretumArray.map((photo: CollectionPhotoProps) => (
+									{collections["mn-arboretum"].map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
+											photo={photo}
 											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
 										/>
 									))}
 								</div>
@@ -191,60 +153,48 @@ export default function Collections() {
 									details="Excelsior, MN. Summer 2024."
 								/>
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-									{excelsiorBirdsBeesArray.slice(0, 12).map((photo: CollectionPhotoProps) => (
-										<CollectionThumbnail
-											key={photo.imageSrc}
-											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
-										/>
-									))}
+									{collections["excelsior-birds-bees"]
+										.slice(0, 12)
+										.map((photo: CollectionPhotoProps) => (
+											<CollectionThumbnail
+												key={photo.imageSrc}
+												photo={photo}
+												setModalData={setModalData}
+											/>
+										))}
 								</div>
 								<div className="grid grid-cols-2 md:grid-cols-4 mx-3">
-									{excelsiorBirdsBeesArray.slice(12, 16).map((photo: CollectionPhotoProps) => (
-										<CollectionThumbnail
-											key={photo.imageSrc}
-											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
-										/>
-									))}
+									{collections["excelsior-birds-bees"]
+										.slice(12, 16)
+										.map((photo: CollectionPhotoProps) => (
+											<CollectionThumbnail
+												key={photo.imageSrc}
+												photo={photo}
+												setModalData={setModalData}
+											/>
+										))}
 								</div>
 								<div className="grid grid-cols-2 mx-3">
-									{excelsiorBirdsBeesArray.slice(16, 18).map((photo: CollectionPhotoProps) => (
-										<CollectionThumbnail
-											key={photo.imageSrc}
-											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
-										/>
-									))}
+									{collections["excelsior-birds-bees"]
+										.slice(16, 18)
+										.map((photo: CollectionPhotoProps) => (
+											<CollectionThumbnail
+												key={photo.imageSrc}
+												photo={photo}
+												setModalData={setModalData}
+											/>
+										))}
 								</div>
 								<div className="grid grid-cols-3 mx-3">
-									{excelsiorBirdsBeesArray.slice(18).map((photo: CollectionPhotoProps) => (
-										<CollectionThumbnail
-											key={photo.imageSrc}
-											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
-										/>
-									))}
+									{collections["excelsior-birds-bees"]
+										.slice(18)
+										.map((photo: CollectionPhotoProps) => (
+											<CollectionThumbnail
+												key={photo.imageSrc}
+												photo={photo}
+												setModalData={setModalData}
+											/>
+										))}
 								</div>
 							</div>
 							<div className="pb-10" id="montroseMoonrise">
@@ -253,30 +203,20 @@ export default function Collections() {
 									details="Chicago, IL. Summer 2023."
 								/>
 								<div className="grid grid-cols-2 mx-3">
-									{montroseMoonriseArray.slice(0, 2).map((photo: CollectionPhotoProps) => (
+									{collections["montrose-moonrise"].slice(0, 2).map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
+											photo={photo}
 											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
 										/>
 									))}
 								</div>
 								<div className="grid grid-cols-2 md:grid-cols-6 mx-3">
-									{montroseMoonriseArray.slice(2).map((photo: CollectionPhotoProps) => (
+									{collections["montrose-moonrise"].slice(2).map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
+											photo={photo}
 											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
 										/>
 									))}
 								</div>
@@ -287,16 +227,11 @@ export default function Collections() {
 									details="House of Blues Boston, MA. Spring 2023."
 								/>
 								<div className="grid grid-cols-3 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-3">
-									{halfaliveArray.map((photo: CollectionPhotoProps) => (
+									{collections["halfalive"].map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
+											photo={photo}
 											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
 										/>
 									))}
 								</div>
@@ -304,16 +239,11 @@ export default function Collections() {
 							<div className="pb-10" id="ducksandlilies">
 								<CollectionHeading title="Ducks & Lilies" details="Saint Paul, MN. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-									{ducksAndLiliesArray.map((photo: CollectionPhotoProps) => (
+									{collections["ducks-and-lilies"].map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
+											photo={photo}
 											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
 										/>
 									))}
 								</div>
@@ -321,16 +251,11 @@ export default function Collections() {
 							<div className="pb-10" id="topsailBeach">
 								<CollectionHeading title="Topsail Beach" details="Topsail Island, NC. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-									{topsailBeachArray.map((photo: CollectionPhotoProps) => (
+									{collections["topsail-beach"].map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
+											photo={photo}
 											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
 										/>
 									))}
 								</div>
@@ -338,16 +263,11 @@ export default function Collections() {
 							<div className="pb-10" id="chicagoStreet">
 								<CollectionHeading title="Downtown Chicago" details="Chicago, IL. Summer 2023." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-									{chicagoStreetArray.map((photo: CollectionPhotoProps) => (
+									{collections["chicago-street"].map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
+											photo={photo}
 											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
 										/>
 									))}
 								</div>
@@ -355,16 +275,11 @@ export default function Collections() {
 							<div className="pb-10" id="perseids2024">
 								<CollectionHeading title="Perseids Meteor Shower 2024" details="MD. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-									{perseids2024Array.map((photo: CollectionPhotoProps) => (
+									{collections["perseids-2024"].map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
+											photo={photo}
 											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
 										/>
 									))}
 								</div>
@@ -372,30 +287,20 @@ export default function Collections() {
 							<div className="pb-10" id="stAgnesStPaul">
 								<CollectionHeading title="Church of St. Agnes" details="Saint Paul, MN. Summer 2023." />
 								<div className="grid grid-cols-2 mx-3">
-									{stPaulChurchArray.slice(0, 2).map((photo: CollectionPhotoProps) => (
+									{collections["stpaul-church"].slice(0, 2).map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
+											photo={photo}
 											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
 										/>
 									))}
 								</div>
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-									{stPaulChurchArray.slice(2).map((photo: CollectionPhotoProps) => (
+									{collections["stpaul-church"].slice(2).map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
+											photo={photo}
 											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments={photo.classAdjustments}
 										/>
 									))}
 								</div>
@@ -409,12 +314,8 @@ export default function Collections() {
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											setModalData={setModalData}
-											src={photo.imageSrc}
-											alt={photo.imageAlt}
-											description={photo.description}
-											collection={photo.collection}
-											stats={photo.stats}
-											classAdjustments=""
+											photo={photo}
+											showLink={true}
 										/>
 									)
 							)}

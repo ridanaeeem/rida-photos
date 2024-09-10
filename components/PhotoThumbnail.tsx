@@ -13,6 +13,7 @@ function openModal(
 		description,
 		collection,
 		stats,
+		showLink: true,
 	});
 }
 

@@ -1,21 +1,11 @@
-interface PhotoModalProps {
-	imageSrc: string;
-	imageAlt: string;
-	description: string;
-	collection: string;
-	showLink: boolean;
-	stats: string;
-	classAdjustments: string;
-	tags?: string[];
-}
+import { CollectionPhotoProps } from "@/types";
 
-const halfaliveArray: PhotoModalProps[] = [
+const halfaliveArray: CollectionPhotoProps[] = [
 	{
 		imageSrc: "/halfalive.jpg",
 		imageAlt: "Perseid meteor shower 2024, one meteor visible",
 		description: "There's one meteor visible, can you find it?",
 		collection: "concerts",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-3 md:col-span-2 row-span-1",
 		tags: ["Concert"],
@@ -25,7 +15,6 @@ const halfaliveArray: PhotoModalProps[] = [
 		imageAlt: "Perseid meteor shower 2024, one meteor visible",
 		description: "There's one meteor visible, can you find it?",
 		collection: "concerts",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],
@@ -35,7 +24,6 @@ const halfaliveArray: PhotoModalProps[] = [
 		imageAlt: "Perseid meteor shower 2024, one meteor visible",
 		description: "There's one meteor visible, can you find it?",
 		collection: "concerts",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],
@@ -45,7 +33,6 @@ const halfaliveArray: PhotoModalProps[] = [
 		imageAlt: "Perseid meteor shower 2024, one meteor visible",
 		description: "There's one meteor visible, can you find it?",
 		collection: "concerts",
-		showLink: false,
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],

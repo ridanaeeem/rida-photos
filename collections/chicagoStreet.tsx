@@ -1,21 +1,11 @@
-interface PhotoModalProps {
-	imageSrc: string;
-	imageAlt: string;
-	description: string;
-	collection: string;
-	showLink: boolean;
-	stats: string;
-	classAdjustments: string;
-	tags?: string[];
-}
+import { CollectionPhotoProps } from "@/types";
 
-const chicagoStreetArray: PhotoModalProps[] = [
+const chicagoStreetArray: CollectionPhotoProps[] = [
 	{
 		imageSrc: "/chicago7.JPG",
 		imageAlt: "Group of skaters in Chicago",
 		description: "",
 		collection: "chicagoStreet",
-		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/3.2 • 1/1000 • 9mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Street"],
@@ -25,7 +15,6 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		imageAlt: "The Chicago theater",
 		description: "",
 		collection: "chicagoStreet",
-		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/320 • 47.86mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Street"],
@@ -35,7 +24,6 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		imageAlt: "close up of eyes on a building in Chicago",
 		description: "",
 		collection: "chicagoStreet",
-		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/500 • 71.52mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 	},
@@ -44,7 +32,6 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		imageAlt: "A protestor with a blindfold and sign in Chicago",
 		description: "",
 		collection: "chicagoStreet",
-		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/6400 • 27.44mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Street"],
@@ -54,7 +41,6 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		imageAlt: "Pigeon in Chicago",
 		description: "",
 		collection: "chicagoStreet",
-		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/10000 • 72mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
@@ -64,7 +50,6 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		imageAlt: "A protestor with a blindfold in Chicago",
 		description: "",
 		collection: "chicagoStreet",
-		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/25600 • 50.65mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Street"],
@@ -74,7 +59,6 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		imageAlt: "Close up of an American flag on a building in Chicago",
 		description: "",
 		collection: "chicagoStreet",
-		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/2000 • 72mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
@@ -84,7 +68,6 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		imageAlt: "Close up of a clock tower in Chicago",
 		description: "",
 		collection: "chicagoStreet",
-		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/1000 • 72mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
@@ -94,7 +77,6 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		imageAlt: "chicago",
 		description: "View of buildings in Chicago",
 		collection: "chicagoStreet",
-		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/3.5 • 1/2500 • 13.29mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
@@ -104,7 +86,6 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		imageAlt: "Backlit view of birds flying in Chicago",
 		description: "",
 		collection: "chicagoStreet",
-		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/3.2 • 1/1600 • 9mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape, Animals"],
@@ -114,7 +95,6 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		imageAlt: "Silhouette of birds flying in Chicago, with one in the center",
 		description: "",
 		collection: "chicagoStreet",
-		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/3.2 • 1/2500 • 9mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape, Animals"],
@@ -125,7 +105,6 @@ const chicagoStreetArray: PhotoModalProps[] = [
 		imageAlt: "Eyes on a building in Chicago",
 		description: "",
 		collection: "chicagoStreet",
-		showLink: false,
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/2000 • 71.03mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],

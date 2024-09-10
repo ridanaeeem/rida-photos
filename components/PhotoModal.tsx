@@ -1,19 +1,11 @@
 import React from "react";
 import { Darker_Grotesque } from "next/font/google";
+import { ModalData } from "@/types";
 
 const darker_grotesque = Darker_Grotesque({ subsets: ["latin"] });
 
-interface PhotoModalProps {
-	isOpen: boolean;
-	imageSrc: string;
-	imageAlt: string;
-	description: string;
-	collection: string;
-	stats: string;
-}
-
-const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, description, collection, stats }) => {
-	if (!isOpen) return null;
+export default function PhotoModal({ modalData, collection }: { modalData: ModalData; collection: string }) {
+	if (!modalData.isOpen) return null;
 
 	return (
 		<div
@@ -21,12 +13,12 @@ const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, des
 				darker_grotesque.className
 			} ${"fixed lg:inset-0 z-50 flex items-center justify-center m-5 lg:m-[20rem] text-center font-normal"}`}>
 			<div className="relative bg-white p-3 md:p-5 rounded-lg text-[#171719]">
-				<img src={imageSrc} alt={imageAlt} className="w-auto h-auto mb-4" />
+				<img src={modalData.imageSrc} alt={modalData.imageAlt} className="w-auto h-auto mb-4" />
 				<p className="text-2xl">
 					{/* {description + ": "} */}
-					{collection != "" ? (
+					{modalData.showLink && modalData.collection !== "" ? (
 						<a
-							href={"/collections#" + collection}
+							href={"/collections#" + modalData.collection}
 							target="_blank"
 							rel="noreferrer"
 							className="hover:text-[#809BB3]">
@@ -34,10 +26,8 @@ const PhotoModal: React.FC<PhotoModalProps> = ({ isOpen, imageSrc, imageAlt, des
 						</a>
 					) : null}
 				</p>
-				<p className="text-md md:text-3xl">{stats}</p>
+				<p className="text-md md:text-3xl">{modalData.stats}</p>
 			</div>
 		</div>
 	);
-};
-
-export default PhotoModal;
+}
