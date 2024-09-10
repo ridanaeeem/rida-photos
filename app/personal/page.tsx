@@ -217,21 +217,6 @@ export default function Personal() {
 									))}
 								</div>
 							</div>
-							<div className="pb-10" id="halfalive">
-								<CollectionHeading
-									title="Half Alive & Tessa Violet"
-									details="House of Blues Boston, MA. Spring 2023."
-								/>
-								<div className="grid grid-cols-3 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-3">
-									{collections["halfalive"].map((photo: CollectionPhotoProps) => (
-										<CollectionThumbnail
-											key={photo.imageSrc}
-											photo={photo}
-											setModalData={setModalData}
-										/>
-									))}
-								</div>
-							</div>
 							<div className="pb-10" id="ducksandlilies">
 								<CollectionHeading title="Ducks & Lilies" details="Saint Paul, MN. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
