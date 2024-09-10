@@ -65,9 +65,9 @@ export default function Collections() {
 
 					<div>
 						<div className="flex flex-col p-6 py-12">
-							<h3 className="text-2xl md:text-4xl font-bold text-left py-2">
-								Search for... {filters.join(" & ")}
-							</h3>
+							{/* <h3 className="text-2xl md:text-4xl font-bold text-left py-2">
+								Look for... {filters.join(" & ")}
+							</h3> */}
 							<div className="grid grid-cols-3 md:grid-cols-7 gap-3 md:gap-4">
 								<FilterBox
 									filter="Landscape"
@@ -303,19 +303,66 @@ export default function Collections() {
 							</div>
 						</div>
 					) : (
-						<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-							{collectionsArray.map(
-								(photo: CollectionPhotoProps) =>
-									filters.every((filter) => photo.tags?.includes(filter)) && (
-										<CollectionThumbnail
-											key={photo.imageSrc}
-											setModalData={setModalData}
-											photo={photo}
-											showLink={true}
-										/>
-									)
+						<>
+							{collectionsArray.filter((photo: CollectionPhotoProps) =>
+								filters.every((filter) => photo.tags?.includes(filter))
+							).length === 0 ? (
+								<div className="flex flex-col p-6 pb-0">
+									<h3 className="text-2xl md:text-4xl font-bold text-left ">
+										{"Looking for... " + filters.join(" & ")}
+									</h3>
+									<h2 className="text-lg md:text-2xl font-medium text-left">
+										No photos found with the selected combination of tags. Click{" "}
+										<button onClick={() => setFilters([])}>
+											<u>Reset</u>
+										</button>{" "}
+										to view all photos.
+									</h2>
+								</div>
+							) : (
+								<>
+									<CollectionHeading
+										title={"Looking for... " + filters.join(" & ")}
+										details="Includes photos with the selected combination of tags."
+									/>
+									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+										{collectionsArray.map(
+											(photo: CollectionPhotoProps) =>
+												filters.every((filter) => photo.tags?.includes(filter)) && (
+													<CollectionThumbnail
+														key={photo.imageSrc}
+														setModalData={setModalData}
+														photo={photo}
+														search={true}
+													/>
+												)
+										)}
+									</div>
+								</>
 							)}
-						</div>
+
+							{/* {filters.length > 1 && (
+								<>
+									<CollectionHeading
+										title={"Looking for... " + filters.join(", ")}
+										details="Includes photos with any one of the selected tags."
+									/>
+									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+										{collectionsArray.map(
+											(photo: CollectionPhotoProps) =>
+												filters.some((filter) => photo.tags?.includes(filter)) && (
+													<CollectionThumbnail
+														key={photo.imageSrc}
+														setModalData={setModalData}
+														photo={photo}
+														search={true}
+													/>
+												)
+										)}
+									</div>
+								</>
+							)} */}
+						</>
 					)}
 				</div>
 			</main>

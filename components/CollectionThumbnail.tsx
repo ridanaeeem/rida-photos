@@ -16,11 +16,11 @@ function openModal(setModalData: any, photo: CollectionPhotoProps, showLink: boo
 export default function CollectionThumbnail({
 	photo,
 	setModalData,
-	showLink,
+	search,
 }: {
 	photo: CollectionPhotoProps;
 	setModalData: any;
-	showLink?: boolean;
+	search?: boolean;
 }) {
 	return (
 		<motion.div
@@ -29,12 +29,12 @@ export default function CollectionThumbnail({
 			transition={{
 				duration: 1,
 			}}
-			className={photo.classAdjustments}>
+			className={search ? "" : photo.classAdjustments}>
 			<img
 				src={photo.imageSrc}
 				alt={photo.imageAlt}
 				className="cursor-pointer p-2 w-full h-full object-cover"
-				onClick={() => openModal(setModalData, photo, showLink ? showLink : false)}></img>
+				onClick={() => openModal(setModalData, photo, search ? search : false)}></img>
 		</motion.div>
 	);
 }
