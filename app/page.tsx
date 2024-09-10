@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import PhotoThumbnail from "@/components/PhotoThumbnail";
 import PhotoModal from "@/components/PhotoModal";

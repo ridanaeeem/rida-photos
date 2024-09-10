@@ -50,7 +50,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		imageSrc: "/waterLily6.JPG",
 		imageAlt: "one bright pink water lily",
 		description: "water lily",
-		collection: "",
+		collection: "ducksandlilies",
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/20000 • 50.65mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
