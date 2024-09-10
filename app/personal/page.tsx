@@ -13,7 +13,7 @@ import { Arimo } from "next/font/google";
 
 const arimo = Arimo({ subsets: ["latin"] });
 
-export default function Collections() {
+export default function Personal() {
 	const [modalData, setModalData] = useState<ModalData>({
 		isOpen: false,
 		imageSrc: "",

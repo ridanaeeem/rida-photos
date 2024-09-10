@@ -21,8 +21,11 @@ export default function Nav() {
 				</h1>
 			</div>
 			<ul className="text-xl md:text-3xl flex justify-center pb-5 font-normal">
-				<ul className={`px-5 ${pathname === "/collections" ? "text-[#809BB3]" : "null"}`}>
-					<Link href="/collections">Collections</Link>
+				<ul className={`px-5 ${pathname === "/personal" ? "text-[#809BB3]" : "null"}`}>
+					<Link href="/personal">Personal</Link>
+				</ul>
+				<ul className={`px-5 ${pathname === "/professional" ? "text-[#809BB3]" : "null"}`}>
+					<Link href="/professional">Professional</Link>
 				</ul>
 				<ul className={`px-5 ${pathname === "/connect" ? "text-[#809BB3]" : "null"}`}>
 					<Link href="/connect">Connect</Link>
