@@ -1,6 +1,6 @@
-import { CollectionPhotoProps } from "@/types";
+import { PhotoProps } from "@/types";
 
-const halfaliveArray: CollectionPhotoProps[] = [
+const halfaliveArray: PhotoProps[] = [
 	{
 		imageSrc: "/halfalive.jpg",
 		imageAlt: "Perseid meteor shower 2024, one meteor visible",
@@ -9,6 +9,7 @@ const halfaliveArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-3 md:col-span-2 row-span-1",
 		tags: ["Concert"],
+		index: 0,
 	},
 	{
 		imageSrc: "/tessaViolet.gif",
@@ -18,6 +19,7 @@ const halfaliveArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],
+		index: 0,
 	},
 	{
 		imageSrc: "/tessaViolet3.jpg",
@@ -27,6 +29,7 @@ const halfaliveArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],
+		index: 0,
 	},
 	{
 		imageSrc: "/tessaViolet4.jpg",
@@ -36,6 +39,7 @@ const halfaliveArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],
+		index: 0,
 	},
 ];
 

@@ -1,6 +1,6 @@
-import { CollectionPhotoProps } from "@/types";
+import { PhotoProps } from "@/types";
 
-const chicagoStreetArray: CollectionPhotoProps[] = [
+const chicagoStreetArray: PhotoProps[] = [
 	{
 		imageSrc: "/chicago7.JPG",
 		imageAlt: "Group of skaters in Chicago",
@@ -9,6 +9,7 @@ const chicagoStreetArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/3.2 • 1/1000 • 9mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Street"],
+		index: 0,
 	},
 	{
 		imageSrc: "/chicago4.jpg",
@@ -18,6 +19,7 @@ const chicagoStreetArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/320 • 47.86mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Street"],
+		index: 0,
 	},
 	{
 		imageSrc: "/chicagoEyes2.JPG",
@@ -26,6 +28,7 @@ const chicagoStreetArray: CollectionPhotoProps[] = [
 		collection: "chicagoStreet",
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/500 • 71.52mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
+		index: 0,
 	},
 	{
 		imageSrc: "/protest2.JPG",
@@ -35,6 +38,7 @@ const chicagoStreetArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/6400 • 27.44mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Street"],
+		index: 0,
 	},
 	{
 		imageSrc: "/pigeon.JPG",
@@ -44,6 +48,7 @@ const chicagoStreetArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/10000 • 72mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/protest.JPG",
@@ -53,6 +58,7 @@ const chicagoStreetArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/25600 • 50.65mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Street"],
+		index: 0,
 	},
 	{
 		imageSrc: "/chicago.JPG",
@@ -62,6 +68,7 @@ const chicagoStreetArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/2000 • 72mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/chicago2.JPG",
@@ -71,6 +78,7 @@ const chicagoStreetArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/1000 • 72mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/chicago3.JPG",
@@ -80,6 +88,7 @@ const chicagoStreetArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/3.5 • 1/2500 • 13.29mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/chicago5.JPG",
@@ -89,6 +98,7 @@ const chicagoStreetArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/3.2 • 1/1600 • 9mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape, Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/chicago6.JPG",
@@ -98,8 +108,8 @@ const chicagoStreetArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/3.2 • 1/2500 • 9mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape, Animals"],
+		index: 0,
 	},
-
 	{
 		imageSrc: "/chicagoEyes.JPG",
 		imageAlt: "Eyes on a building in Chicago",
@@ -108,6 +118,7 @@ const chicagoStreetArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/2000 • 71.03mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 ];
 

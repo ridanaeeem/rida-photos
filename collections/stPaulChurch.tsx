@@ -1,6 +1,6 @@
-import { CollectionPhotoProps } from "@/types";
+import { PhotoProps } from "@/types";
 
-const stPaulChurchArray: CollectionPhotoProps[] = [
+const stPaulChurchArray: PhotoProps[] = [
 	{
 		imageSrc: "/church5.jpg",
 		imageAlt: "Cieling of St Agnes Church in St Paul",
@@ -9,6 +9,7 @@ const stPaulChurchArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Art"],
+		index: 0,
 	},
 	{
 		imageSrc: "/church2.JPG",
@@ -18,6 +19,7 @@ const stPaulChurchArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Art"],
+		index: 0,
 	},
 	{
 		imageSrc: "/church4.JPG",
@@ -27,6 +29,7 @@ const stPaulChurchArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Art"],
+		index: 0,
 	},
 
 	{
@@ -37,6 +40,7 @@ const stPaulChurchArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Art"],
+		index: 0,
 	},
 
 	{
@@ -47,6 +51,7 @@ const stPaulChurchArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Art"],
+		index: 0,
 	},
 ];
 

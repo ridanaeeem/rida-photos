@@ -1,16 +1,11 @@
 import { motion } from "framer-motion";
-import { CollectionPhotoProps } from "@/types";
+import { PhotoProps } from "@/types";
 
-function openModal(setModalData: any, photo: CollectionPhotoProps, showLink: boolean) {
+function openModal(setModalData: any, photo: PhotoProps, showLink: boolean) {
 	setModalData({
+		photo: photo,
 		isOpen: true,
-		imageSrc: photo.imageSrc,
-		imageAlt: photo.imageAlt,
-		description: photo.description,
-		collection: photo.collection,
-		stats: photo.stats,
 		showLink: showLink,
-		index: photo.index,
 	});
 }
 
@@ -19,7 +14,7 @@ export default function CollectionThumbnail({
 	setModalData,
 	search,
 }: {
-	photo: CollectionPhotoProps;
+	photo: PhotoProps;
 	setModalData: any;
 	search?: boolean;
 }) {

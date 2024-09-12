@@ -3,27 +3,19 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import PhotoThumbnail from "@/components/PhotoThumbnail";
 import PhotoModal from "@/components/PhotoModal";
-import { ModalData } from "@/types";
+import { ModalData, defaultPhoto } from "@/types";
 
 export default function Home() {
 	const [modalData, setModalData] = useState<ModalData>({
+		photo: defaultPhoto,
 		isOpen: false,
-		imageSrc: "",
-		imageAlt: "",
-		description: "",
-		collection: "",
-		stats: "",
 		showLink: false,
 	});
 
 	const closeModal = () => {
 		setModalData({
+			photo: defaultPhoto,
 			isOpen: false,
-			imageSrc: "",
-			imageAlt: "",
-			description: "",
-			collection: "",
-			stats: "",
 			showLink: false,
 		});
 	};
@@ -56,7 +48,11 @@ export default function Home() {
 					</div> */}
 
 					<div className="inset-0 flex justify-center">
-						<PhotoModal modalData={modalData} collection={modalData.collection} />
+						<PhotoModal
+							modalData={modalData}
+							collection={modalData.photo.collection}
+							setModalData={setModalData}
+						/>
 					</div>
 
 					{modalData.isOpen ? (

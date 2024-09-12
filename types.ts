@@ -1,15 +1,10 @@
 export type ModalData = {
+	photo: PhotoProps;
 	isOpen: boolean;
-	imageSrc: string;
-	imageAlt: string;
-	description: string;
-	collection: string;
-	stats: string;
 	showLink?: boolean;
-	index: number;
 };
 
-export interface CollectionPhotoProps {
+export type PhotoProps = {
 	imageSrc: string;
 	imageAlt: string;
 	description: string;
@@ -17,5 +12,16 @@ export interface CollectionPhotoProps {
 	stats: string;
 	classAdjustments: string;
 	tags?: string[];
-	index?: number;
-}
+	index: number;
+};
+
+export const defaultPhoto: PhotoProps = {
+	imageSrc: "",
+	imageAlt: "",
+	description: "",
+	collection: "",
+	stats: "",
+	classAdjustments: "",
+	tags: [],
+	index: 0,
+};

@@ -1,38 +1,28 @@
 "use client";
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import FilterBox from "@/components/FilterBox";
 import CollectionThumbnail from "@/components/CollectionThumbnail";
 import CollectionHeading from "@/components/CollectionHeading";
 import PhotoModal from "@/components/PhotoModal";
 import { collectionsArray } from "@/collections/collections";
 import { collections } from "@/collections/collections";
-import { CollectionPhotoProps } from "@/types";
-import { ModalData } from "@/types";
+import { PhotoProps, ModalData, defaultPhoto } from "@/types";
 import { Arimo } from "next/font/google";
 
 const arimo = Arimo({ subsets: ["latin"] });
 
 export default function Personal() {
 	const [modalData, setModalData] = useState<ModalData>({
+		photo: defaultPhoto,
 		isOpen: false,
-		imageSrc: "",
-		imageAlt: "",
-		description: "",
-		collection: "",
-		stats: "",
-		index: 0,
+		showLink: false,
 	});
 
 	const closeModal = () => {
 		setModalData({
+			photo: defaultPhoto,
 			isOpen: false,
-			imageSrc: "",
-			imageAlt: "",
-			description: "",
-			collection: "",
-			stats: "",
-			index: 0,
+			showLink: false,
 		});
 	};
 
@@ -56,17 +46,14 @@ export default function Personal() {
 		const handleLeft = (event: KeyboardEvent) => {
 			if (event.key === "ArrowLeft") {
 				setModalData((prevModalData) => {
-					const newIndex = (prevModalData.index - 1 + collectionsArray.length) % collectionsArray.length;
+					const newIndex =
+						(prevModalData.photo.index - 1 + collectionsArray.length) % collectionsArray.length;
 					const newPhoto = collectionsArray[newIndex];
 
 					return {
 						...prevModalData,
-						imageSrc: newPhoto.imageSrc,
-						imageAlt: newPhoto.imageAlt,
-						description: newPhoto.description,
-						collection: newPhoto.collection,
-						stats: newPhoto.stats,
-						index: newIndex,
+						photo: collectionsArray[newIndex],
+						isOpen: true,
 					};
 				});
 			}
@@ -75,17 +62,13 @@ export default function Personal() {
 		const handleRight = (event: KeyboardEvent) => {
 			if (event.key === "ArrowRight") {
 				setModalData((prevModalData) => {
-					const newIndex = (prevModalData.index + 1) % collectionsArray.length;
+					const newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
 					const newPhoto = collectionsArray[newIndex];
 
 					return {
 						...prevModalData,
-						imageSrc: newPhoto.imageSrc,
-						imageAlt: newPhoto.imageAlt,
-						description: newPhoto.description,
-						collection: newPhoto.collection,
-						stats: newPhoto.stats,
-						index: newIndex,
+						photo: collectionsArray[newIndex],
+						isOpen: true,
 					};
 				});
 			}
@@ -186,7 +169,7 @@ export default function Personal() {
 									details="Minnesota Landscape Arboretum, MN. Summer 2024."
 								/>
 								<div className="grid grid-cols-2 md:grid-cols-4 mx-3">
-									{collections["mn-arboretum"].map((photo: CollectionPhotoProps) => (
+									{collections["mn-arboretum"].map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -201,48 +184,40 @@ export default function Personal() {
 									details="Excelsior, MN. Summer 2024."
 								/>
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-									{collections["excelsior-birds-bees"]
-										.slice(0, 12)
-										.map((photo: CollectionPhotoProps) => (
-											<CollectionThumbnail
-												key={photo.imageSrc}
-												photo={photo}
-												setModalData={setModalData}
-											/>
-										))}
+									{collections["excelsior-birds-bees"].slice(0, 12).map((photo: PhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											photo={photo}
+											setModalData={setModalData}
+										/>
+									))}
 								</div>
 								<div className="grid grid-cols-2 md:grid-cols-4 mx-3">
-									{collections["excelsior-birds-bees"]
-										.slice(12, 16)
-										.map((photo: CollectionPhotoProps) => (
-											<CollectionThumbnail
-												key={photo.imageSrc}
-												photo={photo}
-												setModalData={setModalData}
-											/>
-										))}
+									{collections["excelsior-birds-bees"].slice(12, 16).map((photo: PhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											photo={photo}
+											setModalData={setModalData}
+										/>
+									))}
 								</div>
 								<div className="grid grid-cols-2 mx-3">
-									{collections["excelsior-birds-bees"]
-										.slice(16, 18)
-										.map((photo: CollectionPhotoProps) => (
-											<CollectionThumbnail
-												key={photo.imageSrc}
-												photo={photo}
-												setModalData={setModalData}
-											/>
-										))}
+									{collections["excelsior-birds-bees"].slice(16, 18).map((photo: PhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											photo={photo}
+											setModalData={setModalData}
+										/>
+									))}
 								</div>
 								<div className="grid grid-cols-3 mx-3">
-									{collections["excelsior-birds-bees"]
-										.slice(18)
-										.map((photo: CollectionPhotoProps) => (
-											<CollectionThumbnail
-												key={photo.imageSrc}
-												photo={photo}
-												setModalData={setModalData}
-											/>
-										))}
+									{collections["excelsior-birds-bees"].slice(18).map((photo: PhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											photo={photo}
+											setModalData={setModalData}
+										/>
+									))}
 								</div>
 							</div>
 							<div className="pb-10" id="montroseMoonrise">
@@ -251,7 +226,7 @@ export default function Personal() {
 									details="Chicago, IL. Summer 2023."
 								/>
 								<div className="grid grid-cols-2 mx-3">
-									{collections["montrose-moonrise"].slice(0, 2).map((photo: CollectionPhotoProps) => (
+									{collections["montrose-moonrise"].slice(0, 2).map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -260,7 +235,7 @@ export default function Personal() {
 									))}
 								</div>
 								<div className="grid grid-cols-2 md:grid-cols-6 mx-3">
-									{collections["montrose-moonrise"].slice(2).map((photo: CollectionPhotoProps) => (
+									{collections["montrose-moonrise"].slice(2).map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -272,7 +247,7 @@ export default function Personal() {
 							<div className="pb-10" id="ducksandlilies">
 								<CollectionHeading title="Ducks & Lilies" details="Saint Paul, MN. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-									{collections["ducks-and-lilies"].map((photo: CollectionPhotoProps) => (
+									{collections["ducks-and-lilies"].map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -284,7 +259,7 @@ export default function Personal() {
 							<div className="pb-10" id="topsailBeach">
 								<CollectionHeading title="Topsail Beach" details="Topsail Island, NC. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-									{collections["topsail-beach"].map((photo: CollectionPhotoProps) => (
+									{collections["topsail-beach"].map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -296,7 +271,7 @@ export default function Personal() {
 							<div className="pb-10" id="chicagoStreet">
 								<CollectionHeading title="Downtown Chicago" details="Chicago, IL. Summer 2023." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-									{collections["chicago-street"].map((photo: CollectionPhotoProps) => (
+									{collections["chicago-street"].map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -308,7 +283,7 @@ export default function Personal() {
 							<div className="pb-10" id="perseids2024">
 								<CollectionHeading title="Perseids Meteor Shower 2024" details="MD. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-									{collections["perseids-2024"].map((photo: CollectionPhotoProps) => (
+									{collections["perseids-2024"].map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -320,7 +295,7 @@ export default function Personal() {
 							<div className="pb-10" id="stAgnesStPaul">
 								<CollectionHeading title="Church of St. Agnes" details="Saint Paul, MN. Summer 2023." />
 								<div className="grid grid-cols-2 mx-3">
-									{collections["stpaul-church"].slice(0, 2).map((photo: CollectionPhotoProps) => (
+									{collections["stpaul-church"].slice(0, 2).map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -329,7 +304,7 @@ export default function Personal() {
 									))}
 								</div>
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-									{collections["stpaul-church"].slice(2).map((photo: CollectionPhotoProps) => (
+									{collections["stpaul-church"].slice(2).map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -341,7 +316,7 @@ export default function Personal() {
 						</div>
 					) : (
 						<>
-							{collectionsArray.filter((photo: CollectionPhotoProps) =>
+							{collectionsArray.filter((photo: PhotoProps) =>
 								filters.every((filter) => photo.tags?.includes(filter))
 							).length === 0 ? (
 								<div className="flex flex-col p-6 pb-12">
@@ -364,7 +339,7 @@ export default function Personal() {
 									/>
 									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
 										{collectionsArray.map(
-											(photo: CollectionPhotoProps) =>
+											(photo: PhotoProps) =>
 												filters.every((filter) => photo.tags?.includes(filter)) && (
 													<CollectionThumbnail
 														key={photo.imageSrc}
@@ -386,7 +361,7 @@ export default function Personal() {
 									/>
 									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
 										{collectionsArray.map(
-											(photo: CollectionPhotoProps) =>
+											(photo: PhotoProps) =>
 												filters.some((filter) => photo.tags?.includes(filter)) && (
 													<CollectionThumbnail
 														key={photo.imageSrc}

@@ -7,7 +7,7 @@ import CollectionHeading from "@/components/CollectionHeading";
 import PhotoModal from "@/components/PhotoModal";
 import { collectionsArray } from "@/collections/collections";
 import { collections } from "@/collections/collections";
-import { CollectionPhotoProps } from "@/types";
+import { defaultPhoto, PhotoProps } from "@/types";
 import { ModalData } from "@/types";
 import { Arimo } from "next/font/google";
 
@@ -15,24 +15,16 @@ const arimo = Arimo({ subsets: ["latin"] });
 
 export default function Professional() {
 	const [modalData, setModalData] = useState<ModalData>({
+		photo: defaultPhoto,
 		isOpen: false,
-		imageSrc: "",
-		imageAlt: "",
-		description: "",
-		collection: "",
-		stats: "",
-		index: 0,
+		showLink: false,
 	});
 
 	const closeModal = () => {
 		setModalData({
+			photo: defaultPhoto,
 			isOpen: false,
-			imageSrc: "",
-			imageAlt: "",
-			description: "",
-			collection: "",
-			stats: "",
-			index: 0,
+			showLink: false,
 		});
 	};
 
@@ -95,7 +87,7 @@ export default function Professional() {
 									details="House of Blues Boston, MA. Spring 2023."
 								/>
 								<div className="grid grid-cols-3 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-3">
-									{collections["halfalive"].map((photo: CollectionPhotoProps) => (
+									{collections["halfalive"].map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -107,7 +99,7 @@ export default function Professional() {
 						</div>
 					) : (
 						<>
-							{collectionsArray.filter((photo: CollectionPhotoProps) =>
+							{collectionsArray.filter((photo: PhotoProps) =>
 								filters.every((filter) => photo.tags?.includes(filter))
 							).length === 0 ? (
 								<div className="flex flex-col p-6 pb-0">
@@ -130,7 +122,7 @@ export default function Professional() {
 									/>
 									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
 										{collectionsArray.map(
-											(photo: CollectionPhotoProps) =>
+											(photo: PhotoProps) =>
 												filters.every((filter) => photo.tags?.includes(filter)) && (
 													<CollectionThumbnail
 														key={photo.imageSrc}
@@ -152,7 +144,7 @@ export default function Professional() {
 									/>
 									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
 										{collectionsArray.map(
-											(photo: CollectionPhotoProps) =>
+											(photo: PhotoProps) =>
 												filters.some((filter) => photo.tags?.includes(filter)) && (
 													<CollectionThumbnail
 														key={photo.imageSrc}

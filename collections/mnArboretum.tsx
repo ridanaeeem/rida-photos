@@ -1,6 +1,6 @@
-import { CollectionPhotoProps } from "@/types";
+import { PhotoProps } from "@/types";
 
-const mnArboretumArray: CollectionPhotoProps[] = [
+const mnArboretumArray: PhotoProps[] = [
 	{
 		imageSrc: "/mnArboretum20.JPG",
 		imageAlt: "Faraway shot of the arboretum, showing bushes and trees in the distance",
@@ -9,6 +9,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-2 row-span-2",
 		tags: ["Landscape", "Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum18.JPG",
@@ -18,6 +19,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum19.JPG",
@@ -27,6 +29,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum23.JPG",
@@ -36,6 +39,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum14.JPG",
@@ -45,6 +49,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum15.JPG",
@@ -54,6 +59,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum6.jpg",
@@ -64,6 +70,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "row-span-2 md:col-span-2 md:row-span-2",
 		tags: ["Landscape", "Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum22.JPG",
@@ -73,6 +80,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape", "Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum4.JPG",
@@ -82,6 +90,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum16.JPG",
@@ -91,6 +100,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape", "Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum5.JPG",
@@ -100,6 +110,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum2.JPG",
@@ -109,6 +120,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape", "Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum17.JPG",
@@ -118,6 +130,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "row-span-2 md:col-span-2 md:row-span-2",
 		tags: ["Landscape", "Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum12.JPG",
@@ -127,6 +140,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum10.JPG",
@@ -136,6 +150,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape", "Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum.JPG",
@@ -145,6 +160,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape", "Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum7.JPG",
@@ -154,6 +170,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals", "Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum11.JPG",
@@ -163,6 +180,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum8.JPG",
@@ -172,6 +190,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum3.JPG",
@@ -181,6 +200,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape", "Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum9.JPG",
@@ -190,6 +210,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape", "Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum13.JPG",
@@ -199,6 +220,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum21.JPG",
@@ -208,6 +230,7 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnArboretum24.JPG",
@@ -217,114 +240,127 @@ const mnArboretumArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnJapaneseGarden13.JPG",
 		imageAlt: "Waterfall in the Japanese Garden",
 		description: "",
-		collection: "mnJapaneseGarden",
+		collection: "mnArboretum",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnJapaneseGarden2.JPG",
 		imageAlt: "Close-up of moss-covered rocks in the Japanese Garden",
 		description: "",
-		collection: "mnJapaneseGarden",
+		collection: "mnArboretum",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnJapaneseGarden4.JPG",
 		imageAlt: "Japanese Garden house",
 		description: "",
-		collection: "mnJapaneseGarden",
+		collection: "mnArboretum",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnJapaneseGarden7.JPG",
 		imageAlt: "White koi and orange koi with open mouth swimming in the pond",
 		description: "",
-		collection: "mnJapaneseGarden",
+		collection: "mnArboretum",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnJapaneseGarden.JPG",
 		imageAlt: "Moss-covered rocks in the Japanese Garden",
 		description: "",
-		collection: "mnJapaneseGarden",
+		collection: "mnArboretum",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnJapaneseGarden8.JPG",
 		imageAlt: "White koi and orange koi swimming in the pond",
 		description: "",
-		collection: "mnJapaneseGarden",
+		collection: "mnArboretum",
 		stats: "",
 		classAdjustments: "col-span-2 row-span-2",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnJapaneseGarden6.JPG",
 		imageAlt: "A few koi with open mouths swimming in the pond",
 		description: "",
-		collection: "mnJapaneseGarden",
+		collection: "mnArboretum",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnJapaneseGarden9.JPG",
 		imageAlt: "Orange koi with open mouth in the pond",
 		description: "",
-		collection: "mnJapaneseGarden",
+		collection: "mnArboretum",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnJapaneseGarden5.JPG",
 		imageAlt: "Several koi swimming in the pond",
 		description: "",
-		collection: "mnJapaneseGarden",
+		collection: "mnArboretum",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnJapaneseGarden10.JPG",
 		imageAlt: "Orange koi underwater with white koi in background",
 		description: "",
-		collection: "mnJapaneseGarden",
+		collection: "mnArboretum",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnJapaneseGarden11.JPG",
 		imageAlt: "Koi swimming underwater, with one orange koi opening mouth above water",
 		description: "",
-		collection: "mnJapaneseGarden",
+		collection: "mnArboretum",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mnJapaneseGarden12.JPG",
 		imageAlt: "Orange koi swimming underwater",
 		description: "",
-		collection: "mnJapaneseGarden",
+		collection: "mnArboretum",
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 ];
 

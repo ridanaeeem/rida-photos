@@ -1,6 +1,6 @@
-import { CollectionPhotoProps } from "@/types";
+import { PhotoProps } from "@/types";
 
-const topsailBeachArray: CollectionPhotoProps[] = [
+const topsailBeachArray: PhotoProps[] = [
 	{
 		imageSrc: "/starryTSB2.JPG",
 		imageAlt: "Night shot of Topsail Beach",
@@ -9,6 +9,7 @@ const topsailBeachArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape", "Astrophotography"],
+		index: 0,
 	},
 	{
 		imageSrc: "/starryTSB.JPG",
@@ -18,6 +19,7 @@ const topsailBeachArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape", "Astrophotography"],
+		index: 0,
 	},
 	{
 		imageSrc: "/starryTSB3.JPG",
@@ -27,6 +29,7 @@ const topsailBeachArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Astrophotography"],
+		index: 0,
 	},
 	{
 		imageSrc: "/starryTSB4.JPG",
@@ -36,6 +39,7 @@ const topsailBeachArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Astrophotography"],
+		index: 0,
 	},
 	{
 		imageSrc: "/nightTSB.jpg",
@@ -45,6 +49,7 @@ const topsailBeachArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/beach.JPG",
@@ -54,6 +59,7 @@ const topsailBeachArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/beach2.JPG",
@@ -63,6 +69,7 @@ const topsailBeachArray: CollectionPhotoProps[] = [
 		stats: "",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 ];
 

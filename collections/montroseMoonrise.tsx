@@ -1,6 +1,6 @@
-import { CollectionPhotoProps } from "@/types";
+import { PhotoProps } from "@/types";
 
-const montroseMoonriseArray: CollectionPhotoProps[] = [
+const montroseMoonriseArray: PhotoProps[] = [
 	{
 		imageSrc: "/montrose5.JPG",
 		imageAlt: "Two people standing in front of a lighthouse at Montrose Moonrise Vista Point",
@@ -9,6 +9,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-3 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose6.JPG",
@@ -18,6 +19,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-3 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose11.JPG",
@@ -27,6 +29,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape", "Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose12.JPG",
@@ -36,6 +39,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape", "Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose7.JPG",
@@ -46,6 +50,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose3.JPG",
@@ -55,6 +60,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape", "Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose9.JPG",
@@ -64,6 +70,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose8.JPG",
@@ -73,6 +80,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose.JPG",
@@ -82,6 +90,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose14.JPG",
@@ -91,6 +100,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose10.JPG",
@@ -100,6 +110,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose2.JPG",
@@ -109,6 +120,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose4.JPG",
@@ -118,6 +130,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/montrose13.JPG",
@@ -127,6 +140,7 @@ const montroseMoonriseArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 ];
 

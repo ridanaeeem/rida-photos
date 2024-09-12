@@ -1,6 +1,6 @@
-import { CollectionPhotoProps } from "@/types";
+import { PhotoProps } from "@/types";
 
-const ducksAndLiliesArray: CollectionPhotoProps[] = [
+const ducksAndLiliesArray: PhotoProps[] = [
 	{
 		imageSrc: "/waterLily.JPG",
 		imageAlt: "white water lily",
@@ -9,6 +9,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/6.3 • 1/2000 • 63.55mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/waterLily2.JPG",
@@ -18,6 +19,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/25600 • 72.00mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/duck.JPG",
@@ -27,6 +29,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.6 • 1/16000 • 71.25mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/duck2.JPG",
@@ -36,6 +39,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/16000 • 72.00mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/waterLily3.JPG",
@@ -45,6 +49,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.0 • 1/20000 • 34.64mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/waterLily6.JPG",
@@ -54,6 +59,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/20000 • 50.65mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/waterLily4.JPG",
@@ -63,6 +69,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/20000 • 72.00mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/waterLily5.JPG",
@@ -72,6 +79,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/20000 • 50.65mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/waterLily9.JPG",
@@ -81,6 +89,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.0 • 1/16000 • 33.98mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/waterLily10.JPG",
@@ -90,6 +99,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.0 • 1/16000 • 33.98mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/duck3.JPG",
@@ -99,6 +109,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/16000 • 72.00mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/duck4.JPG",
@@ -108,6 +119,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/16000 • 40.37mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/waterLily12.JPG",
@@ -117,6 +129,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/5000 • 69.49mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/duckTri.JPG",
@@ -126,6 +139,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/16000 • 72.00mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/waterLily7.JPG",
@@ -135,6 +149,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/8.0 • 1/8000 • 30.26mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/waterLily8.JPG",
@@ -144,6 +159,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/5.0 • 1/8000 • 65.97mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/waterLily13.JPG",
@@ -153,6 +169,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/8.0 • 1/1250 • 34.64mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/waterLily14.JPG",
@@ -162,6 +179,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/8.0 • 1/1250 • 71.03mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
+		index: 0,
 	},
 	{
 		imageSrc: "/duck5.JPG",
@@ -171,6 +189,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/5.0 • 1/16000 • 72.00mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/duck6.jpg",
@@ -180,6 +199,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/16000 • 72.00mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 	{
 		imageSrc: "/duck7.JPG",
@@ -189,6 +209,7 @@ const ducksAndLiliesArray: CollectionPhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/16000 • 72.00mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
+		index: 0,
 	},
 ];
 

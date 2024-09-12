@@ -2,6 +2,8 @@ import React from "react";
 import { Darker_Grotesque } from "next/font/google";
 import { ModalData } from "@/types";
 import { collectionsArray } from "@/collections/collections";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const darker_grotesque = Darker_Grotesque({ subsets: ["latin"] });
 
@@ -16,57 +18,60 @@ export default function PhotoModal({
 }) {
 	if (!modalData.isOpen) return null;
 
+	const pathname = usePathname();
 	return (
 		<div
 			className={`${
 				darker_grotesque.className
 			} ${"fixed lg:inset-0 z-50 flex flex-col items-center justify-center m-5 lg:m-[20rem] text-center font-normal"}`}>
 			<div className="relative bg-white p-3 md:p-5 rounded-lg text-[#171719]">
-				<img src={modalData.imageSrc} alt={modalData.imageAlt} className="w-auto h-auto mb-4" />
+				<img src={modalData.photo.imageSrc} alt={modalData.photo.imageAlt} className="w-auto h-auto mb-4" />
 				<p className="text-2xl">
-					{/* {description + ": "} */}
-					{modalData.showLink && modalData.collection !== "" ? (
-						<a
-							href={"/collections#" + modalData.collection}
+					{modalData.showLink && modalData.photo.collection !== "" ? (
+						<Link
+							href={`#${modalData.photo.collection}`}
 							target="_blank"
 							rel="noreferrer"
 							className="hover:text-[#809BB3]">
 							View Collection
-						</a>
+						</Link>
 					) : null}
 				</p>
-				<p className="text-md md:text-3xl">{modalData.stats}</p>
-				<p>{modalData.index}</p>
+				<p className="text-md md:text-3xl">{modalData.photo.stats}</p>
+				<p>{modalData.photo.index}</p>
 			</div>
 			<div className="flex text-4xl justify-between m-2">
 				<button
 					className="px-6"
-					onClick={() =>
-						setModalData({
-							isOpen: true,
-							imageSrc: collectionsArray[(modalData.index - 1 + collectionsArray.length) % collectionsArray.length].imageSrc,
-							imageAlt: collectionsArray[(modalData.index - 1 + collectionsArray.length) % collectionsArray.length].imageAlt,
-							description: collectionsArray[(modalData.index - 1 + collectionsArray.length) % collectionsArray.length].description,
-							collection: collectionsArray[(modalData.index - 1 + collectionsArray.length) % collectionsArray.length].collection,
-							stats: collectionsArray[(modalData.index - 1 + collectionsArray.length) % collectionsArray.length].stats,
-							index: (modalData.index - 1 + collectionsArray.length) % collectionsArray.length,
-						})
-					}>
+					onClick={() => {
+						setModalData((prevModalData: ModalData) => {
+							const newIndex =
+								(prevModalData.photo.index - 1 + collectionsArray.length) % collectionsArray.length;
+							const newPhoto = collectionsArray[newIndex];
+
+							return {
+								...prevModalData,
+								photo: collectionsArray[newIndex],
+								isOpen: true,
+							};
+						});
+					}}>
 					&larr;
 				</button>
 				<button
 					className="px-6"
-					onClick={() =>
-						setModalData({
-							isOpen: true,
-							imageSrc: collectionsArray[(modalData.index + 1) % collectionsArray.length].imageSrc,
-							imageAlt: collectionsArray[(modalData.index + 1) % collectionsArray.length].imageAlt,
-							description: collectionsArray[(modalData.index + 1) % collectionsArray.length].description,
-							collection: collectionsArray[(modalData.index + 1) % collectionsArray.length].collection,
-							stats: collectionsArray[(modalData.index + 1) % collectionsArray.length].stats,
-							index: (modalData.index + 1) % collectionsArray.length,
-						})
-					}>
+					onClick={() => {
+						setModalData((prevModalData: ModalData) => {
+							const newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
+							const newPhoto = collectionsArray[newIndex];
+
+							return {
+								...prevModalData,
+								photo: collectionsArray[newIndex],
+								isOpen: true,
+							};
+						});
+					}}>
 					&rarr;
 				</button>
 			</div>
