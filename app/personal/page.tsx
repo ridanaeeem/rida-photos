@@ -21,6 +21,7 @@ export default function Personal() {
 		description: "",
 		collection: "",
 		stats: "",
+		index: 0,
 	});
 
 	const closeModal = () => {
@@ -31,6 +32,7 @@ export default function Personal() {
 			description: "",
 			collection: "",
 			stats: "",
+			index: 0,
 		});
 	};
 
@@ -50,6 +52,56 @@ export default function Personal() {
 		};
 	}, [modalData.isOpen]);
 
+	useEffect(() => {
+		const handleLeft = (event: KeyboardEvent) => {
+			if (event.key === "ArrowLeft") {
+				setModalData((prevModalData) => {
+					const newIndex = (prevModalData.index - 1 + collectionsArray.length) % collectionsArray.length;
+					const newPhoto = collectionsArray[newIndex];
+
+					return {
+						...prevModalData,
+						imageSrc: newPhoto.imageSrc,
+						imageAlt: newPhoto.imageAlt,
+						description: newPhoto.description,
+						collection: newPhoto.collection,
+						stats: newPhoto.stats,
+						index: newIndex,
+					};
+				});
+			}
+		};
+
+		const handleRight = (event: KeyboardEvent) => {
+			if (event.key === "ArrowRight") {
+				setModalData((prevModalData) => {
+					const newIndex = (prevModalData.index + 1) % collectionsArray.length;
+					const newPhoto = collectionsArray[newIndex];
+
+					return {
+						...prevModalData,
+						imageSrc: newPhoto.imageSrc,
+						imageAlt: newPhoto.imageAlt,
+						description: newPhoto.description,
+						collection: newPhoto.collection,
+						stats: newPhoto.stats,
+						index: newIndex,
+					};
+				});
+			}
+		};
+
+		if (modalData.isOpen) {
+			window.addEventListener("keydown", handleLeft);
+			window.addEventListener("keydown", handleRight);
+		}
+
+		return () => {
+			window.removeEventListener("keydown", handleLeft);
+			window.removeEventListener("keydown", handleRight);
+		};
+	}, [modalData.isOpen]);
+
 	const [filters, setFilters] = useState<string[]>([]);
 
 	return (
@@ -57,7 +109,7 @@ export default function Personal() {
 			<title>Rida Naeem Photography</title>
 			<main>
 				<div className="bg-gradient-to-b from-[#171719] to-[#171719] min-h-screen">
-					<PhotoModal modalData={modalData} collection="" />
+					<PhotoModal modalData={modalData} collection="" setModalData={setModalData} />
 
 					{modalData.isOpen ? (
 						<div className="fixed inset-0 z-10 bg-black bg-opacity-75" onClick={() => closeModal()}></div>

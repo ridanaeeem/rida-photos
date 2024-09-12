@@ -10,6 +10,7 @@ function openModal(setModalData: any, photo: CollectionPhotoProps, showLink: boo
 		collection: photo.collection,
 		stats: photo.stats,
 		showLink: showLink,
+		index: photo.index,
 	});
 }
 

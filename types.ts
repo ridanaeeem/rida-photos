@@ -1,11 +1,12 @@
 export type ModalData = {
-    isOpen: boolean;
+	isOpen: boolean;
 	imageSrc: string;
 	imageAlt: string;
 	description: string;
 	collection: string;
 	stats: string;
-    showLink?: boolean;
+	showLink?: boolean;
+	index: number;
 };
 
 export interface CollectionPhotoProps {
@@ -16,4 +17,5 @@ export interface CollectionPhotoProps {
 	stats: string;
 	classAdjustments: string;
 	tags?: string[];
+	index?: number;
 }

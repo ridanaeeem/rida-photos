@@ -8,16 +8,21 @@ import excelsiorBirdsBeesArray from "./excelsiorBirdsBees";
 import mnArboretumArray from "./mnArboretum";
 import stPaulChurchArray from "./stPaulChurch";
 
-export const collectionsArray = chicagoStreetArray.concat(
-	mnArboretumArray,
-	excelsiorBirdsBeesArray,
-	montroseMoonriseArray,
-	ducksAndLiliesArray,
-	perseids2024Array,
-	topsailBeachArray,
-	halfaliveArray,
-	stPaulChurchArray
-);
+export const collectionsArray = [
+	...mnArboretumArray,
+	...excelsiorBirdsBeesArray,
+	...ducksAndLiliesArray,
+	...montroseMoonriseArray,
+	...chicagoStreetArray,
+	...perseids2024Array,
+	...topsailBeachArray,
+	...halfaliveArray,
+	...stPaulChurchArray,
+];
+
+for (let i = 0; i < collectionsArray.length; i++) {
+	collectionsArray[i].index = i;
+}
 
 export const collections = {
 	"chicago-street": chicagoStreetArray,
@@ -27,6 +32,6 @@ export const collections = {
 	"ducks-and-lilies": ducksAndLiliesArray,
 	"perseids-2024": perseids2024Array,
 	"topsail-beach": topsailBeachArray,
-	"halfalive": halfaliveArray,
+	halfalive: halfaliveArray,
 	"stpaul-church": stPaulChurchArray,
 };

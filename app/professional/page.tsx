@@ -21,6 +21,7 @@ export default function Professional() {
 		description: "",
 		collection: "",
 		stats: "",
+		index: 0,
 	});
 
 	const closeModal = () => {
@@ -31,6 +32,7 @@ export default function Professional() {
 			description: "",
 			collection: "",
 			stats: "",
+			index: 0,
 		});
 	};
 
@@ -56,7 +58,7 @@ export default function Professional() {
 			<title>Rida Naeem Photography</title>
 			<main>
 				<div className="bg-gradient-to-b from-[#171719] to-[#171719] min-h-screen">
-					<PhotoModal modalData={modalData} collection="" />
+					<PhotoModal modalData={modalData} collection="" setModalData={setModalData} />
 
 					{modalData.isOpen ? (
 						<div className="fixed inset-0 z-10 bg-black bg-opacity-75" onClick={() => closeModal()}></div>
