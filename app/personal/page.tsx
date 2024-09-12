@@ -92,7 +92,7 @@ export default function Personal() {
 			<title>Rida Naeem Photography</title>
 			<main>
 				<div className="bg-gradient-to-b from-[#171719] to-[#171719] min-h-screen">
-					<PhotoModal modalData={modalData} collection="" setModalData={setModalData} />
+					<PhotoModal modalData={modalData} setModalData={setModalData} />
 
 					{modalData.isOpen ? (
 						<div className="fixed inset-0 z-10 bg-black bg-opacity-75" onClick={() => closeModal()}></div>

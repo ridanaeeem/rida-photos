@@ -48,11 +48,7 @@ export default function Home() {
 					</div> */}
 
 					<div className="inset-0 flex justify-center">
-						<PhotoModal
-							modalData={modalData}
-							collection={modalData.photo.collection}
-							setModalData={setModalData}
-						/>
+						<PhotoModal modalData={modalData} setModalData={setModalData} />
 					</div>
 
 					{modalData.isOpen ? (

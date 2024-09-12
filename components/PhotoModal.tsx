@@ -2,23 +2,13 @@ import React from "react";
 import { Darker_Grotesque } from "next/font/google";
 import { ModalData } from "@/types";
 import { collectionsArray } from "@/collections/collections";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const darker_grotesque = Darker_Grotesque({ subsets: ["latin"] });
 
-export default function PhotoModal({
-	modalData,
-	collection,
-	setModalData,
-}: {
-	modalData: ModalData;
-	collection: string;
-	setModalData: any;
-}) {
+export default function PhotoModal({ modalData, setModalData }: { modalData: ModalData; setModalData: any }) {
 	if (!modalData.isOpen) return null;
 
-	const pathname = usePathname();
 	return (
 		<div
 			className={`${
