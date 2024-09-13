@@ -28,15 +28,25 @@ export default function PhotoModal({ modalData, setModalData }: { modalData: Mod
 					) : null}
 				</p>
 				<p className="text-md md:text-3xl">{modalData.photo.stats}</p>
-				<p>{modalData.photo.index}</p>
+				<p>{modalData.photo.index + 1}</p>
+				<p>{modalData.photo.filtered}</p>
 			</div>
 			<div className="flex text-4xl justify-between m-2">
 				<button
 					className="px-6"
 					onClick={() => {
 						setModalData((prevModalData: ModalData) => {
-							const newIndex =
+							let newIndex =
 								(prevModalData.photo.index - 1 + collectionsArray.length) % collectionsArray.length;
+
+							if (modalData.photo.filtered) {
+								console.log("filtered");
+								while (collectionsArray[newIndex].filtered === false) {
+									newIndex =
+										(prevModalData.photo.index - 1 + collectionsArray.length) %
+										collectionsArray.length;
+								}
+							}
 							const newPhoto = collectionsArray[newIndex];
 
 							return {
@@ -52,7 +62,12 @@ export default function PhotoModal({ modalData, setModalData }: { modalData: Mod
 					className="px-6"
 					onClick={() => {
 						setModalData((prevModalData: ModalData) => {
-							const newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
+							let newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
+							if (modalData.photo.filtered) {
+								while (collectionsArray[newIndex].filtered !== true) {
+									newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
+								}
+							}
 							const newPhoto = collectionsArray[newIndex];
 
 							return {

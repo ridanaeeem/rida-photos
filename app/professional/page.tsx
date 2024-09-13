@@ -121,17 +121,22 @@ export default function Professional() {
 										details="Includes photos with the selected combination of tags."
 									/>
 									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-										{collectionsArray.map(
-											(photo: PhotoProps) =>
-												filters.every((filter) => photo.tags?.includes(filter)) && (
+										{collectionsArray.map((photo: PhotoProps) => {
+											const matchesFilters = filters.every((filter) =>
+												photo.tags?.includes(filter)
+											);
+											if (matchesFilters) {
+												photo.filtered = true;
+												return (
 													<CollectionThumbnail
 														key={photo.imageSrc}
 														setModalData={setModalData}
 														photo={photo}
 														search={true}
 													/>
-												)
-										)}
+												);
+											} else photo.filtered = false;
+										})}
 									</div>
 								</>
 							)}

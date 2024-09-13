@@ -13,6 +13,7 @@ export type PhotoProps = {
 	classAdjustments: string;
 	tags?: string[];
 	index: number;
+	filtered?: boolean;
 };
 
 export const defaultPhoto: PhotoProps = {
@@ -24,4 +25,5 @@ export const defaultPhoto: PhotoProps = {
 	classAdjustments: "",
 	tags: [],
 	index: 0,
+	filtered: false,
 };

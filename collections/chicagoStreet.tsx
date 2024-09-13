@@ -10,6 +10,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Street"],
 		index: 0,
+		filtered: false,
 	},
 	{
 		imageSrc: "/chicago4.jpg",
@@ -20,6 +21,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Street"],
 		index: 0,
+		filtered: false,
 	},
 	{
 		imageSrc: "/chicagoEyes2.JPG",
@@ -29,6 +31,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/500 • 71.52mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
 		index: 0,
+		filtered: false,
 	},
 	{
 		imageSrc: "/protest2.JPG",
@@ -39,6 +42,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Street"],
 		index: 0,
+		filtered: false,
 	},
 	{
 		imageSrc: "/pigeon.JPG",
@@ -49,6 +53,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
 		index: 0,
+		filtered: false,
 	},
 	{
 		imageSrc: "/protest.JPG",
@@ -59,6 +64,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Street"],
 		index: 0,
+		filtered: false,
 	},
 	{
 		imageSrc: "/chicago.JPG",
@@ -69,6 +75,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
 		index: 0,
+		filtered: false,
 	},
 	{
 		imageSrc: "/chicago2.JPG",
@@ -79,6 +86,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
 		index: 0,
+		filtered: false,
 	},
 	{
 		imageSrc: "/chicago3.JPG",
@@ -89,6 +97,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
 		index: 0,
+		filtered: false,
 	},
 	{
 		imageSrc: "/chicago5.JPG",
@@ -99,6 +108,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape, Animals"],
 		index: 0,
+		filtered: false,
 	},
 	{
 		imageSrc: "/chicago6.JPG",
@@ -109,6 +119,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape, Animals"],
 		index: 0,
+		filtered: false,
 	},
 	{
 		imageSrc: "/chicagoEyes.JPG",
@@ -119,6 +130,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Landscape"],
 		index: 0,
+		filtered: false,
 	},
 ];
 
