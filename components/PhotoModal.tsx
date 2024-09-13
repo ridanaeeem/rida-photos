@@ -36,6 +36,7 @@ export default function PhotoModal({ modalData, setModalData }: { modalData: Mod
 					className="px-6"
 					onClick={() => {
 						setModalData((prevModalData: ModalData) => {
+							console.log("clicked");
 							let newIndex =
 								(prevModalData.photo.index - 1 + collectionsArray.length) % collectionsArray.length;
 
@@ -47,7 +48,6 @@ export default function PhotoModal({ modalData, setModalData }: { modalData: Mod
 										collectionsArray.length;
 								}
 							}
-							const newPhoto = collectionsArray[newIndex];
 
 							return {
 								...prevModalData,
@@ -64,11 +64,10 @@ export default function PhotoModal({ modalData, setModalData }: { modalData: Mod
 						setModalData((prevModalData: ModalData) => {
 							let newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
 							if (modalData.photo.filtered) {
-								while (collectionsArray[newIndex].filtered !== true) {
+								while (collectionsArray[newIndex].filtered === false) {
 									newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
 								}
 							}
-							const newPhoto = collectionsArray[newIndex];
 
 							return {
 								...prevModalData,
