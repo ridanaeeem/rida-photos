@@ -62,29 +62,6 @@ export default function Professional() {
 						<div className="fixed inset-0 z-10 bg-black bg-opacity-75" onClick={() => closeModal()}></div>
 					) : null}
 
-					<div>
-						{/* <div className="flex flex-col p-6 py-12">
-							<div className="grid grid-cols-3 md:grid-cols-7 gap-3 md:gap-4">
-								<FilterBox
-									filter="Concerts"
-									filters={filters}
-									setFilters={setFilters}
-									imageSrc="/starryTSB4.JPG"
-									imageAlt="Rocks along the shore at Montrose Moonrise Vista Point"
-								/>
-								<button onClick={() => setFilters([])}>
-									<div className="relative">
-										<img src="/starryTSB4.JPG" alt="Night sky" />
-										<div className="absolute inset-0 bg-black opacity-50"></div>
-										<h5 className="absolute inset-0 flex items-center justify-center text-white text-lg md:text-xl font-bold">
-											Reset
-										</h5>
-									</div>
-								</button>
-							</div>
-						</div> */}
-					</div>
-
 					{filters.length === 0 ? (
 						<div>
 							<div className="pb-10" id="halfalive">
@@ -92,7 +69,7 @@ export default function Professional() {
 									title="Concert Photography: Half Alive & Tessa Violet"
 									details="House of Blues Boston, MA. Spring 2023."
 								/>
-								<div className="grid grid-cols-3 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-3">
+								<div className="grid grid-cols-3 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-1 md:mx-3">
 									{collections["halfalive"].map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}

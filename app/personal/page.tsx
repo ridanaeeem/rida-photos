@@ -64,7 +64,7 @@ export default function Personal() {
 					) : null}
 
 					<div>
-						<div className="flex flex-col p-6 py-12">
+						<div className="flex flex-col p-3 md:p-5 py-12">
 							{/* <h3 className="text-2xl md:text-4xl font-bold text-left py-2">
 								Look for... {filters.join(" & ")}
 							</h3> */}
@@ -133,7 +133,7 @@ export default function Personal() {
 									title="Global Gardens"
 									details="Minnesota Landscape Arboretum, MN. Summer 2024."
 								/>
-								<div className="grid grid-cols-2 md:grid-cols-4 mx-3">
+								<div className="grid grid-cols-2 md:grid-cols-4 mx-1 md:mx-3">
 									{collections["mn-arboretum"].map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
@@ -148,7 +148,7 @@ export default function Personal() {
 									title="The Birds and Bees of Excelsior"
 									details="Excelsior, MN. Summer 2024."
 								/>
-								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
 									{collections["excelsior-birds-bees"]
 										.slice(0, 12)
 										.map((photo: CollectionPhotoProps) => (
@@ -159,7 +159,7 @@ export default function Personal() {
 											/>
 										))}
 								</div>
-								<div className="grid grid-cols-2 md:grid-cols-4 mx-3">
+								<div className="grid grid-cols-2 md:grid-cols-4 mx-1 md:mx-3">
 									{collections["excelsior-birds-bees"]
 										.slice(12, 16)
 										.map((photo: CollectionPhotoProps) => (
@@ -170,7 +170,7 @@ export default function Personal() {
 											/>
 										))}
 								</div>
-								<div className="grid grid-cols-2 mx-3">
+								<div className="grid grid-cols-2 mx-1 md:mx-3">
 									{collections["excelsior-birds-bees"]
 										.slice(16, 18)
 										.map((photo: CollectionPhotoProps) => (
@@ -181,7 +181,7 @@ export default function Personal() {
 											/>
 										))}
 								</div>
-								<div className="grid grid-cols-3 mx-3">
+								<div className="grid grid-cols-3 mx-1 md:mx-3">
 									{collections["excelsior-birds-bees"]
 										.slice(18)
 										.map((photo: CollectionPhotoProps) => (
@@ -198,7 +198,7 @@ export default function Personal() {
 									title="Montrose Moonrise Vista Point"
 									details="Chicago, IL. Summer 2023."
 								/>
-								<div className="grid grid-cols-2 mx-3">
+								<div className="grid grid-cols-2 mx-1 md:mx-3">
 									{collections["montrose-moonrise"].slice(0, 2).map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
@@ -207,7 +207,7 @@ export default function Personal() {
 										/>
 									))}
 								</div>
-								<div className="grid grid-cols-2 md:grid-cols-6 mx-3">
+								<div className="grid grid-cols-2 md:grid-cols-6 mx-1 md:mx-3">
 									{collections["montrose-moonrise"].slice(2).map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
@@ -219,7 +219,7 @@ export default function Personal() {
 							</div>
 							<div className="pb-10" id="ducksandlilies">
 								<CollectionHeading title="Ducks & Lilies" details="Saint Paul, MN. Summer 2024." />
-								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
 									{collections["ducks-and-lilies"].map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
@@ -231,7 +231,7 @@ export default function Personal() {
 							</div>
 							<div className="pb-10" id="topsailBeach">
 								<CollectionHeading title="Topsail Beach" details="Topsail Island, NC. Summer 2024." />
-								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
 									{collections["topsail-beach"].map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
@@ -243,7 +243,7 @@ export default function Personal() {
 							</div>
 							<div className="pb-10" id="chicagoStreet">
 								<CollectionHeading title="Downtown Chicago" details="Chicago, IL. Summer 2023." />
-								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
 									{collections["chicago-street"].map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
@@ -255,7 +255,7 @@ export default function Personal() {
 							</div>
 							<div className="pb-10" id="perseids2024">
 								<CollectionHeading title="Perseids Meteor Shower 2024" details="MD. Summer 2024." />
-								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
 									{collections["perseids-2024"].map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
@@ -267,7 +267,7 @@ export default function Personal() {
 							</div>
 							<div className="pb-10" id="stAgnesStPaul">
 								<CollectionHeading title="Church of St. Agnes" details="Saint Paul, MN. Summer 2023." />
-								<div className="grid grid-cols-2 mx-3">
+								<div className="grid grid-cols-2 mx-1 md:mx-3">
 									{collections["stpaul-church"].slice(0, 2).map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
@@ -276,7 +276,7 @@ export default function Personal() {
 										/>
 									))}
 								</div>
-								<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
 									{collections["stpaul-church"].slice(2).map((photo: CollectionPhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
@@ -310,7 +310,7 @@ export default function Personal() {
 										title={"Looking for... " + filters.join(" & ")}
 										details="Includes photos with the selected combination of tags."
 									/>
-									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+									<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
 										{collectionsArray.map(
 											(photo: CollectionPhotoProps) =>
 												filters.every((filter) => photo.tags?.includes(filter)) && (
@@ -332,7 +332,7 @@ export default function Personal() {
 										title={"Looking for... " + filters.join(", ")}
 										details="Includes photos with any one of the selected tags."
 									/>
-									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
+									<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
 										{collectionsArray.map(
 											(photo: CollectionPhotoProps) =>
 												filters.some((filter) => photo.tags?.includes(filter)) && (
