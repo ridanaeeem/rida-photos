@@ -18,7 +18,7 @@ export default function PhotoModal({ modalData, collection }: { modalData: Modal
 					{/* {description + ": "} */}
 					{modalData.showLink && modalData.collection !== "" ? (
 						<a
-							href={"/collections#" + modalData.collection}
+							href={"/personal#" + modalData.collection}
 							target="_blank"
 							rel="noreferrer"
 							className="hover:text-[#809BB3]">
