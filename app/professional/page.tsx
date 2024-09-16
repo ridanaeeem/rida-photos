@@ -20,18 +20,13 @@ export default function Professional() {
 		showLink: false,
 	});
 
-	const closeModal = () => {
-		setModalData({
-			photo: defaultPhoto,
-			isOpen: false,
-			showLink: false,
-		});
-	};
-
 	useEffect(() => {
 		const handleEsc = (event: KeyboardEvent) => {
 			if (event.key === "Escape") {
-				closeModal();
+				setModalData({
+					...modalData,
+					showLink: false,
+				});
 			}
 		};
 		const handleLeft = (event: KeyboardEvent) => {
@@ -94,10 +89,6 @@ export default function Professional() {
 						isFiltered={filters.length > 0 ? true : false}
 						pageArray={professionalArray}
 					/>
-
-					{modalData.isOpen ? (
-						<div className="fixed inset-0 z-10 bg-black bg-opacity-75" onClick={() => closeModal()}></div>
-					) : null}
 
 					{filters.length === 0 ? (
 						<div>

@@ -29,8 +29,16 @@ export default function PhotoModal({
 			className={`${
 				darker_grotesque.className
 			} ${"fixed lg:inset-0 z-50 flex flex-col items-center justify-center m-5 lg:m-[20rem] text-center font-normal"}`}>
+			<div
+				className="fixed inset-0 bg-black bg-opacity-50"
+				onClick={() => setModalData({ ...modalData, isOpen: false })}
+			/>
 			<div className="relative bg-white p-3 md:p-5 rounded-lg text-[#171719]">
-				<img src={modalData.photo.imageSrc} alt={modalData.photo.imageAlt} className="w-auto h-auto mb-4" />
+				<img
+					src={modalData.photo.imageSrc}
+					alt={modalData.photo.imageAlt}
+					className="w-auto max-h-screen max-h-[75vh] mb-4 object-contain"
+				/>
 				<p className="text-2xl">
 					{/* {description + ": "} */}
 					{modalData.showLink && modalData.photo.collection !== "" ? (
@@ -47,7 +55,7 @@ export default function PhotoModal({
 				{/* <p>{modalData.photo.index + 1}</p> */}
 				<p>{modalData.photo.filtered}</p>
 			</div>
-			<div className="flex text-4xl justify-between m-2 text-white">
+			<div className="flex text-4xl justify-between m-2 text-white z-10">
 				<button
 					className="px-6"
 					onClick={() => {

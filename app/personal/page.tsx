@@ -18,18 +18,13 @@ export default function Personal() {
 		showLink: false,
 	});
 
-	const closeModal = () => {
-		setModalData({
-			photo: defaultPhoto,
-			isOpen: false,
-			showLink: false,
-		});
-	};
-
 	useEffect(() => {
 		const handleEsc = (event: KeyboardEvent) => {
 			if (event.key === "Escape") {
-				closeModal();
+				setModalData({
+					...modalData,
+					showLink: false,
+				});
 			}
 		};
 		const handleLeft = (event: KeyboardEvent) => {
@@ -91,10 +86,6 @@ export default function Personal() {
 						isFiltered={filters.length > 0 ? true : false}
 						pageArray={personalArray}
 					/>
-
-					{modalData.isOpen ? (
-						<div className="fixed inset-0 z-10 bg-black bg-opacity-75" onClick={() => closeModal()}></div>
-					) : null}
 
 					<div>
 						<div className="flex flex-col p-3 md:p-5 py-12">
