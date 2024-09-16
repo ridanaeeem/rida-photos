@@ -14,7 +14,7 @@ export default function PhotoModal({
 	pageArray,
 }: {
 	modalData: ModalData;
-	setModalData: any;
+	setModalData: React.Dispatch<React.SetStateAction<ModalData>>;
 	isFiltered: boolean;
 	pageArray: PhotoProps[];
 }) {

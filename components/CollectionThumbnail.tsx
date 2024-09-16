@@ -1,13 +1,5 @@
 import { motion } from "framer-motion";
-import { PhotoProps } from "@/types";
-
-function openModal(setModalData: any, photo: PhotoProps, showLink: boolean) {
-	setModalData({
-		photo: photo,
-		isOpen: true,
-		showLink: showLink,
-	});
-}
+import { PhotoProps, ModalData } from "@/types";
 
 export default function CollectionThumbnail({
 	photo,
@@ -15,7 +7,7 @@ export default function CollectionThumbnail({
 	search,
 }: {
 	photo: PhotoProps;
-	setModalData: any;
+	setModalData: React.Dispatch<React.SetStateAction<ModalData>>;
 	search?: boolean;
 }) {
 	return (
@@ -30,7 +22,7 @@ export default function CollectionThumbnail({
 				src={photo.imageSrc}
 				alt={photo.imageAlt}
 				className="cursor-pointer p-2 w-full h-full object-cover"
-				onClick={() => openModal(setModalData, photo, search ? search : false)}></img>
+				onClick={() => setModalData({ photo: photo, isOpen: true, showLink: search ?? false })}></img>
 		</motion.div>
 	);
 }
