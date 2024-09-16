@@ -52,7 +52,7 @@ export default function PhotoModal({
 					) : null}
 				</p>
 				<p className="text-md md:text-3xl">{modalData.photo.stats}</p>
-				{/* <p>{modalData.photo.index + 1}</p> */}
+				<p>{modalData.photo.index + 1}</p>
 				<p>{modalData.photo.filtered}</p>
 			</div>
 			<div className="flex text-4xl justify-between m-2 text-white z-10">

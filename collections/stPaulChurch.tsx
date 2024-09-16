@@ -31,7 +31,6 @@ const stPaulChurchArray: PhotoProps[] = [
 		tags: ["Art"],
 		index: 0,
 	},
-
 	{
 		imageSrc: "/church3.JPG",
 		imageAlt: "Statue in St Agnes Church in St Paul",
@@ -42,7 +41,6 @@ const stPaulChurchArray: PhotoProps[] = [
 		tags: ["Art"],
 		index: 0,
 	},
-
 	{
 		imageSrc: "/church.JPG",
 		imageAlt: "Far away shot of the Pieta in St Agnes Church in St Paul, framed by doors",

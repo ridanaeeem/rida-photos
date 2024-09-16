@@ -13,11 +13,11 @@ import motherMotherArray from "./motherMother";
 export const personalArray = [
 	...mnArboretumArray,
 	...excelsiorBirdsBeesArray,
-	...ducksAndLiliesArray,
 	...montroseMoonriseArray,
+	...ducksAndLiliesArray,
+	...topsailBeachArray,
 	...chicagoStreetArray,
 	...perseids2024Array,
-	...topsailBeachArray,
 	...stPaulChurchArray,
 ];
 
