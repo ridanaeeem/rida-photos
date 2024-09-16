@@ -43,9 +43,7 @@ export default function PhotoModal({ modalData, setModalData }: { modalData: Mod
 							if (modalData.photo.filtered) {
 								console.log("filtered");
 								while (collectionsArray[newIndex].filtered === false) {
-									newIndex =
-										(prevModalData.photo.index - 1 + collectionsArray.length) %
-										collectionsArray.length;
+									newIndex--;
 								}
 							}
 
@@ -65,7 +63,7 @@ export default function PhotoModal({ modalData, setModalData }: { modalData: Mod
 							let newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
 							if (modalData.photo.filtered) {
 								while (collectionsArray[newIndex].filtered === false) {
-									newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
+									newIndex++;
 								}
 							}
 
