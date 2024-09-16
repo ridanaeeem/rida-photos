@@ -4,7 +4,7 @@ import FilterBox from "@/components/FilterBox";
 import CollectionThumbnail from "@/components/CollectionThumbnail";
 import CollectionHeading from "@/components/CollectionHeading";
 import PhotoModal from "@/components/PhotoModal";
-import { collectionsArray } from "@/collections/collections";
+import { personalArray } from "@/collections/collections";
 import { collections } from "@/collections/collections";
 import { PhotoProps, ModalData, defaultPhoto } from "@/types";
 import { Arimo } from "next/font/google";
@@ -46,17 +46,17 @@ export default function Personal() {
 		const handleLeft = (event: KeyboardEvent) => {
 			if (event.key === "ArrowLeft") {
 				setModalData((prevModalData) => {
-					let newIndex = (prevModalData.photo.index - 1 + collectionsArray.length) % collectionsArray.length;
+					let newIndex = (prevModalData.photo.index - 1 + personalArray.length) % personalArray.length;
 
 					if (filters.length > 0) {
-						while (collectionsArray[newIndex].filtered === false) {
-							newIndex = (newIndex - 1 + collectionsArray.length) % collectionsArray.length;
+						while (personalArray[newIndex].filtered === false) {
+							newIndex = (newIndex - 1 + personalArray.length) % personalArray.length;
 						}
 					}
 
 					return {
 						...prevModalData,
-						photo: collectionsArray[newIndex],
+						photo: personalArray[newIndex],
 						isOpen: true,
 					};
 				});
@@ -66,16 +66,16 @@ export default function Personal() {
 		const handleRight = (event: KeyboardEvent) => {
 			if (event.key === "ArrowRight") {
 				setModalData((prevModalData) => {
-					let newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
+					let newIndex = (prevModalData.photo.index + 1) % personalArray.length;
 					if (filters.length > 0) {
-						while (collectionsArray[newIndex].filtered === false) {
-							newIndex = (newIndex + 1) % collectionsArray.length;
+						while (personalArray[newIndex].filtered === false) {
+							newIndex = (newIndex + 1) % personalArray.length;
 						}
 					}
 
 					return {
 						...prevModalData,
-						photo: collectionsArray[newIndex],
+						photo: personalArray[newIndex],
 						isOpen: true,
 					};
 				});
@@ -328,7 +328,7 @@ export default function Personal() {
 						</div>
 					) : (
 						<>
-							{collectionsArray.filter((photo: PhotoProps) =>
+							{personalArray.filter((photo: PhotoProps) =>
 								filters.every((filter) => photo.tags?.includes(filter))
 							).length === 0 ? (
 								<div className="flex flex-col p-6 pb-12">
@@ -350,7 +350,7 @@ export default function Personal() {
 										details="Includes photos with the selected combination of tags."
 									/>
 									<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
-										{collectionsArray.map((photo: PhotoProps) => {
+										{personalArray.map((photo: PhotoProps) => {
 											if (filters.every((filter) => photo.tags?.includes(filter))) {
 												photo.filtered = true;
 												return (
@@ -374,7 +374,7 @@ export default function Personal() {
 										details="Includes photos with any one of the selected tags."
 									/>
 									<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md mx-1:mx-3">
-										{collectionsArray.map(
+										{personalArray.map(
 											(photo: PhotoProps) =>
 												filters.some((filter) => photo.tags?.includes(filter)) && (
 													<CollectionThumbnail

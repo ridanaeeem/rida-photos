@@ -1,7 +1,8 @@
 import React from "react";
 import { Darker_Grotesque } from "next/font/google";
-import { ModalData } from "@/types";
-import { collectionsArray } from "@/collections/collections";
+import { ModalData, PhotoProps } from "@/types";
+import { personalArray, collections } from "@/collections/collections";
+import mainPageArray from "@/collections/mainPage";
 import Link from "next/link";
 
 const darker_grotesque = Darker_Grotesque({ subsets: ["latin"] });
@@ -10,10 +11,12 @@ export default function PhotoModal({
 	modalData,
 	setModalData,
 	isFiltered,
+	pageArray,
 }: {
 	modalData: ModalData;
 	setModalData: any;
 	isFiltered: boolean;
+	pageArray?: string;
 }) {
 	if (!modalData.isOpen) return null;
 
@@ -37,52 +40,58 @@ export default function PhotoModal({
 					) : null}
 				</p>
 				<p className="text-md md:text-3xl">{modalData.photo.stats}</p>
-				<p>{modalData.photo.index + 1}</p>
+				{/* <p>{modalData.photo.index + 1}</p> */}
 				<p>{modalData.photo.filtered}</p>
 			</div>
 			<div className="flex text-4xl justify-between m-2">
-				<button
-					className="px-6"
-					onClick={() => {
-						setModalData((prevModalData: ModalData) => {
-							let newIndex =
-								(prevModalData.photo.index - 1 + collectionsArray.length) % collectionsArray.length;
+				{pageArray === "mainPageArray" ? (
+					<></>
+				) : (
+					<>
+						<button
+							className="px-6"
+							onClick={() => {
+								setModalData((prevModalData: ModalData) => {
+									let newIndex =
+										(prevModalData.photo.index - 1 + personalArray.length) % personalArray.length;
 
-							if (isFiltered) {
-								while (collectionsArray[newIndex].filtered === false) {
-									newIndex = (newIndex - 1 + collectionsArray.length) % collectionsArray.length;
-								}
-							}
+									if (isFiltered) {
+										while (personalArray[newIndex].filtered === false) {
+											newIndex = (newIndex - 1 + personalArray.length) % personalArray.length;
+										}
+									}
 
-							return {
-								...prevModalData,
-								photo: collectionsArray[newIndex],
-								isOpen: true,
-							};
-						});
-					}}>
-					&larr;
-				</button>
-				<button
-					className="px-6"
-					onClick={() => {
-						setModalData((prevModalData: ModalData) => {
-							let newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
-							if (isFiltered) {
-								while (collectionsArray[newIndex].filtered === false) {
-									newIndex = (newIndex + 1) % collectionsArray.length;
-								}
-							}
+									return {
+										...prevModalData,
+										photo: personalArray[newIndex],
+										isOpen: true,
+									};
+								});
+							}}>
+							&larr;
+						</button>
+						<button
+							className="px-6"
+							onClick={() => {
+								setModalData((prevModalData: ModalData) => {
+									let newIndex = (prevModalData.photo.index + 1) % personalArray.length;
+									if (isFiltered) {
+										while (personalArray[newIndex].filtered === false) {
+											newIndex = (newIndex + 1) % personalArray.length;
+										}
+									}
 
-							return {
-								...prevModalData,
-								photo: collectionsArray[newIndex],
-								isOpen: true,
-							};
-						});
-					}}>
-					&rarr;
-				</button>
+									return {
+										...prevModalData,
+										photo: personalArray[newIndex],
+										isOpen: true,
+									};
+								});
+							}}>
+							&rarr;
+						</button>
+					</>
+				)}
 			</div>
 		</div>
 	);

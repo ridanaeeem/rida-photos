@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import PhotoThumbnail from "@/components/PhotoThumbnail";
 import PhotoModal from "@/components/PhotoModal";
 import { ModalData, defaultPhoto } from "@/types";
-import { collections } from "@/collections/collections";
+import mainPageArray from "@/collections/mainPage";
 
 export default function Home() {
 	const [modalData, setModalData] = useState<ModalData>({
@@ -49,7 +49,12 @@ export default function Home() {
 					</div> */}
 
 					<div className="inset-0 flex justify-center">
-						<PhotoModal modalData={modalData} setModalData={setModalData} isFiltered={false} />
+						<PhotoModal
+							modalData={modalData}
+							setModalData={setModalData}
+							isFiltered={false}
+							pageArray="mainPageArray"
+						/>
 					</div>
 
 					{modalData.isOpen ? (
@@ -64,16 +69,12 @@ export default function Home() {
 						}}>
 						<div className="grid grid-cols-3 gap-4 p-2 md:p-5 lg:grid-cols-3">
 							<div className="col-start-2 col-span-2 row-span-3 lg:col-start-2">
-								<PhotoThumbnail
-									key={collections["excelsior-birds-bees"][0].imageSrc}
-									photo={collections["ducks-and-lilies"][0]}
-									setModalData={setModalData}
-								/>
+								<PhotoThumbnail photo={mainPageArray[0]} setModalData={setModalData} />
 							</div>
 						</div>
 					</motion.div>
 				</div>
-				{/* <div className="bg-gradient-to-b from-[#9EB8CF] to-[#9EB8CF]">
+				<div className="bg-gradient-to-b from-[#9EB8CF] to-[#9EB8CF]">
 					<motion.div
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
@@ -82,24 +83,10 @@ export default function Home() {
 						}}>
 						<div className="grid grid-cols-4 grid-rows-3 gap-4 px-5">
 							<div className="col-span-2 row-start-1 row-span-2">
-								<PhotoThumbnail
-									setModalData={setModalData}
-									src="/fireworks.JPG"
-									alt="fireworks"
-									description="fireworks"
-									collection=""
-									stats=""
-								/>
+								<PhotoThumbnail photo={mainPageArray[1]} setModalData={setModalData} />
 							</div>
 							<div className="col-span-2 row-start-2 row-span-2">
-								<PhotoThumbnail
-									setModalData={setModalData}
-									src="/chicagoEyes.JPG"
-									alt="Eyes on a building in Chicago"
-									description="Chicago Eyes"
-									collection="chicagoStreet"
-									stats="SONY DSC-RX100M6 • f/4.5 • 1/2000 • 71.03mm • ISO250"
-								/>
+								<PhotoThumbnail photo={mainPageArray[2]} setModalData={setModalData} />
 							</div>
 						</div>
 					</motion.div>
@@ -112,14 +99,7 @@ export default function Home() {
 							duration: transitionLength,
 						}}
 						className="p-2 md:p-5">
-						<PhotoThumbnail
-							setModalData={setModalData}
-							src="/haSunset.JPG"
-							alt="Sunset"
-							description="Sunset"
-							collection=""
-							stats=""
-						/>
+						<PhotoThumbnail photo={mainPageArray[3]} setModalData={setModalData} />
 					</motion.div>
 				</div>
 
@@ -132,14 +112,7 @@ export default function Home() {
 						}}
 						className="grid grid-cols-4 lg:grid-cols-6 gap-4 px-5">
 						<div className="col-start-2 col-span-2">
-							<PhotoThumbnail
-								setModalData={setModalData}
-								src="/montrose14.JPG"
-								alt="chicago lighthouse"
-								description="chicago lighthouse"
-								collection=""
-								stats=""
-							/>
+							<PhotoThumbnail photo={mainPageArray[4]} setModalData={setModalData} />
 						</div>
 					</motion.div>
 
@@ -151,24 +124,10 @@ export default function Home() {
 						}}
 						className="p-2 md:p-5 grid grid-cols-6 grid-rows-2 gap-4 px-5">
 						<div className="col-span-4 col-start-3 row-span-2">
-							<PhotoThumbnail
-								setModalData={setModalData}
-								src="/starryTSB.JPG"
-								alt="night sky"
-								description="night sky"
-								collection=""
-								stats=""
-							/>
+							<PhotoThumbnail photo={mainPageArray[5]} setModalData={setModalData} />
 						</div>
 						<div className="col-span-2 row-start-2 pt-8">
-							<PhotoThumbnail
-								setModalData={setModalData}
-								src="/rb.JPG"
-								alt="rab"
-								description="rab"
-								collection=""
-								stats=""
-							/>
+							<PhotoThumbnail photo={mainPageArray[6]} setModalData={setModalData} />
 						</div>
 					</motion.div>
 
@@ -180,24 +139,10 @@ export default function Home() {
 						}}
 						className="grid grid-cols-4 grid-rows-1 gap-4 px-5">
 						<div className="col-span-2 row-span-2">
-							<PhotoThumbnail
-								setModalData={setModalData}
-								src="/koi.JPG"
-								alt="koi"
-								description="koi"
-								collection=""
-								stats=""
-							/>
+							<PhotoThumbnail photo={mainPageArray[7]} setModalData={setModalData} />
 						</div>
 						<div className="col-span-2 px-2 pt-2 md:px-5 md:pt-2 lg:px-12 lg:pt-6">
-							<PhotoThumbnail
-								setModalData={setModalData}
-								src="/flower.JPG"
-								alt="flower"
-								description="flower"
-								collection=""
-								stats=""
-							/>
+							<PhotoThumbnail photo={mainPageArray[8]} setModalData={setModalData} />
 						</div>
 					</motion.div>
 
@@ -209,14 +154,7 @@ export default function Home() {
 						}}
 						className="p-2 md:p-5 grid grid-cols-3 gap-4 md:px-5">
 						<div className="col-start-2 col-span-2">
-							<PhotoThumbnail
-								setModalData={setModalData}
-								src="/duckTri.JPG"
-								alt="duck"
-								description="duck"
-								collection="ducksandlilies"
-								stats="SONY DSC-RX100M6 • f/4.5 • 1/16000 • 72.00mm • ISO3200"
-							/>
+							<PhotoThumbnail photo={mainPageArray[9]} setModalData={setModalData} />
 						</div>
 					</motion.div>
 
@@ -228,24 +166,10 @@ export default function Home() {
 						}}
 						className="grid grid-cols-8 md:grid-cols-4 gap-4 md:px-5">
 						<div className="col-span-5 md:col-start-3 md:col-span-2 pr-10">
-							<PhotoThumbnail
-								setModalData={setModalData}
-								src="/protest.JPG"
-								alt="A protestor with a blindfold in Chicago"
-								description="protest"
-								collection=""
-								stats="SONY DSC-RX100M6 • f/4.5 • 1/25600 • 50.65mm • ISO5000"
-							/>
+							<PhotoThumbnail photo={mainPageArray[10]} setModalData={setModalData} />
 						</div>
 						<div className="col-span-3 md:col-span-2 row-start-1 pt-20 md:px-40 md:pt-24">
-							<PhotoThumbnail
-								setModalData={setModalData}
-								src="/bernini.jpg"
-								alt="A Bernini sculpture"
-								description="bernini"
-								collection=""
-								stats=""
-							/>
+							<PhotoThumbnail photo={mainPageArray[11]} setModalData={setModalData} />
 						</div>
 					</motion.div>
 
@@ -257,14 +181,7 @@ export default function Home() {
 						}}
 						className="p-2 md:p-5 grid grid-cols-3 gap-4 md:px-5">
 						<div className="col-start-2 col-span-2">
-							<PhotoThumbnail
-								setModalData={setModalData}
-								src="/waterLily2.JPG"
-								alt="two white water lilies"
-								description="water lily"
-								collection="ducksandlilies"
-								stats="SONY DSC-RX100M6 • f/4.5 • 1/25600 • 72.00mm • ISO5000"
-							/>
+							<PhotoThumbnail photo={mainPageArray[12]} setModalData={setModalData} />
 						</div>
 					</motion.div>
 
@@ -276,17 +193,9 @@ export default function Home() {
 						}}
 						className="grid grid-cols-4 md:grid-cols-7 gap-4 md:px-5">
 						<div className="col-start-2 col-span-2">
-							<PhotoThumbnail
-								setModalData={setModalData}
-								src="/church.JPG"
-								alt="The Pieta in a church"
-								description=""
-								collection="stAgnesStPaul"
-								stats="SONY DSC-RX100M6"
-							/>
+							<PhotoThumbnail photo={mainPageArray[13]} setModalData={setModalData} />
 						</div>
 					</motion.div>
-
 					<motion.div
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
@@ -295,17 +204,10 @@ export default function Home() {
 						}}
 						className="p-2 md:p-5 grid grid-cols-3 md:grid-cols-5 gap-4 md:px-5">
 						<div className="col-start-1 col-span-2">
-							<PhotoThumbnail
-								setModalData={setModalData}
-								src="/bahai.JPG"
-								alt="Dome of the Bahai Temple in Chicago"
-								description=""
-								collection=""
-								stats="SONY DSC-RX100M6 • f/4.5 • 1/32000 • 72mm • ISO2000"
-							/>
+							<PhotoThumbnail photo={mainPageArray[14]} setModalData={setModalData} />
 						</div>
 					</motion.div>
-				</div> */}
+				</div>
 			</main>
 		</div>
 	);

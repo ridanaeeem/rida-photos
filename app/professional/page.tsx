@@ -5,7 +5,7 @@ import FilterBox from "@/components/FilterBox";
 import CollectionThumbnail from "@/components/CollectionThumbnail";
 import CollectionHeading from "@/components/CollectionHeading";
 import PhotoModal from "@/components/PhotoModal";
-import { collectionsArray } from "@/collections/collections";
+import { personalArray } from "@/collections/collections";
 import { collections } from "@/collections/collections";
 import { defaultPhoto, PhotoProps } from "@/types";
 import { ModalData } from "@/types";
@@ -111,7 +111,7 @@ export default function Professional() {
 						</div>
 					) : (
 						<>
-							{collectionsArray.filter((photo: PhotoProps) =>
+							{personalArray.filter((photo: PhotoProps) =>
 								filters.every((filter) => photo.tags?.includes(filter))
 							).length === 0 ? (
 								<div className="flex flex-col p-6 pb-0">
@@ -133,7 +133,7 @@ export default function Professional() {
 										details="Includes photos with the selected combination of tags."
 									/>
 									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-										{collectionsArray.map((photo: PhotoProps) => {
+										{personalArray.map((photo: PhotoProps) => {
 											const matchesFilters = filters.every((filter) =>
 												photo.tags?.includes(filter)
 											);
@@ -160,7 +160,7 @@ export default function Professional() {
 										details="Includes photos with any one of the selected tags."
 									/>
 									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-										{collectionsArray.map(
+										{personalArray.map(
 											(photo: PhotoProps) =>
 												filters.some((filter) => photo.tags?.includes(filter)) && (
 													<CollectionThumbnail
