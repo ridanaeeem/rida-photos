@@ -28,7 +28,7 @@ export default function PhotoModal({
 		<div
 			className={`${
 				darker_grotesque.className
-			} ${"fixed lg:inset-0 z-50 flex flex-col items-center justify-center m-5 lg:m-[20rem] text-center font-normal"}`}>
+			} ${"fixed lg:inset-0 z-50 flex flex-col items-center justify-center m-5 lg:m-10 xl:m-20 text-center font-normal"}`}>
 			<div
 				className="fixed inset-0 bg-black bg-opacity-85"
 				onClick={() => setModalData({ ...modalData, isOpen: false })}
@@ -52,7 +52,7 @@ export default function PhotoModal({
 					) : null}
 				</p>
 				<p className="text-md md:text-3xl flex-wrap break-words object-contain">{modalData.photo.stats}</p>
-				<p>{modalData.photo.index + 1}</p>
+				{/* <p>{modalData.photo.index + 1}</p> */}
 				<p>{modalData.photo.filtered}</p>
 			</div>
 			<div className="flex text-4xl justify-between m-2 text-white z-10">
@@ -61,13 +61,11 @@ export default function PhotoModal({
 					onClick={() => {
 						setModalData((prevModalData: ModalData) => {
 							let newIndex = (prevModalData.photo.index - 1 + pageArray.length) % pageArray.length;
-
 							if (isFiltered) {
 								while (pageArray[newIndex].filtered === false) {
 									newIndex = (newIndex - 1 + pageArray.length) % pageArray.length;
 								}
 							}
-
 							return {
 								...prevModalData,
 								photo: pageArray[newIndex],
@@ -87,7 +85,6 @@ export default function PhotoModal({
 									newIndex = (newIndex + 1) % pageArray.length;
 								}
 							}
-
 							return {
 								...prevModalData,
 								photo: pageArray[newIndex],
