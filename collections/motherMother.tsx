@@ -3,7 +3,7 @@ import { PhotoProps } from "@/types";
 const motherMotherArray: PhotoProps[] = [
 	{
 		imageSrc: "/mothermother.jpg",
-		imageAlt: "Perseid meteor shower 2024, one meteor visible",
+		imageAlt: "concert photo",
 		description: "",
 		collection: "mothermother",
 		stats: "SONY DSC-RX100M6",
@@ -13,7 +13,7 @@ const motherMotherArray: PhotoProps[] = [
 	},
 	{
 		imageSrc: "/mothermother2.jpg",
-		imageAlt: "Perseid meteor shower 2024, one meteor visible",
+		imageAlt: "concert photo",
 		description: "",
 		collection: "mothermother",
 		stats: "SONY DSC-RX100M6",
@@ -23,7 +23,7 @@ const motherMotherArray: PhotoProps[] = [
 	},
 	{
 		imageSrc: "/vundabar.jpg",
-		imageAlt: "Perseid meteor shower 2024, one meteor visible",
+		imageAlt: "concert photo",
 		description: "",
 		collection: "mothermother",
 		stats: "SONY DSC-RX100M6",
@@ -33,7 +33,7 @@ const motherMotherArray: PhotoProps[] = [
 	},
 	{
 		imageSrc: "/vundabar2.jpg",
-		imageAlt: "Perseid meteor shower 2024, one meteor visible",
+		imageAlt: "concert photo",
 		description: "",
 		collection: "mothermother",
 		stats: "SONY DSC-RX100M6",

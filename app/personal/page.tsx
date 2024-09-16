@@ -367,28 +367,6 @@ export default function Personal() {
 									</div>
 								</div>
 							)}
-
-							{/* {filters.length > 1 && (
-								<div className="pb-12">
-									<CollectionHeading
-										title={"Looking for... " + filters.join(", ")}
-										details="Includes photos with any one of the selected tags."
-									/>
-									<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md mx-1:mx-3">
-										{personalArray.map(
-											(photo: PhotoProps) =>
-												filters.some((filter) => photo.tags?.includes(filter)) && (
-													<CollectionThumbnail
-														key={photo.imageSrc}
-														setModalData={setModalData}
-														photo={photo}
-														search={true}
-													/>
-												)
-										)}
-									</div>
-								</div>
-							)} */}
 						</>
 					)}
 				</div>

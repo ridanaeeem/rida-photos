@@ -146,22 +146,6 @@ export default function Professional() {
 									))}
 								</div>
 							</div>
-
-							{/* <div className="pb-10" id="mothermother">
-								<CollectionHeading
-									title="Concert Photography: Boygenius"
-									details="MGM Music Hall at Fenway, MA. Fall 2023."
-								/>
-								<div className="grid grid-cols-3 md:grid-cols-3 mx-1 md:mx-3">
-									{collections["halfalive"].slice(8, 11).map((photo: PhotoProps) => (
-										<CollectionThumbnail
-											key={photo.imageSrc}
-											photo={photo}
-											setModalData={setModalData}
-										/>
-									))}
-								</div>
-							</div> */}
 						</div>
 					) : (
 						<>
@@ -206,28 +190,6 @@ export default function Professional() {
 									</div>
 								</>
 							)}
-
-							{/* {filters.length > 1 && (
-								<>
-									<CollectionHeading
-										title={"Looking for... " + filters.join(", ")}
-										details="Includes photos with any one of the selected tags."
-									/>
-									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-										{professionalArray.map(
-											(photo: PhotoProps) =>
-												filters.some((filter) => photo.tags?.includes(filter)) && (
-													<CollectionThumbnail
-														key={photo.imageSrc}
-														setModalData={setModalData}
-														photo={photo}
-														search={true}
-													/>
-												)
-										)}
-									</div>
-								</>
-							)} */}
 						</>
 					)}
 				</div>

@@ -3,7 +3,7 @@ import { PhotoProps } from "@/types";
 const halfaliveArray: PhotoProps[] = [
 	{
 		imageSrc: "/halfalive.jpg",
-		imageAlt: "Perseid meteor shower 2024, one meteor visible",
+		imageAlt: "concert photo",
 		description: "",
 		collection: "halfalive",
 		stats: "SONY DSC-RX100M6",
@@ -13,7 +13,7 @@ const halfaliveArray: PhotoProps[] = [
 	},
 	{
 		imageSrc: "/tessaViolet.gif",
-		imageAlt: "Perseid meteor shower 2024, one meteor visible",
+		imageAlt: "concert photo",
 		description: "",
 		collection: "halfalive",
 		stats: "SONY DSC-RX100M6",
@@ -23,7 +23,7 @@ const halfaliveArray: PhotoProps[] = [
 	},
 	{
 		imageSrc: "/tessaViolet3.jpg",
-		imageAlt: "Perseid meteor shower 2024, one meteor visible",
+		imageAlt: "concert photo",
 		description: "",
 		collection: "halfalive",
 		stats: "SONY DSC-RX100M6",
@@ -33,7 +33,7 @@ const halfaliveArray: PhotoProps[] = [
 	},
 	{
 		imageSrc: "/tessaViolet4.jpg",
-		imageAlt: "Perseid meteor shower 2024, one meteor visible",
+		imageAlt: "concert photo",
 		description: "",
 		collection: "halfalive",
 		stats: "SONY DSC-RX100M6",
@@ -43,7 +43,7 @@ const halfaliveArray: PhotoProps[] = [
 	},
 	// {
 	// 	imageSrc: "/phoebeBridgers.jpg",
-	// 	imageAlt: "Perseid meteor shower 2024, one meteor visible",
+	// 	imageAlt: "concert photo",
 	// 	description: "",
 	// 	collection: "halfalive",
 	// 	stats: "SONY DSC-RX100M6",
@@ -53,7 +53,7 @@ const halfaliveArray: PhotoProps[] = [
 	// },
 	// {
 	// 	imageSrc: "/julienBaker.jpg",
-	// 	imageAlt: "Perseid meteor shower 2024, one meteor visible",
+	// 	imageAlt: "concert photo",
 	// 	description: "",
 	// 	collection: "halfalive",
 	// 	stats: "SONY DSC-RX100M6",
@@ -63,7 +63,7 @@ const halfaliveArray: PhotoProps[] = [
 	// },
 	// {
 	// 	imageSrc: "/lucyDacus.jpg",
-	// 	imageAlt: "Perseid meteor shower 2024, one meteor visible",
+	// 	imageAlt: "concert photo",
 	// 	description: "",
 	// 	collection: "halfalive",
 	// 	stats: "SONY DSC-RX100M6",
