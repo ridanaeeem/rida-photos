@@ -27,17 +27,6 @@ export default function Home() {
 				closeModal();
 			}
 		};
-
-		if (modalData.isOpen) {
-			window.addEventListener("keydown", handleEsc);
-		}
-
-		return () => {
-			window.removeEventListener("keydown", handleEsc);
-		};
-	}, [modalData.isOpen]);
-
-	useEffect(() => {
 		const handleLeft = (event: KeyboardEvent) => {
 			if (event.key === "ArrowLeft") {
 				setModalData((prevModalData) => {
@@ -51,7 +40,6 @@ export default function Home() {
 				});
 			}
 		};
-
 		const handleRight = (event: KeyboardEvent) => {
 			if (event.key === "ArrowRight") {
 				setModalData((prevModalData) => {
@@ -65,13 +53,13 @@ export default function Home() {
 				});
 			}
 		};
-
 		if (modalData.isOpen) {
+			window.addEventListener("keydown", handleEsc);
 			window.addEventListener("keydown", handleLeft);
 			window.addEventListener("keydown", handleRight);
 		}
-
 		return () => {
+			window.removeEventListener("keydown", handleEsc);
 			window.removeEventListener("keydown", handleLeft);
 			window.removeEventListener("keydown", handleRight);
 		};

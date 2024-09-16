@@ -34,29 +34,16 @@ export default function Professional() {
 				closeModal();
 			}
 		};
-
-		if (modalData.isOpen) {
-			window.addEventListener("keydown", handleEsc);
-		}
-
-		return () => {
-			window.removeEventListener("keydown", handleEsc);
-		};
-	}, [modalData.isOpen]);
-
-	useEffect(() => {
 		const handleLeft = (event: KeyboardEvent) => {
 			if (event.key === "ArrowLeft") {
 				setModalData((prevModalData) => {
 					let newIndex =
 						(prevModalData.photo.index - 1 + professionalArray.length) % professionalArray.length;
-
 					if (filters.length > 0) {
 						while (professionalArray[newIndex].filtered === false) {
 							newIndex = (newIndex - 1 + professionalArray.length) % professionalArray.length;
 						}
 					}
-
 					return {
 						...prevModalData,
 						photo: professionalArray[newIndex],
@@ -65,7 +52,6 @@ export default function Professional() {
 				});
 			}
 		};
-
 		const handleRight = (event: KeyboardEvent) => {
 			if (event.key === "ArrowRight") {
 				setModalData((prevModalData) => {
@@ -75,7 +61,6 @@ export default function Professional() {
 							newIndex = (newIndex + 1) % professionalArray.length;
 						}
 					}
-
 					return {
 						...prevModalData,
 						photo: professionalArray[newIndex],
@@ -84,13 +69,13 @@ export default function Professional() {
 				});
 			}
 		};
-
 		if (modalData.isOpen) {
+			window.addEventListener("keydown", handleEsc);
 			window.addEventListener("keydown", handleLeft);
 			window.addEventListener("keydown", handleRight);
 		}
-
 		return () => {
+			window.removeEventListener("keydown", handleEsc);
 			window.removeEventListener("keydown", handleLeft);
 			window.removeEventListener("keydown", handleRight);
 		};

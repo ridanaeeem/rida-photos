@@ -32,28 +32,15 @@ export default function Personal() {
 				closeModal();
 			}
 		};
-
-		if (modalData.isOpen) {
-			window.addEventListener("keydown", handleEsc);
-		}
-
-		return () => {
-			window.removeEventListener("keydown", handleEsc);
-		};
-	}, [modalData.isOpen]);
-
-	useEffect(() => {
 		const handleLeft = (event: KeyboardEvent) => {
 			if (event.key === "ArrowLeft") {
 				setModalData((prevModalData) => {
 					let newIndex = (prevModalData.photo.index - 1 + personalArray.length) % personalArray.length;
-
 					if (filters.length > 0) {
 						while (personalArray[newIndex].filtered === false) {
 							newIndex = (newIndex - 1 + personalArray.length) % personalArray.length;
 						}
 					}
-
 					return {
 						...prevModalData,
 						photo: personalArray[newIndex],
@@ -62,7 +49,6 @@ export default function Personal() {
 				});
 			}
 		};
-
 		const handleRight = (event: KeyboardEvent) => {
 			if (event.key === "ArrowRight") {
 				setModalData((prevModalData) => {
@@ -72,7 +58,6 @@ export default function Personal() {
 							newIndex = (newIndex + 1) % personalArray.length;
 						}
 					}
-
 					return {
 						...prevModalData,
 						photo: personalArray[newIndex],
@@ -81,13 +66,13 @@ export default function Personal() {
 				});
 			}
 		};
-
 		if (modalData.isOpen) {
+			window.addEventListener("keydown", handleEsc);
 			window.addEventListener("keydown", handleLeft);
 			window.addEventListener("keydown", handleRight);
 		}
-
 		return () => {
+			window.removeEventListener("keydown", handleEsc);
 			window.removeEventListener("keydown", handleLeft);
 			window.removeEventListener("keydown", handleRight);
 		};
