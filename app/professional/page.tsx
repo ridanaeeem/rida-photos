@@ -68,7 +68,7 @@ export default function Professional() {
 									details="House of Blues Boston, MA. Spring 2023."
 								/>
 								<div className="grid grid-cols-3 md:grid-cols-5 grid-auto-rows minmax(150px, auto) mx-3">
-									{collections["halfalive"].map((photo: PhotoProps) => (
+									{collections["halfalive"].slice(0, 4).map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -77,6 +77,37 @@ export default function Professional() {
 									))}
 								</div>
 							</div>
+							<div className="pb-10" id="mothermother">
+								<CollectionHeading
+									title="Concert Photography: Mother Mother & Vundabar"
+									details="House of Blues Boston, MA. Fall 2022."
+								/>
+								<div className="grid grid-cols-2 md:grid-cols-2 grid-auto-rows minmax(150px, auto) mx-1 md:mx-3">
+									{collections["halfalive"].slice(4, 8).map((photo: PhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											photo={photo}
+											setModalData={setModalData}
+										/>
+									))}
+								</div>
+							</div>
+
+							{/* <div className="pb-10" id="mothermother">
+								<CollectionHeading
+									title="Concert Photography: Boygenius"
+									details="MGM Music Hall at Fenway, MA. Fall 2023."
+								/>
+								<div className="grid grid-cols-3 md:grid-cols-3 mx-1 md:mx-3">
+									{collections["halfalive"].slice(8, 11).map((photo: PhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											photo={photo}
+											setModalData={setModalData}
+										/>
+									))}
+								</div>
+							</div> */}
 						</div>
 					) : (
 						<>

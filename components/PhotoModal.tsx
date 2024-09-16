@@ -25,9 +25,10 @@ export default function PhotoModal({
 			<div className="relative bg-white p-3 md:p-5 rounded-lg text-[#171719]">
 				<img src={modalData.photo.imageSrc} alt={modalData.photo.imageAlt} className="w-auto h-auto mb-4" />
 				<p className="text-2xl">
+					{/* {description + ": "} */}
 					{modalData.showLink && modalData.photo.collection !== "" ? (
 						<Link
-							href={`#${modalData.photo.collection}`}
+							href={`personal#${modalData.photo.collection}`}
 							target="_blank"
 							rel="noreferrer"
 							className="hover:text-[#809BB3]">
