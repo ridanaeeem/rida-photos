@@ -37,7 +37,7 @@ export default function PhotoModal({
 				<img
 					src={modalData.photo.imageSrc}
 					alt={modalData.photo.imageAlt}
-					className="w-auto max-h-screen max-h-[75vh] mb-4 object-contain"
+					className="w-auto max-w-screen max-h-[75vh] mb-4 object-contain"
 				/>
 				<p className="text-2xl">
 					{/* {description + ": "} */}
