@@ -42,7 +42,7 @@ export default function PhotoModal({
 				{/* <p>{modalData.photo.index + 1}</p> */}
 				<p>{modalData.photo.filtered}</p>
 			</div>
-			<div className="flex text-4xl justify-between m-2">
+			<div className="flex text-4xl justify-between m-2 text-white">
 				<button
 					className="px-6"
 					onClick={() => {
