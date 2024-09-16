@@ -30,7 +30,7 @@ export default function PhotoModal({
 				darker_grotesque.className
 			} ${"fixed lg:inset-0 z-50 flex flex-col items-center justify-center m-5 lg:m-[20rem] text-center font-normal"}`}>
 			<div
-				className="fixed inset-0 bg-black bg-opacity-50"
+				className="fixed inset-0 bg-black bg-opacity-85"
 				onClick={() => setModalData({ ...modalData, isOpen: false })}
 			/>
 			<div className="relative bg-white p-3 md:p-5 rounded-lg text-[#171719]">
