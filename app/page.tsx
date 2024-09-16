@@ -13,6 +13,10 @@ export default function Home() {
 		showLink: false,
 	});
 
+	for (let i = 0; i < mainPageArray.length; i++) {
+		mainPageArray[i].index = i;
+	}
+
 	useEffect(() => {
 		const handleEsc = (event: KeyboardEvent) => {
 			if (event.key === "Escape") {

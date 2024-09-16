@@ -18,6 +18,10 @@ export default function Personal() {
 		showLink: false,
 	});
 
+	for (let i = 0; i < personalArray.length; i++) {
+		personalArray[i].index = i;
+	}
+
 	useEffect(() => {
 		const handleEsc = (event: KeyboardEvent) => {
 			if (event.key === "Escape") {

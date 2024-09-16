@@ -20,6 +20,10 @@ export default function Professional() {
 		showLink: false,
 	});
 
+	for (let i = 0; i < professionalArray.length; i++) {
+		professionalArray[i].index = i;
+	}
+
 	useEffect(() => {
 		const handleEsc = (event: KeyboardEvent) => {
 			if (event.key === "Escape") {
