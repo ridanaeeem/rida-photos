@@ -50,7 +50,11 @@ export default function Professional() {
 			<title>Rida Naeem Photography</title>
 			<main>
 				<div className="bg-gradient-to-b from-[#171719] to-[#171719] min-h-screen">
-					<PhotoModal modalData={modalData} setModalData={setModalData} />
+					<PhotoModal
+						modalData={modalData}
+						setModalData={setModalData}
+						isFiltered={filters.length > 0 ? true : false}
+					/>
 
 					{modalData.isOpen ? (
 						<div className="fixed inset-0 z-10 bg-black bg-opacity-75" onClick={() => closeModal()}></div>

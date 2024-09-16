@@ -46,9 +46,13 @@ export default function Personal() {
 		const handleLeft = (event: KeyboardEvent) => {
 			if (event.key === "ArrowLeft") {
 				setModalData((prevModalData) => {
-					const newIndex =
-						(prevModalData.photo.index - 1 + collectionsArray.length) % collectionsArray.length;
-					const newPhoto = collectionsArray[newIndex];
+					let newIndex = (prevModalData.photo.index - 1 + collectionsArray.length) % collectionsArray.length;
+
+					if (filters.length > 0) {
+						while (collectionsArray[newIndex].filtered === false) {
+							newIndex = (newIndex - 1 + collectionsArray.length) % collectionsArray.length;
+						}
+					}
 
 					return {
 						...prevModalData,
@@ -62,8 +66,12 @@ export default function Personal() {
 		const handleRight = (event: KeyboardEvent) => {
 			if (event.key === "ArrowRight") {
 				setModalData((prevModalData) => {
-					const newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
-					const newPhoto = collectionsArray[newIndex];
+					let newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
+					if (filters.length > 0) {
+						while (collectionsArray[newIndex].filtered === false) {
+							newIndex = (newIndex + 1) % collectionsArray.length;
+						}
+					}
 
 					return {
 						...prevModalData,
@@ -92,7 +100,11 @@ export default function Personal() {
 			<title>Rida Naeem Photography</title>
 			<main>
 				<div className="bg-gradient-to-b from-[#171719] to-[#171719] min-h-screen">
-					<PhotoModal modalData={modalData} setModalData={setModalData} />
+					<PhotoModal
+						modalData={modalData}
+						setModalData={setModalData}
+						isFiltered={filters.length > 0 ? true : false}
+					/>
 
 					{modalData.isOpen ? (
 						<div className="fixed inset-0 z-10 bg-black bg-opacity-75" onClick={() => closeModal()}></div>

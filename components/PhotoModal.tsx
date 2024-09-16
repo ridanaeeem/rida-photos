@@ -6,7 +6,15 @@ import Link from "next/link";
 
 const darker_grotesque = Darker_Grotesque({ subsets: ["latin"] });
 
-export default function PhotoModal({ modalData, setModalData }: { modalData: ModalData; setModalData: any }) {
+export default function PhotoModal({
+	modalData,
+	setModalData,
+	isFiltered,
+}: {
+	modalData: ModalData;
+	setModalData: any;
+	isFiltered: boolean;
+}) {
 	if (!modalData.isOpen) return null;
 
 	return (
@@ -36,12 +44,10 @@ export default function PhotoModal({ modalData, setModalData }: { modalData: Mod
 					className="px-6"
 					onClick={() => {
 						setModalData((prevModalData: ModalData) => {
-							console.log("clicked");
 							let newIndex =
 								(prevModalData.photo.index - 1 + collectionsArray.length) % collectionsArray.length;
 
-							if (modalData.photo.filtered) {
-								console.log("filtered");
+							if (isFiltered) {
 								while (collectionsArray[newIndex].filtered === false) {
 									newIndex = (newIndex - 1 + collectionsArray.length) % collectionsArray.length;
 								}
@@ -61,7 +67,7 @@ export default function PhotoModal({ modalData, setModalData }: { modalData: Mod
 					onClick={() => {
 						setModalData((prevModalData: ModalData) => {
 							let newIndex = (prevModalData.photo.index + 1) % collectionsArray.length;
-							if (modalData.photo.filtered) {
+							if (isFiltered) {
 								while (collectionsArray[newIndex].filtered === false) {
 									newIndex = (newIndex + 1) % collectionsArray.length;
 								}
