@@ -3,7 +3,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Caveat } from "next/font/google";
 import { Darker_Grotesque } from "next/font/google";
+import { Arimo } from "next/font/google";
 
+const arimo = Arimo({ subsets: ["latin"] });
 const darker_grotesque = Darker_Grotesque({ subsets: ["latin"] });
 const caveat = Caveat({ subsets: ["latin"] });
 
@@ -17,7 +19,10 @@ export default function Nav() {
 			}`}
 			id="nav">
 			<div className="header flex flex-col font-bold p-2 md:p-5">
-				<h1 className={`text-4xl ${caveat.className} ${pathname === "/" ? "text-[#809BB3]" : null}`}>
+				<h1
+					className={`text-4xl md:text-7xl lg:text-8xl xl:text-9xl ${caveat.className} ${
+						pathname === "/" ? "text-[#809BB3]" : null
+					}`}>
 					<Link href="/">Rida Naeem Photography</Link>
 				</h1>
 			</div>
