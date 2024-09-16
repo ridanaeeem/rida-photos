@@ -2,7 +2,7 @@ import { PhotoProps } from "@/types";
 
 const chicagoStreetArray: PhotoProps[] = [
 	{
-		imageSrc: "/chicago7.JPG",
+		imageSrc: "/chicago-street/chicago7.JPG",
 		imageAlt: "Group of skaters in Chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -13,7 +13,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		filtered: false,
 	},
 	{
-		imageSrc: "/chicago4.jpg",
+		imageSrc: "/chicago-street/chicago4.jpg",
 		imageAlt: "The Chicago theater",
 		description: "",
 		collection: "chicagoStreet",
@@ -24,7 +24,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		filtered: false,
 	},
 	{
-		imageSrc: "/chicagoEyes2.JPG",
+		imageSrc: "/chicago-street/chicagoEyes2.JPG",
 		imageAlt: "close up of eyes on a building in Chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -34,7 +34,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		filtered: false,
 	},
 	{
-		imageSrc: "/protest2.JPG",
+		imageSrc: "/chicago-street/protest2.JPG",
 		imageAlt: "A protestor with a blindfold and sign in Chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -45,7 +45,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		filtered: false,
 	},
 	{
-		imageSrc: "/pigeon.JPG",
+		imageSrc: "/chicago-street/pigeon.JPG",
 		imageAlt: "Pigeon in Chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -56,7 +56,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		filtered: false,
 	},
 	{
-		imageSrc: "/protest.JPG",
+		imageSrc: "/chicago-street/protest.JPG",
 		imageAlt: "A protestor with a blindfold in Chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -67,7 +67,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		filtered: false,
 	},
 	{
-		imageSrc: "/chicago.JPG",
+		imageSrc: "/chicago-street/chicago.JPG",
 		imageAlt: "Close up of an American flag on a building in Chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -78,7 +78,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		filtered: false,
 	},
 	{
-		imageSrc: "/chicago2.JPG",
+		imageSrc: "/chicago-street/chicago2.JPG",
 		imageAlt: "Close up of a clock tower in Chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -89,9 +89,9 @@ const chicagoStreetArray: PhotoProps[] = [
 		filtered: false,
 	},
 	{
-		imageSrc: "/chicago3.JPG",
-		imageAlt: "chicago",
-		description: "View of buildings in Chicago",
+		imageSrc: "/chicago-street/chicago3.JPG",
+		imageAlt: "View of buildings in Chicago",
+		description: "",
 		collection: "chicagoStreet",
 		stats: "SONY DSC-RX100M6 • f/3.5 • 1/2500 • 13.29mm • ISO250",
 		classAdjustments: "col-span-1 row-span-1",
@@ -100,7 +100,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		filtered: false,
 	},
 	{
-		imageSrc: "/chicago5.JPG",
+		imageSrc: "/chicago-street/chicago5.JPG",
 		imageAlt: "Backlit view of birds flying in Chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -111,7 +111,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		filtered: false,
 	},
 	{
-		imageSrc: "/chicago6.JPG",
+		imageSrc: "/chicago-street/chicago6.JPG",
 		imageAlt: "Silhouette of birds flying in Chicago, with one in the center",
 		description: "",
 		collection: "chicagoStreet",
@@ -122,7 +122,7 @@ const chicagoStreetArray: PhotoProps[] = [
 		filtered: false,
 	},
 	{
-		imageSrc: "/chicagoEyes.JPG",
+		imageSrc: "/chicago-street/chicagoEyes.JPG",
 		imageAlt: "Eyes on a building in Chicago",
 		description: "",
 		collection: "chicagoStreet",

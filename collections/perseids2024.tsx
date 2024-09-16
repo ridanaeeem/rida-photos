@@ -2,7 +2,7 @@ import { PhotoProps } from "@/types";
 
 const perseids2024Array: PhotoProps[] = [
 	{
-		imageSrc: "/perseid.JPG",
+		imageSrc: "/perseids-2024/perseid.JPG",
 		imageAlt: "Perseid meteor shower 2024, one meteor visible",
 		description: "There's one meteor visible, can you find it?",
 		collection: "perseids2024",
@@ -12,7 +12,7 @@ const perseids2024Array: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/perseid2.jpg",
+		imageSrc: "/perseids-2024/perseid2.jpg",
 		imageAlt: "Perseid meteor shower 2024, one meteor visible",
 		description: "There's one meteor visible, can you find it?",
 		collection: "perseids2024",
@@ -22,7 +22,7 @@ const perseids2024Array: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/perseid3.jpg",
+		imageSrc: "/perseids-2024/perseid3.jpg",
 		imageAlt: "Perseid meteor shower 2024, one meteor visible",
 		description: "There's one meteor visible, can you find it?",
 		collection: "perseids2024",

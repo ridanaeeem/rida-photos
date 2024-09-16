@@ -2,7 +2,7 @@ import { PhotoProps } from "@/types";
 
 const excelsiorBirdsBeesArray: PhotoProps[] = [
 	{
-		imageSrc: "/birdsAndBees.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees.JPG",
 		imageAlt: "Goose walking towards camera",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -12,7 +12,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees5.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees5.JPG",
 		imageAlt: "Goose opening beak as other geese in background eat",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -22,7 +22,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees2.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees2.JPG",
 		imageAlt: "Shot of dragonfly with blurred background",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -32,7 +32,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees3.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees3.JPG",
 		imageAlt: "Close up shot of dragonfly",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -42,7 +42,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees6.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees6.JPG",
 		imageAlt: "Goose in foreground with four geese eating in background",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -52,7 +52,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees4.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees4.JPG",
 		imageAlt: "Shot of several geese by the water and a bench",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -62,7 +62,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees14.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees14.JPG",
 		imageAlt: "Long purple flowers in the tall grass",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -72,7 +72,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees13.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees13.JPG",
 		imageAlt: "Several bees on a pink flower",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -82,7 +82,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees12.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees12.JPG",
 		imageAlt: "Bee on long purple flowers",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -92,7 +92,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees11.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees11.JPG",
 		imageAlt: "Mixed focus shot of long purple flowers",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -102,7 +102,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees21.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees21.JPG",
 		imageAlt: "Bees on long white and purple flowers",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -112,7 +112,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees8.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees8.JPG",
 		imageAlt: "Duck pulling head out of the water with visible water droplets",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -122,7 +122,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees16.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees16.JPG",
 		imageAlt: "Shot of small red sailboat, Red Ink, in the water and centered",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -132,7 +132,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees20.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees20.JPG",
 		imageAlt: "Glass reflecting the flowers and water",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -142,7 +142,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees15.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees15.JPG",
 		imageAlt: "Shot of small red sailboat, Red Ink, in the water framed by the trees",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -152,7 +152,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees7.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees7.JPG",
 		imageAlt: "Duck sitting still in the water",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -162,7 +162,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees9.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees9.JPG",
 		imageAlt: "Duck facing away from camera",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -172,7 +172,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees10.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees10.JPG",
 		imageAlt: "Duck diving into the water, with its backside up in the air",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -183,7 +183,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 	},
 
 	{
-		imageSrc: "/birdsAndBees17.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees17.JPG",
 		imageAlt: "The last three ducks in a line of five ducks",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -193,7 +193,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees19.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees19.JPG",
 		imageAlt: "A line of five ducks swimming in the water",
 		description: "",
 		collection: "excelsiorBirdsBees",
@@ -203,7 +203,7 @@ const excelsiorBirdsBeesArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/birdsAndBees18.JPG",
+		imageSrc: "/excelsior-birds-bees/birdsAndBees18.JPG",
 		imageAlt: "The first three ducks in a line of five ducks",
 		description: "",
 		collection: "excelsiorBirdsBees",

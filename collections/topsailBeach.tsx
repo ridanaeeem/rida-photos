@@ -2,7 +2,7 @@ import { PhotoProps } from "@/types";
 
 const topsailBeachArray: PhotoProps[] = [
 	{
-		imageSrc: "/starryTSB2.JPG",
+		imageSrc: "/topsail-beach/starryTSB2.JPG",
 		imageAlt: "Night shot of Topsail Beach",
 		description: "",
 		collection: "topsailBeach",
@@ -12,7 +12,7 @@ const topsailBeachArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/starryTSB.JPG",
+		imageSrc: "/topsail-beach/starryTSB.JPG",
 		imageAlt: "Illuminated houses on Topsail Beach at night, with stars in the sky",
 		description: "",
 		collection: "topsailBeach",
@@ -22,7 +22,7 @@ const topsailBeachArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/starryTSB3.JPG",
+		imageSrc: "/topsail-beach/starryTSB3.JPG",
 		imageAlt: "Shot of the night sky at Topsail Beach, with higher exposure",
 		description: "",
 		collection: "topsailBeach",
@@ -32,7 +32,7 @@ const topsailBeachArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/starryTSB4.JPG",
+		imageSrc: "/topsail-beach/starryTSB4.JPG",
 		imageAlt: "Shot of the night sky at Topsail Beach, with lower exposure",
 		description: "",
 		collection: "topsailBeach",
@@ -42,7 +42,7 @@ const topsailBeachArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/nightTSB.jpg",
+		imageSrc: "/topsail-beach/nightTSB.jpg",
 		imageAlt: "Shot of two girls sitting on the beach under the moonlight",
 		description: "",
 		collection: "topsailBeach",
@@ -52,7 +52,7 @@ const topsailBeachArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/beach.JPG",
+		imageSrc: "/topsail-beach/beach.JPG",
 		imageAlt: "Shot of girl walking towards the ocean on Topsail Beach",
 		description: "",
 		collection: "topsailBeach",
@@ -62,7 +62,7 @@ const topsailBeachArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/beach2.JPG",
+		imageSrc: "/topsail-beach/beach2.JPG",
 		imageAlt: "Shot of girl walking in the sand",
 		description: "",
 		collection: "topsailBeach",

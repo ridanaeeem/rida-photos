@@ -13,10 +13,10 @@ import stPaulChurchArray from "./stPaulChurch";
 const mainPageArray: PhotoProps[] = [
 	// ducksAndLiliesArray[0],
 	{
-		imageSrc: "/waterLily.JPG",
+		imageSrc: "/ducks-and-lilies/waterLily.JPG",
 		imageAlt: "white water lily",
 		description: "water lily",
-		collection: "ducksandlilies",
+		collection: "ducksAndLilies",
 		stats: "SONY DSC-RX100M6 • f/6.3 • 1/2000 • 63.55mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
@@ -34,7 +34,7 @@ const mainPageArray: PhotoProps[] = [
 	},
 	// chicagoStreetArray[2],
 	{
-		imageSrc: "/chicagoEyes2.JPG",
+		imageSrc: "/chicago-street/chicagoEyes2.JPG",
 		imageAlt: "close up of eyes on a building in Chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -44,7 +44,7 @@ const mainPageArray: PhotoProps[] = [
 		filtered: false,
 	},
 	{
-		imageSrc: "/haSunset.JPG",
+		imageSrc: "/topsail-beach/haSunset.JPG",
 		imageAlt: "Sunset",
 		description: "Sunset",
 		collection: "",
@@ -55,7 +55,7 @@ const mainPageArray: PhotoProps[] = [
 	},
 	// montroseMoonriseArray[9],
 	{
-		imageSrc: "/montrose14.JPG",
+		imageSrc: "/montrose-moonrise/montrose14.JPG",
 		imageAlt: "Lighthouse at Montrose Moonrise Vista Point, with boat passing by",
 		description: "",
 		collection: "montroseMoonrise",
@@ -66,7 +66,7 @@ const mainPageArray: PhotoProps[] = [
 	},
 	// topsailBeachArray[1],
 	{
-		imageSrc: "/starryTSB.JPG",
+		imageSrc: "/topsail-beach/starryTSB.JPG",
 		imageAlt: "Illuminated houses on Topsail Beach at night, with stars in the sky",
 		description: "",
 		collection: "topsailBeach",
@@ -87,7 +87,7 @@ const mainPageArray: PhotoProps[] = [
 	},
 	// mnArboretumArray[29],
 	{
-		imageSrc: "/mnJapaneseGarden8.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden8.JPG",
 		imageAlt: "White koi and orange koi swimming in the pond",
 		description: "",
 		collection: "mnArboretum",
@@ -98,7 +98,7 @@ const mainPageArray: PhotoProps[] = [
 	},
 	// mnArboretumArray[8],
 	{
-		imageSrc: "/mnArboretum4.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum4.JPG",
 		imageAlt: "Light shining on a yellow flower in the dark forest",
 		description: "",
 		collection: "mnArboretum",
@@ -109,10 +109,10 @@ const mainPageArray: PhotoProps[] = [
 	},
 	// ducksAndLiliesArray[13],
 	{
-		imageSrc: "/duckTri.JPG",
+		imageSrc: "/ducks-and-lilies/duckTri.JPG",
 		imageAlt: "baby duck swimming in water",
 		description: "water lily",
-		collection: "ducksandlilies",
+		collection: "ducksAndLilies",
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/16000 • 72.00mm • ISO3200",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Animals"],
@@ -120,7 +120,7 @@ const mainPageArray: PhotoProps[] = [
 	},
 	// chicagoStreetArray[5],
 	{
-		imageSrc: "/protest.JPG",
+		imageSrc: "/chicago-street/protest.JPG",
 		imageAlt: "A protestor with a blindfold in Chicago",
 		description: "",
 		collection: "chicagoStreet",
@@ -142,10 +142,10 @@ const mainPageArray: PhotoProps[] = [
 	},
 	// ducksAndLiliesArray[1],
 	{
-		imageSrc: "/waterLily2.JPG",
+		imageSrc: "/ducks-and-lilies/waterLily2.JPG",
 		imageAlt: "two white water lilies",
 		description: "water lily",
-		collection: "ducksandlilies",
+		collection: "ducksAndLilies",
 		stats: "SONY DSC-RX100M6 • f/4.5 • 1/25600 • 72.00mm • ISO5000",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Plants"],
@@ -153,7 +153,7 @@ const mainPageArray: PhotoProps[] = [
 	},
 	// stPaulChurchArray[4],
 	{
-		imageSrc: "/church.JPG",
+		imageSrc: "/st-agnes-st-paul/church.JPG",
 		imageAlt: "Far away shot of the Pieta in St Agnes Church in St Paul, framed by doors",
 		description: "",
 		collection: "stAgnesStPaul",

@@ -2,7 +2,7 @@ import { PhotoProps } from "@/types";
 
 const mnArboretumArray: PhotoProps[] = [
 	{
-		imageSrc: "/mnArboretum20.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum20.JPG",
 		imageAlt: "Faraway shot of the arboretum, showing bushes and trees in the distance",
 		description: "",
 		collection: "mnArboretum",
@@ -12,7 +12,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum18.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum18.JPG",
 		imageAlt: "A pink rose",
 		description: "",
 		collection: "mnArboretum",
@@ -22,7 +22,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum19.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum19.JPG",
 		imageAlt: "A salmon rose",
 		description: "",
 		collection: "mnArboretum",
@@ -32,7 +32,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum23.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum23.JPG",
 		imageAlt: "Leaking faucet in front of pink flowers",
 		description: "",
 		collection: "mnArboretum",
@@ -42,7 +42,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum14.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum14.JPG",
 		imageAlt: "Light pink sweet alyssum flowers",
 		description: "",
 		collection: "mnArboretum",
@@ -52,7 +52,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum15.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum15.JPG",
 		imageAlt: "Pink clethra flowers",
 		description: "",
 		collection: "mnArboretum",
@@ -62,7 +62,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum6.jpg",
+		imageSrc: "/mn-arboretum/mnArboretum6.jpg",
 		imageAlt:
 			"Light hitting the bushes and trees from the back in a forest, with the silhouette of one tree in the foreground",
 		description: "",
@@ -73,7 +73,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum22.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum22.JPG",
 		imageAlt: "Statue of a mother and child in front of some pink flowers",
 		description: "",
 		collection: "mnArboretum",
@@ -83,7 +83,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum4.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum4.JPG",
 		imageAlt: "Light shining on a yellow flower in the dark forest",
 		description: "",
 		collection: "mnArboretum",
@@ -93,7 +93,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum16.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum16.JPG",
 		imageAlt: "Trees shaded in the back of a field, with sky",
 		description: "",
 		collection: "mnArboretum",
@@ -103,7 +103,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum5.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum5.JPG",
 		imageAlt: "Light shining on a white flower in the dark forest",
 		description: "",
 		collection: "mnArboretum",
@@ -113,7 +113,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum2.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum2.JPG",
 		imageAlt: "Yellow and purple flowers in the tall, shaded grass",
 		description: "",
 		collection: "mnArboretum",
@@ -123,7 +123,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum17.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum17.JPG",
 		imageAlt: "Trees shaded in the back of a field, without sky",
 		description: "",
 		collection: "mnArboretum",
@@ -133,7 +133,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum12.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum12.JPG",
 		imageAlt: "Close-up of yellow thunbergias",
 		description: "",
 		collection: "mnArboretum",
@@ -143,7 +143,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum10.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum10.JPG",
 		imageAlt: "Yellow and purple flowers in the grass in a field with trees in the background",
 		description: "",
 		collection: "mnArboretum",
@@ -153,7 +153,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum.JPG",
 		imageAlt: "Yellow and purple flowers in the tall grass",
 		description: "",
 		collection: "mnArboretum",
@@ -163,7 +163,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum7.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum7.JPG",
 		imageAlt: "Orange butterfly on a purple flower surrounded by black-eyed susans",
 		description: "",
 		collection: "mnArboretum",
@@ -173,7 +173,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum11.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum11.JPG",
 		imageAlt: "Close-up of black-eyed susans",
 		description: "",
 		collection: "mnArboretum",
@@ -183,7 +183,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum8.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum8.JPG",
 		imageAlt: "Black-eyed susan flowers lining the sidewalk",
 		description: "",
 		collection: "mnArboretum",
@@ -193,7 +193,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum3.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum3.JPG",
 		imageAlt: "Yellow, white, and purple flowers in the tall grass",
 		description: "",
 		collection: "mnArboretum",
@@ -203,7 +203,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum9.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum9.JPG",
 		imageAlt: "Yellow and purple flowers in the grass in a field",
 		description: "",
 		collection: "mnArboretum",
@@ -213,7 +213,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum13.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum13.JPG",
 		imageAlt: "One yellow thunbergia in the leaves",
 		description: "",
 		collection: "mnArboretum",
@@ -223,7 +223,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum21.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum21.JPG",
 		imageAlt: "Blue berries",
 		description: "",
 		collection: "mnArboretum",
@@ -233,7 +233,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnArboretum24.JPG",
+		imageSrc: "/mn-arboretum/mnArboretum24.JPG",
 		imageAlt: "Fountain with dripping water",
 		description: "",
 		collection: "mnArboretum",
@@ -243,7 +243,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnJapaneseGarden13.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden13.JPG",
 		imageAlt: "Waterfall in the Japanese Garden",
 		description: "",
 		collection: "mnArboretum",
@@ -253,7 +253,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnJapaneseGarden2.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden2.JPG",
 		imageAlt: "Close-up of moss-covered rocks in the Japanese Garden",
 		description: "",
 		collection: "mnArboretum",
@@ -263,7 +263,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnJapaneseGarden4.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden4.JPG",
 		imageAlt: "Japanese Garden house",
 		description: "",
 		collection: "mnArboretum",
@@ -273,7 +273,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnJapaneseGarden7.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden7.JPG",
 		imageAlt: "White koi and orange koi with open mouth swimming in the pond",
 		description: "",
 		collection: "mnArboretum",
@@ -283,7 +283,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnJapaneseGarden.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden.JPG",
 		imageAlt: "Moss-covered rocks in the Japanese Garden",
 		description: "",
 		collection: "mnArboretum",
@@ -293,7 +293,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnJapaneseGarden8.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden8.JPG",
 		imageAlt: "White koi and orange koi swimming in the pond",
 		description: "",
 		collection: "mnArboretum",
@@ -303,7 +303,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnJapaneseGarden6.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden6.JPG",
 		imageAlt: "A few koi with open mouths swimming in the pond",
 		description: "",
 		collection: "mnArboretum",
@@ -313,7 +313,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnJapaneseGarden9.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden9.JPG",
 		imageAlt: "Orange koi with open mouth in the pond",
 		description: "",
 		collection: "mnArboretum",
@@ -323,7 +323,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnJapaneseGarden5.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden5.JPG",
 		imageAlt: "Several koi swimming in the pond",
 		description: "",
 		collection: "mnArboretum",
@@ -333,7 +333,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnJapaneseGarden10.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden10.JPG",
 		imageAlt: "Orange koi underwater with white koi in background",
 		description: "",
 		collection: "mnArboretum",
@@ -343,7 +343,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnJapaneseGarden11.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden11.JPG",
 		imageAlt: "Koi swimming underwater, with one orange koi opening mouth above water",
 		description: "",
 		collection: "mnArboretum",
@@ -353,7 +353,7 @@ const mnArboretumArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mnJapaneseGarden12.JPG",
+		imageSrc: "/mn-arboretum/mnJapaneseGarden12.JPG",
 		imageAlt: "Orange koi swimming underwater",
 		description: "",
 		collection: "mnArboretum",

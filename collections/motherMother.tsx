@@ -2,8 +2,8 @@ import { PhotoProps } from "@/types";
 
 const motherMotherArray: PhotoProps[] = [
 	{
-		imageSrc: "/mothermother.jpg",
-		imageAlt: "concert photo",
+		imageSrc: "/concerts/mother-mother/mothermother.jpg",
+		imageAlt: "Three members of Mother Mother performing",
 		description: "",
 		collection: "mothermother",
 		stats: "Samsung S22 Ultra • f/2.4 • 1/51 • 7.9mm • ISO160",
@@ -12,8 +12,8 @@ const motherMotherArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/mothermother2.jpg",
-		imageAlt: "concert photo",
+		imageSrc: "/concerts/mother-mother/mothermother2.jpg",
+		imageAlt: "Three members of Mother Mother performing",
 		description: "",
 		collection: "mothermother",
 		stats: "Samsung S22 Ultra • f/2.4 • 1/51 • 7.9mm • ISO100",
@@ -22,8 +22,8 @@ const motherMotherArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/vundabar.jpg",
-		imageAlt: "concert photo",
+		imageSrc: "/concerts/mother-mother/vundabar.jpg",
+		imageAlt: "Vundabar performing",
 		description: "",
 		collection: "mothermother",
 		stats: "Samsung S22 Ultra • f/1.8 • 1/60 • 6.4mm • ISO640",
@@ -32,8 +32,8 @@ const motherMotherArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/vundabar2.jpg",
-		imageAlt: "concert photo",
+		imageSrc: "/concerts/mother-mother/vundabar2.jpg",
+		imageAlt: "Vundabar singer with guitar",
 		description: "",
 		collection: "mothermother",
 		stats: "Samsung S22 Ultra • f/2.4 • 1/59 • 7.9mm • ISO200",

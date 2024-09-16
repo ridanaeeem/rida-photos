@@ -97,47 +97,47 @@ export default function Personal() {
 									filter="Landscape"
 									filters={filters}
 									setFilters={setFilters}
-									imageSrc="/montrose2.JPG"
+									imageSrc="/montrose-moonrise/montrose2.JPG"
 									imageAlt="Rocks along the shore at Montrose Moonrise Vista Point"
 								/>
 								<FilterBox
 									filter="Plants"
 									filters={filters}
 									setFilters={setFilters}
-									imageSrc="waterLily10.JPG"
+									imageSrc="/ducks-and-lilies/waterLily10.JPG"
 									imageAlt="Water Lily"
 								/>
 								<FilterBox
 									filter="Animals"
 									filters={filters}
 									setFilters={setFilters}
-									imageSrc="duck.JPG"
+									imageSrc="/ducks-and-lilies/duck.JPG"
 									imageAlt="duck"
 								/>
 								<FilterBox
 									filter="People"
 									filters={filters}
 									setFilters={setFilters}
-									imageSrc="haSunset.JPG"
+									imageSrc="/topsail-beach/haSunset.JPG"
 									imageAlt="Sunset"
 								/>
 								<FilterBox
 									filter="Astrophotography"
 									filters={filters}
 									setFilters={setFilters}
-									imageSrc="perseid.JPG"
+									imageSrc="/perseids-2024/perseid.JPG"
 									imageAlt="Perseif Meteor Shower"
 								/>
 								<FilterBox
 									filter="Street"
 									filters={filters}
 									setFilters={setFilters}
-									imageSrc="/chicago7.JPG"
+									imageSrc="/chicago-street/chicago7.JPG"
 									imageAlt="Skaters in Chicago"
 								/>
 								<button onClick={() => setFilters([])}>
 									<div className="relative">
-										<img src="/starryTSB4.JPG" alt="Night sky" />
+										<img src="/topsail-beach/starryTSB4.JPG" alt="Night sky" />
 										{/* black overlay with 50% opacity */}
 										<div className="absolute inset-0 bg-black opacity-50"></div>
 										{/* centered text */}
@@ -233,7 +233,7 @@ export default function Personal() {
 									))}
 								</div>
 							</div>
-							<div className="pb-10" id="ducksandlilies">
+							<div className="pb-10" id="ducksAndLilies">
 								<CollectionHeading title="Ducks & Lilies" details="Saint Paul, MN. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
 									{collections["ducks-and-lilies"].map((photo: PhotoProps) => (

@@ -2,8 +2,8 @@ import { PhotoProps } from "@/types";
 
 const halfaliveArray: PhotoProps[] = [
 	{
-		imageSrc: "/halfalive.jpg",
-		imageAlt: "concert photo",
+		imageSrc: "/concerts/halfalive/halfalive.jpg",
+		imageAlt: "Halfalive with their arms up while singing",
 		description: "",
 		collection: "halfalive",
 		stats: "Samsung S22 Ultra • f/2.4 • 1/35 • 7.9mm • ISO320",
@@ -12,8 +12,8 @@ const halfaliveArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/tessaViolet.gif",
-		imageAlt: "concert photo",
+		imageSrc: "/concerts/halfalive/tessaViolet.gif",
+		imageAlt: "GIF of Tessa Violet playing the guitar",
 		description: "",
 		collection: "halfalive",
 		stats: "Samsung S22 Ultra • f/4.9 • 1/35 • 27.2mm • ISO1250",
@@ -22,8 +22,8 @@ const halfaliveArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/tessaViolet3.jpg",
-		imageAlt: "concert photo",
+		imageSrc: "/concerts/halfalive/tessaViolet3.jpg",
+		imageAlt: "Tessa Violet singing",
 		description: "",
 		collection: "halfalive",
 		stats: "Samsung S22 Ultra • f/2.4 • 1/60 • 7.9mm • ISO125",
@@ -32,8 +32,8 @@ const halfaliveArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/tessaViolet4.jpg",
-		imageAlt: "concert photo",
+		imageSrc: "/concerts/halfalive/tessaViolet4.jpg",
+		imageAlt: "Close-up of Tessa Violet singing, facing to the side",
 		description: "",
 		collection: "halfalive",
 		stats: "Samsung S22 Ultra • f/4.9 • 1/30 • 27.2mm • ISO320",
@@ -42,7 +42,7 @@ const halfaliveArray: PhotoProps[] = [
 		index: 0,
 	},
 	// {
-	// 	imageSrc: "/phoebeBridgers.jpg",
+	// 	imageSrc: "/concerts/boygenius/phoebeBridgers.jpg",
 	// 	imageAlt: "concert photo",
 	// 	description: "",
 	// 	collection: "halfalive",
@@ -52,7 +52,7 @@ const halfaliveArray: PhotoProps[] = [
 	// 	index: 0,
 	// },
 	// {
-	// 	imageSrc: "/julienBaker.jpg",
+	// 	imageSrc: "/concerts/boygenius/julienBaker.jpg",
 	// 	imageAlt: "concert photo",
 	// 	description: "",
 	// 	collection: "halfalive",
@@ -62,7 +62,7 @@ const halfaliveArray: PhotoProps[] = [
 	// 	index: 0,
 	// },
 	// {
-	// 	imageSrc: "/lucyDacus.jpg",
+	// 	imageSrc: "/concerts/boygenius/lucyDacus.jpg",
 	// 	imageAlt: "concert photo",
 	// 	description: "",
 	// 	collection: "halfalive",
