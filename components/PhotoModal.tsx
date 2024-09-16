@@ -34,11 +34,13 @@ export default function PhotoModal({
 				onClick={() => setModalData({ ...modalData, isOpen: false })}
 			/>
 			<div className="relative bg-white p-3 md:p-5 rounded-lg text-[#171719] flex flex-center flex-col flex-wrap break-words">
-				<img
-					src={modalData.photo.imageSrc}
-					alt={modalData.photo.imageAlt}
-					className="w-auto max-w-screen max-h-[75vh] mb-4 object-contain"
-				/>
+				<Link href={modalData.photo.imageSrc} target="_blank">
+					<img
+						src={modalData.photo.imageSrc}
+						alt={modalData.photo.imageAlt}
+						className="w-auto max-w-screen max-h-[75vh] mb-4 object-contain"
+					/>
+				</Link>
 				<p className="text-2xl">
 					{/* {description + ": "} */}
 					{modalData.showLink && modalData.photo.collection !== "" ? (
