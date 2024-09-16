@@ -161,7 +161,7 @@ export default function Personal() {
 									title="Global Gardens"
 									details="Minnesota Landscape Arboretum, MN. Summer 2024."
 								/>
-								<div className="grid grid-cols-2 md:grid-cols-4 mx-1 mx-1 mx-1 md:mx-3">
+								<div className="grid grid-cols-2 md:grid-cols-4 mx-1 md:mx-3">
 									{collections["mn-arboretum"].map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
@@ -185,7 +185,7 @@ export default function Personal() {
 										/>
 									))}
 								</div>
-								<div className="grid grid-cols-2 md:grid-cols-4 mx-1 mx-1 md:mx-3">
+								<div className="grid grid-cols-2 md:grid-cols-4 mx-1 md:mx-3">
 									{collections["excelsior-birds-bees"].slice(12, 16).map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
