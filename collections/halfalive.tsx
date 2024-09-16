@@ -39,6 +39,7 @@ const halfaliveArray: PhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mothermother.jpg",
@@ -48,6 +49,7 @@ const halfaliveArray: PhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],
+		index: 0,
 	},
 	{
 		imageSrc: "/mothermother2.jpg",
@@ -57,6 +59,7 @@ const halfaliveArray: PhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],
+		index: 0,
 	},
 	{
 		imageSrc: "/vundabar.jpg",
@@ -66,6 +69,7 @@ const halfaliveArray: PhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],
+		index: 0,
 	},
 	{
 		imageSrc: "/vundabar2.jpg",
@@ -75,6 +79,7 @@ const halfaliveArray: PhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],
+		index: 0,
 	},
 	{
 		imageSrc: "/phoebeBridgers.jpg",
@@ -84,6 +89,7 @@ const halfaliveArray: PhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],
+		index: 0,
 	},
 	{
 		imageSrc: "/julienBaker.jpg",
@@ -93,6 +99,7 @@ const halfaliveArray: PhotoProps[] = [
 		stats: "SONY DSC-RX100M6",
 		classAdjustments: "col-span-1 row-span-1",
 		tags: ["Concert"],
+		index: 0,
 	},
 	{
 		imageSrc: "/lucyDacus.jpg",
