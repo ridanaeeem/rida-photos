@@ -43,7 +43,7 @@ const connectArray: PhotoProps[] = [
 	},
 	{
 		imageSrc: "/connect/first2.jpg",
-		imageAlt: "Kid outside",
+		imageAlt: "Kid standing outside in nature",
 		description: "",
 		collection: "connect",
 		stats: "VTech Kidizoom • 0.3MP • 640 x 480",
@@ -52,8 +52,8 @@ const connectArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/connect/first.JPG",
-		imageAlt: "Kid inside",
+		imageSrc: "/connect/first.jpg",
+		imageAlt: "Kid standing in front of closet",
 		description: "",
 		collection: "connect",
 		stats: "VTech Kidizoom • 0.3MP • 640 x 480",
