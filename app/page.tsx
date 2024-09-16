@@ -37,6 +37,46 @@ export default function Home() {
 		};
 	}, [modalData.isOpen]);
 
+	useEffect(() => {
+		const handleLeft = (event: KeyboardEvent) => {
+			if (event.key === "ArrowLeft") {
+				setModalData((prevModalData) => {
+					let newIndex = (prevModalData.photo.index - 1 + mainPageArray.length) % mainPageArray.length;
+
+					return {
+						...prevModalData,
+						photo: mainPageArray[newIndex],
+						isOpen: true,
+					};
+				});
+			}
+		};
+
+		const handleRight = (event: KeyboardEvent) => {
+			if (event.key === "ArrowRight") {
+				setModalData((prevModalData) => {
+					let newIndex = (prevModalData.photo.index + 1) % mainPageArray.length;
+
+					return {
+						...prevModalData,
+						photo: mainPageArray[newIndex],
+						isOpen: true,
+					};
+				});
+			}
+		};
+
+		if (modalData.isOpen) {
+			window.addEventListener("keydown", handleLeft);
+			window.addEventListener("keydown", handleRight);
+		}
+
+		return () => {
+			window.removeEventListener("keydown", handleLeft);
+			window.removeEventListener("keydown", handleRight);
+		};
+	}, [modalData.isOpen]);
+
 	const transitionLength = 1;
 
 	return (

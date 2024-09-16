@@ -25,13 +25,14 @@ for (let i = 0; i < personalArray.length; i++) {
 	personalArray[i].index = i;
 }
 
-export const professionalArray = [
-	...halfaliveArray,
-	...motherMotherArray,
-];
+export const professionalArray = [...halfaliveArray, ...motherMotherArray];
 
 for (let i = 0; i < professionalArray.length; i++) {
 	professionalArray[i].index = i;
+}
+
+for (let i = 0; i < mainPageArray.length; i++) {
+	mainPageArray[i].index = i;
 }
 
 export const collections = {

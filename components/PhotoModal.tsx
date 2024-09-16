@@ -43,54 +43,47 @@ export default function PhotoModal({
 				<p>{modalData.photo.filtered}</p>
 			</div>
 			<div className="flex text-4xl justify-between m-2">
-				{pageArray === mainPageArray ? (
-					<></>
-				) : (
-					<>
-						<button
-							className="px-6"
-							onClick={() => {
-								setModalData((prevModalData: ModalData) => {
-									let newIndex =
-										(prevModalData.photo.index - 1 + pageArray.length) % pageArray.length;
+				<button
+					className="px-6"
+					onClick={() => {
+						setModalData((prevModalData: ModalData) => {
+							let newIndex = (prevModalData.photo.index - 1 + pageArray.length) % pageArray.length;
 
-									if (isFiltered) {
-										while (pageArray[newIndex].filtered === false) {
-											newIndex = (newIndex - 1 + pageArray.length) % pageArray.length;
-										}
-									}
+							if (isFiltered) {
+								while (pageArray[newIndex].filtered === false) {
+									newIndex = (newIndex - 1 + pageArray.length) % pageArray.length;
+								}
+							}
 
-									return {
-										...prevModalData,
-										photo: pageArray[newIndex],
-										isOpen: true,
-									};
-								});
-							}}>
-							&larr;
-						</button>
-						<button
-							className="px-6"
-							onClick={() => {
-								setModalData((prevModalData: ModalData) => {
-									let newIndex = (prevModalData.photo.index + 1) % pageArray.length;
-									if (isFiltered) {
-										while (pageArray[newIndex].filtered === false) {
-											newIndex = (newIndex + 1) % pageArray.length;
-										}
-									}
+							return {
+								...prevModalData,
+								photo: pageArray[newIndex],
+								isOpen: true,
+							};
+						});
+					}}>
+					&larr;
+				</button>
+				<button
+					className="px-6"
+					onClick={() => {
+						setModalData((prevModalData: ModalData) => {
+							let newIndex = (prevModalData.photo.index + 1) % pageArray.length;
+							if (isFiltered) {
+								while (pageArray[newIndex].filtered === false) {
+									newIndex = (newIndex + 1) % pageArray.length;
+								}
+							}
 
-									return {
-										...prevModalData,
-										photo: pageArray[newIndex],
-										isOpen: true,
-									};
-								});
-							}}>
-							&rarr;
-						</button>
-					</>
-				)}
+							return {
+								...prevModalData,
+								photo: pageArray[newIndex],
+								isOpen: true,
+							};
+						});
+					}}>
+					&rarr;
+				</button>
 			</div>
 		</div>
 	);
