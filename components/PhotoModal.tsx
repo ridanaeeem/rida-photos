@@ -1,8 +1,9 @@
 import React from "react";
 import { Darker_Grotesque } from "next/font/google";
 import { ModalData, PhotoProps } from "@/types";
-import mainPageArray from "@/collections/mainPage";
 import Link from "next/link";
+import mainPageArray from "@/collections/mainPage";
+import { personalArray, professionalArray } from "@/collections/collections";
 
 const darker_grotesque = Darker_Grotesque({ subsets: ["latin"] });
 
@@ -19,6 +20,10 @@ export default function PhotoModal({
 }) {
 	if (!modalData.isOpen) return null;
 
+	let path = "";
+	if (pageArray === personalArray || pageArray === mainPageArray) path = "personal";
+	else if (pageArray === professionalArray) path = "professional";
+
 	return (
 		<div
 			className={`${
@@ -30,7 +35,7 @@ export default function PhotoModal({
 					{/* {description + ": "} */}
 					{modalData.showLink && modalData.photo.collection !== "" ? (
 						<Link
-							href={`personal#${modalData.photo.collection}`}
+							href={`${path}#${modalData.photo.collection}`}
 							target="_blank"
 							rel="noreferrer"
 							className="hover:text-[#809BB3]">
