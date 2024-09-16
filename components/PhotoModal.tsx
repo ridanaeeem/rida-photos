@@ -1,7 +1,6 @@
 import React from "react";
 import { Darker_Grotesque } from "next/font/google";
 import { ModalData, PhotoProps } from "@/types";
-import { personalArray, collections } from "@/collections/collections";
 import mainPageArray from "@/collections/mainPage";
 import Link from "next/link";
 
@@ -16,7 +15,7 @@ export default function PhotoModal({
 	modalData: ModalData;
 	setModalData: any;
 	isFiltered: boolean;
-	pageArray?: string;
+	pageArray: PhotoProps[];
 }) {
 	if (!modalData.isOpen) return null;
 
@@ -44,7 +43,7 @@ export default function PhotoModal({
 				<p>{modalData.photo.filtered}</p>
 			</div>
 			<div className="flex text-4xl justify-between m-2">
-				{pageArray === "mainPageArray" ? (
+				{pageArray === mainPageArray ? (
 					<></>
 				) : (
 					<>
@@ -53,17 +52,17 @@ export default function PhotoModal({
 							onClick={() => {
 								setModalData((prevModalData: ModalData) => {
 									let newIndex =
-										(prevModalData.photo.index - 1 + personalArray.length) % personalArray.length;
+										(prevModalData.photo.index - 1 + pageArray.length) % pageArray.length;
 
 									if (isFiltered) {
-										while (personalArray[newIndex].filtered === false) {
-											newIndex = (newIndex - 1 + personalArray.length) % personalArray.length;
+										while (pageArray[newIndex].filtered === false) {
+											newIndex = (newIndex - 1 + pageArray.length) % pageArray.length;
 										}
 									}
 
 									return {
 										...prevModalData,
-										photo: personalArray[newIndex],
+										photo: pageArray[newIndex],
 										isOpen: true,
 									};
 								});
@@ -74,16 +73,16 @@ export default function PhotoModal({
 							className="px-6"
 							onClick={() => {
 								setModalData((prevModalData: ModalData) => {
-									let newIndex = (prevModalData.photo.index + 1) % personalArray.length;
+									let newIndex = (prevModalData.photo.index + 1) % pageArray.length;
 									if (isFiltered) {
-										while (personalArray[newIndex].filtered === false) {
-											newIndex = (newIndex + 1) % personalArray.length;
+										while (pageArray[newIndex].filtered === false) {
+											newIndex = (newIndex + 1) % pageArray.length;
 										}
 									}
 
 									return {
 										...prevModalData,
-										photo: personalArray[newIndex],
+										photo: pageArray[newIndex],
 										isOpen: true,
 									};
 								});

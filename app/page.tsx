@@ -53,7 +53,7 @@ export default function Home() {
 							modalData={modalData}
 							setModalData={setModalData}
 							isFiltered={false}
-							pageArray="mainPageArray"
+							pageArray={mainPageArray}
 						/>
 					</div>
 

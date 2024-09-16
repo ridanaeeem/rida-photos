@@ -104,6 +104,7 @@ export default function Personal() {
 						modalData={modalData}
 						setModalData={setModalData}
 						isFiltered={filters.length > 0 ? true : false}
+						pageArray={personalArray}
 					/>
 
 					{modalData.isOpen ? (

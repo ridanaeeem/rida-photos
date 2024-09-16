@@ -5,7 +5,7 @@ import FilterBox from "@/components/FilterBox";
 import CollectionThumbnail from "@/components/CollectionThumbnail";
 import CollectionHeading from "@/components/CollectionHeading";
 import PhotoModal from "@/components/PhotoModal";
-import { personalArray } from "@/collections/collections";
+import { professionalArray } from "@/collections/collections";
 import { collections } from "@/collections/collections";
 import { defaultPhoto, PhotoProps } from "@/types";
 import { ModalData } from "@/types";
@@ -44,7 +44,60 @@ export default function Professional() {
 		};
 	}, [modalData.isOpen]);
 
+	useEffect(() => {
+		const handleLeft = (event: KeyboardEvent) => {
+			if (event.key === "ArrowLeft") {
+				setModalData((prevModalData) => {
+					let newIndex =
+						(prevModalData.photo.index - 1 + professionalArray.length) % professionalArray.length;
+
+					if (filters.length > 0) {
+						while (professionalArray[newIndex].filtered === false) {
+							newIndex = (newIndex - 1 + professionalArray.length) % professionalArray.length;
+						}
+					}
+
+					return {
+						...prevModalData,
+						photo: professionalArray[newIndex],
+						isOpen: true,
+					};
+				});
+			}
+		};
+
+		const handleRight = (event: KeyboardEvent) => {
+			if (event.key === "ArrowRight") {
+				setModalData((prevModalData) => {
+					let newIndex = (prevModalData.photo.index + 1) % professionalArray.length;
+					if (filters.length > 0) {
+						while (professionalArray[newIndex].filtered === false) {
+							newIndex = (newIndex + 1) % professionalArray.length;
+						}
+					}
+
+					return {
+						...prevModalData,
+						photo: professionalArray[newIndex],
+						isOpen: true,
+					};
+				});
+			}
+		};
+
+		if (modalData.isOpen) {
+			window.addEventListener("keydown", handleLeft);
+			window.addEventListener("keydown", handleRight);
+		}
+
+		return () => {
+			window.removeEventListener("keydown", handleLeft);
+			window.removeEventListener("keydown", handleRight);
+		};
+	}, [modalData.isOpen]);
+
 	const [filters, setFilters] = useState<string[]>([]);
+
 	return (
 		<div className={`${arimo.className} ${"text-white"}`}>
 			<title>Rida Naeem Photography</title>
@@ -54,6 +107,7 @@ export default function Professional() {
 						modalData={modalData}
 						setModalData={setModalData}
 						isFiltered={filters.length > 0 ? true : false}
+						pageArray={professionalArray}
 					/>
 
 					{modalData.isOpen ? (
@@ -83,7 +137,7 @@ export default function Professional() {
 									details="House of Blues Boston, MA. Fall 2022."
 								/>
 								<div className="grid grid-cols-2 md:grid-cols-2 grid-auto-rows minmax(150px, auto) mx-1 md:mx-3">
-									{collections["halfalive"].slice(4, 8).map((photo: PhotoProps) => (
+									{collections["mother-mother"].map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -111,7 +165,7 @@ export default function Professional() {
 						</div>
 					) : (
 						<>
-							{personalArray.filter((photo: PhotoProps) =>
+							{professionalArray.filter((photo: PhotoProps) =>
 								filters.every((filter) => photo.tags?.includes(filter))
 							).length === 0 ? (
 								<div className="flex flex-col p-6 pb-0">
@@ -133,7 +187,7 @@ export default function Professional() {
 										details="Includes photos with the selected combination of tags."
 									/>
 									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-										{personalArray.map((photo: PhotoProps) => {
+										{professionalArray.map((photo: PhotoProps) => {
 											const matchesFilters = filters.every((filter) =>
 												photo.tags?.includes(filter)
 											);
@@ -160,7 +214,7 @@ export default function Professional() {
 										details="Includes photos with any one of the selected tags."
 									/>
 									<div className="grid grid-cols-2 md:grid-cols-3 mx-3">
-										{personalArray.map(
+										{professionalArray.map(
 											(photo: PhotoProps) =>
 												filters.some((filter) => photo.tags?.includes(filter)) && (
 													<CollectionThumbnail

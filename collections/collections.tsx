@@ -1,6 +1,5 @@
 import mainPageArray from "./mainPage";
 import chicagoStreetArray from "@/collections/chicagoStreet";
-import halfaliveArray from "@/collections/halfalive";
 import montroseMoonriseArray from "@/collections/montroseMoonrise";
 import ducksAndLiliesArray from "./ducksAndLilies";
 import perseids2024Array from "./perseids2024";
@@ -8,6 +7,8 @@ import topsailBeachArray from "./topsailBeach";
 import excelsiorBirdsBeesArray from "./excelsiorBirdsBees";
 import mnArboretumArray from "./mnArboretum";
 import stPaulChurchArray from "./stPaulChurch";
+import halfaliveArray from "@/collections/halfalive";
+import motherMotherArray from "./motherMother";
 
 export const personalArray = [
 	...mnArboretumArray,
@@ -24,6 +25,15 @@ for (let i = 0; i < personalArray.length; i++) {
 	personalArray[i].index = i;
 }
 
+export const professionalArray = [
+	...halfaliveArray,
+	...motherMotherArray,
+];
+
+for (let i = 0; i < professionalArray.length; i++) {
+	professionalArray[i].index = i;
+}
+
 export const collections = {
 	"main-page": mainPageArray,
 	"chicago-street": chicagoStreetArray,
@@ -33,6 +43,7 @@ export const collections = {
 	"ducks-and-lilies": ducksAndLiliesArray,
 	"perseids-2024": perseids2024Array,
 	"topsail-beach": topsailBeachArray,
-	halfalive: halfaliveArray,
 	"stpaul-church": stPaulChurchArray,
+	halfalive: halfaliveArray,
+	"mother-mother": motherMotherArray,
 };
