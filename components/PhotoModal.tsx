@@ -33,7 +33,7 @@ export default function PhotoModal({
 				className="fixed inset-0 bg-black bg-opacity-85"
 				onClick={() => setModalData({ ...modalData, isOpen: false })}
 			/>
-			<div className="relative bg-white p-3 md:p-5 rounded-lg text-[#171719]">
+			<div className="relative bg-white p-3 md:p-5 rounded-lg text-[#171719] flex flex-center flex-col flex-wrap break-words">
 				<img
 					src={modalData.photo.imageSrc}
 					alt={modalData.photo.imageAlt}
@@ -51,7 +51,7 @@ export default function PhotoModal({
 						</Link>
 					) : null}
 				</p>
-				<p className="text-md md:text-3xl">{modalData.photo.stats}</p>
+				<p className="text-md md:text-3xl flex-wrap break-words object-contain">{modalData.photo.stats}</p>
 				<p>{modalData.photo.index + 1}</p>
 				<p>{modalData.photo.filtered}</p>
 			</div>

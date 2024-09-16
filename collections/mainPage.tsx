@@ -59,7 +59,7 @@ const mainPageArray: PhotoProps[] = [
 		imageAlt: "Lighthouse at Montrose Moonrise Vista Point, with boat passing by",
 		description: "",
 		collection: "montroseMoonrise",
-		stats: "SONY DSC-RX100M6",
+		stats: "SONY DSC-RX100M6 • ƒ/11 • 1/6400 • 9mm • ISO2000",
 		classAdjustments: "col-span-1 md:col-span-2 row-span-1",
 		tags: ["Landscape"],
 		index: 0,
