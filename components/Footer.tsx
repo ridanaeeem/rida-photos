@@ -11,13 +11,17 @@ export default function Footer() {
 		<div className={`${darker_grotesque.className} ${"bg-[#171719] text-white"}`}>
 			<ul className="text-lg md:text-2xl flex justify-center pb-5 font-normal">
 				<ul className="px-5 hover:text-[#809BD8]">
-					<Link href="https://www.instagram.com/ridasphotos/">Instagram</Link>
+					<Link href="https://www.instagram.com/ridasphotos/" target="_blank">
+						Instagram
+					</Link>
 				</ul>
 				<ul className="px-5 hover:text-[#809BD8]">
-					<Link href="mailto:ridan@bu.edu">Email</Link>
+					<Link href="mailto:ridan@bu.edu" target="_blank">
+						Email
+					</Link>
 				</ul>
 				<ul className="px-5 hover:text-[#809BD8]">
-					<Link href={pathname}>Back to Top</Link>
+					<Link href="#nav">Back to Top</Link>
 				</ul>
 			</ul>
 		</div>

@@ -14,7 +14,8 @@ export default function Nav() {
 		<nav
 			className={`${darker_grotesque.className} ${
 				pathname === "/" ? "bg-white text-black" : "bg-[#171719] text-white"
-			}`}>
+			}`}
+			id="nav">
 			<div className="header flex flex-col font-bold p-2 md:p-5">
 				<h1 className={`text-4xl ${caveat.className} ${pathname === "/" ? "text-[#809BB3]" : null}`}>
 					<Link href="/">Rida Naeem Photography</Link>
