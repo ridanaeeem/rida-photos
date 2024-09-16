@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import PhotoThumbnail from "@/components/PhotoThumbnail";
 import PhotoModal from "@/components/PhotoModal";
 import { ModalData, defaultPhoto } from "@/types";
+import { collections } from "@/collections/collections";
 
 export default function Home() {
 	const [modalData, setModalData] = useState<ModalData>({
@@ -64,18 +65,15 @@ export default function Home() {
 						<div className="grid grid-cols-3 gap-4 p-2 md:p-5 lg:grid-cols-3">
 							<div className="col-start-2 col-span-2 row-span-3 lg:col-start-2">
 								<PhotoThumbnail
+									key={collections["excelsior-birds-bees"][0].imageSrc}
+									photo={collections["ducks-and-lilies"][0]}
 									setModalData={setModalData}
-									src="/waterLily.JPG"
-									alt="white water lily"
-									description="water lily"
-									collection="ducksandlilies"
-									stats="SONY DSC-RX100M6 • f/6.3 • 1/2000 • 63.55mm • ISO3200"
 								/>
 							</div>
 						</div>
 					</motion.div>
 				</div>
-				<div className="bg-gradient-to-b from-[#9EB8CF] to-[#9EB8CF]">
+				{/* <div className="bg-gradient-to-b from-[#9EB8CF] to-[#9EB8CF]">
 					<motion.div
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
@@ -307,7 +305,7 @@ export default function Home() {
 							/>
 						</div>
 					</motion.div>
-				</div>
+				</div> */}
 			</main>
 		</div>
 	);

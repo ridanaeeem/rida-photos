@@ -1,42 +1,19 @@
-function openModal(
-	setModalData: any,
-	imageSrc: string,
-	imageAlt: string,
-	description: string,
-	collection: string,
-	stats: string
-) {
+import { PhotoProps } from "@/types";
+
+function openModal(setModalData: any, photo: PhotoProps) {
 	setModalData({
+		photo: photo,
 		isOpen: true,
-		imageSrc,
-		imageAlt,
-		description,
-		collection,
-		stats,
 		showLink: true,
 	});
 }
 
-export default function PhotoThumbnail({
-	setModalData,
-	src,
-	alt,
-	description,
-	collection,
-	stats,
-}: {
-	setModalData: any;
-	src: string;
-	alt: string;
-	description: string;
-	collection: string;
-	stats: string;
-}) {
+export default function PhotoThumbnail({ setModalData, photo }: { setModalData: any; photo: PhotoProps }) {
 	return (
 		<img
-			src={src}
-			alt={alt}
+			src={photo.imageSrc}
+			alt={photo.imageAlt}
 			className="cursor-pointer"
-			onClick={() => openModal(setModalData, src, alt, description, collection, stats)}></img>
+			onClick={() => openModal(setModalData, photo)}></img>
 	);
 }
