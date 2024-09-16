@@ -6,7 +6,7 @@ export default function Contact() {
 			<title>Contact</title>
 			<main>
 				<div className="bg-gradient-to-b from-[#171719] to-[#171719] min-h-screen text-white">
-					<h1 className="text-2xl md:text-4xl text-left font-bold p-6">About Me</h1>
+					<h1 className="text-2xl md:text-4xl text-left font-bold p-6 pb-1">About Me</h1>
 					<p className="text-lg md:text-2xl text-left px-6">
 						Hi! My name is Rida, and I recently graduated from Boston University where I studied
 						Neuroscience and Computer Science. If you want to learn more about my work in those fields,
@@ -38,7 +38,7 @@ export default function Contact() {
 						</a>{" "}
 						to see my growing professional portfolio. Enjoy!
 					</p>
-					<h1 className="text-2xl md:text-4xl text-left font-bold p-6">Get in Touch</h1>
+					<h1 className="text-2xl md:text-4xl text-left font-bold p-6 pb-1">Get in Touch</h1>
 					<p className="text-lg md:text-2xl text-left px-6 pb-6">
 						Email:{" "}
 						<a href="mailto:ridan@bu.edu" className="text-[#809BD8]">
