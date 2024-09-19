@@ -252,7 +252,25 @@ export default function Personal() {
 							<div className="pb-10" id="topsailBeach">
 								<CollectionHeading title="Topsail Beach" details="Topsail Island, NC. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
-									{collections["topsail-beach"].map((photo: PhotoProps) => (
+									{collections["topsail-beach"].slice(0, 3).map((photo: PhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											photo={photo}
+											setModalData={setModalData}
+										/>
+									))}
+								</div>
+								<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
+									{collections["topsail-beach"].slice(3, 6).map((photo: PhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											photo={photo}
+											setModalData={setModalData}
+										/>
+									))}
+								</div>
+								<div className="grid grid-cols-2 md:grid-cols-2 mx-1 md:mx-3">
+									{collections["topsail-beach"].slice(6).map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
