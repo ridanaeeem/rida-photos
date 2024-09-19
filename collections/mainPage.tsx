@@ -34,7 +34,7 @@ const mainPageArray: PhotoProps[] = [
 		index: 0,
 	},
 	montroseMoonriseArray[9],
-	topsailBeachArray[1],
+	topsailBeachArray[4],
 	{
 		imageSrc: "/rb.JPG",
 		imageAlt: "rab",
