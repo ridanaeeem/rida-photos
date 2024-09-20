@@ -8,6 +8,7 @@ import excelsiorBirdsBeesArray from "./excelsiorBirdsBees";
 import mnArboretumArray from "./mnArboretum";
 import stPaulChurchArray from "./stPaulChurch";
 import rainyChicagoArray from "./rainyChicago";
+import topsailTimelineArray from "./topsailTimeline";
 import halfaliveArray from "@/collections/halfalive";
 import motherMotherArray from "./motherMother";
 
@@ -18,6 +19,7 @@ export const personalArray = [
 	...rainyChicagoArray,
 	...ducksAndLiliesArray,
 	...topsailBeachArray,
+	...topsailTimelineArray,
 	...chicagoStreetArray,
 	...perseids2024Array,
 	...stPaulChurchArray,
@@ -34,6 +36,7 @@ export const collections = {
 	"ducks-and-lilies": ducksAndLiliesArray,
 	"perseids-2024": perseids2024Array,
 	"topsail-beach": topsailBeachArray,
+	"topsail-timeline": topsailTimelineArray,
 	"stpaul-church": stPaulChurchArray,
 	"rainy-chicago": rainyChicagoArray,
 	halfalive: halfaliveArray,
