@@ -33,7 +33,7 @@ export default function PhotoModal({
 				className="fixed inset-0 bg-black bg-opacity-85"
 				onClick={() => setModalData({ ...modalData, isOpen: false })}
 			/>
-			<div className="relative bg-white p-3 md:p-5 rounded-lg text-[#171719] flex flex-center flex-col flex-wrap break-words">
+			<div className="relative bg-white p-3 md:p-5 rounded-lg text-[#171719] flex flex-center items-center justify-center flex-col flex-wrap break-words">
 				<Link href={modalData.photo.imageSrc} target="_blank">
 					<img
 						src={modalData.photo.imageSrc}
