@@ -237,6 +237,21 @@ export default function Personal() {
 									))}
 								</div>
 							</div>
+							<div className="pb-10" id="rainyChicago">
+								<CollectionHeading
+									title="Montrose Moonrise in the Rain"
+									details="Chicago, IL. Summer 2024."
+								/>
+								<div className="grid grid-cols-2 md:grid-cols-4 mx-1 md:mx-3">
+									{collections["rainy-chicago"].map((photo: PhotoProps) => (
+										<CollectionThumbnail
+											key={photo.imageSrc}
+											photo={photo}
+											setModalData={setModalData}
+										/>
+									))}
+								</div>
+							</div>
 							<div className="pb-10" id="ducksAndLilies">
 								<CollectionHeading title="Ducks & Lilies" details="Saint Paul, MN. Summer 2024." />
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
@@ -261,7 +276,7 @@ export default function Personal() {
 									))}
 								</div>
 								<div className="grid grid-cols-2 md:grid-cols-3 mx-1 md:mx-3">
-									{collections["topsail-beach"].slice(3, 6).map((photo: PhotoProps) => (
+									{collections["topsail-beach"].slice(3, 9).map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
@@ -270,7 +285,7 @@ export default function Personal() {
 									))}
 								</div>
 								<div className="grid grid-cols-2 md:grid-cols-2 mx-1 md:mx-3">
-									{collections["topsail-beach"].slice(6).map((photo: PhotoProps) => (
+									{collections["topsail-beach"].slice(9, 12).map((photo: PhotoProps) => (
 										<CollectionThumbnail
 											key={photo.imageSrc}
 											photo={photo}
