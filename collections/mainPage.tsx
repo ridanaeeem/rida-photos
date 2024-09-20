@@ -6,6 +6,7 @@ import montroseMoonriseArray from "@/collections/montroseMoonrise";
 import ducksAndLiliesArray from "./ducksAndLilies";
 import perseids2024Array from "./perseids2024";
 import topsailBeachArray from "./topsailBeach";
+import topsailTimelineArray from "./topsailTimeline";
 import excelsiorBirdsBeesArray from "./excelsiorBirdsBees";
 import mnArboretumArray from "./mnArboretum";
 import stPaulChurchArray from "./stPaulChurch";
@@ -34,7 +35,7 @@ const mainPageArray: PhotoProps[] = [
 		index: 0,
 	},
 	montroseMoonriseArray[9],
-	topsailBeachArray[4],
+	topsailTimelineArray[8],
 	{
 		imageSrc: "/rb.JPG",
 		imageAlt: "rab",
