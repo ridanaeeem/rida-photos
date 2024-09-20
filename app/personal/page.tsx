@@ -141,7 +141,7 @@ export default function Personal() {
 								/>
 								<button onClick={() => setFilters([])}>
 									<div className="relative">
-										<img src="/topsail-beach/starryTSB4.JPG" alt="Night sky" />
+										<img src="/topsail-timeline/starryTSB4.JPG" alt="Night sky" />
 										{/* black overlay with 50% opacity */}
 										<div className="absolute inset-0 bg-black opacity-50"></div>
 										{/* centered text */}
