@@ -32,7 +32,7 @@ const topsailBeachArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/topsail-beach/beach5.jpg",
+		imageSrc: "/topsail-beach/beach5.JPG",
 		imageAlt: "Shot of two girls sitting in the water at the baech",
 		description: "",
 		collection: "topsailBeach",
@@ -42,7 +42,7 @@ const topsailBeachArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/topsail-beach/beach4.jpg",
+		imageSrc: "/topsail-beach/beach4.JPG",
 		imageAlt: "Shot of beachfront homes",
 		description: "",
 		collection: "topsailBeach",

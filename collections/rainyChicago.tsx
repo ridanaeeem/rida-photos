@@ -22,7 +22,7 @@ const rainyChicagoArray: PhotoProps[] = [
 		index: 0,
 	},
 	{
-		imageSrc: "/rainy-chicago/rainyChicago4.jpg",
+		imageSrc: "/rainy-chicago/rainyChicago4.JPG",
 		imageAlt: "",
 		description: "",
 		collection: "rainyChicago",
